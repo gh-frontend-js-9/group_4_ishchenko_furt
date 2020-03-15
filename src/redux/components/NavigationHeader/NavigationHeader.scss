@@ -9,7 +9,7 @@
   padding: $p-5;
   &__link {
     @include text-styles($md-font-size, $black-color);
-    padding: $p-10;
+    padding: 10px;
     font-weight: $bold-font-weight;
     text-decoration: none;
     margin: 35px;

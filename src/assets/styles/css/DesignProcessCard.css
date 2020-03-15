@@ -8,14 +8,16 @@
   padding: 10px 0px 40px; }
 
 .design-process-card {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   padding: 25px 40px 45px;
   max-width: 573px;
   max-height: 358px;
   border-radius: 8px;
   background-color: #1b0042; }
   .design-process-card--hovered:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     cursor: pointer;
-    background-color: #22006b; }
+    background-color: #220059; }
   .design-process-card__author {
     font-size: 16px;
     color: #ffffff;

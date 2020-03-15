@@ -8,17 +8,17 @@ export const DesignProcessCard: React.FC = () => {
         title: 'How to Boost Conversions on Your WooCommerce Product Pages',
         paragraph: 'User research is the reality check every project needs. Here’s our guide to why you should be doing it — and how to get started.'
     }, {
-        header: 'Popular',
+        header: 'Essentials',
         autor: 'BY TOMAS LAURINAVICIUS IN DESIGN PROCESS',
         title: 'How to Boost Conversions on Your WooCommerce Product Pages',
         paragraph: 'User research is the reality check every project needs. Here’s our guide to why you should be doing it — and how to get started.'
     }, {
-        header: 'Popular',
+        header: 'Freelance',
         autor: 'BY TOMAS LAURINAVICIUS IN DESIGN PROCESS',
         title: 'How to Boost Conversions on Your WooCommerce Product Pages',
         paragraph: 'User research is the reality check every project needs. Here’s our guide to why you should be doing it — and how to get started.'
     }]
-    let renderComponentsCard = items.map((item: any, n: number) => {
+    let renderItems = items.map((item: any, n: number) => {
         return <>
             <h3 className='article-header'>
                 {item.header}
@@ -33,7 +33,7 @@ export const DesignProcessCard: React.FC = () => {
 
     return (
         <div>
-            <>{renderComponentsCard}</>
+            <>{renderItems}</>
         </div>
 
     );

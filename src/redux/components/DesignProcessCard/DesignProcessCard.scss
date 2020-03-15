@@ -1,4 +1,5 @@
 @import '../../../assets/styles/scss/styles.scss';
+
 .article-header{
   @include text-styles($xxxl-font-size, $black-color);
   font-weight: 700;
@@ -8,6 +9,7 @@
 }
 
 .design-process-card {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   padding: 25px 40px 45px;
   max-width: 573px;
   max-height: 358px;
@@ -15,6 +17,7 @@
   background-color: $violet-color;
 
   &--hovered:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     cursor: pointer;
     background-color: $violet-color-hovered;
   }

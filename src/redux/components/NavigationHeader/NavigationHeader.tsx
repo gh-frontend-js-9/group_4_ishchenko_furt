@@ -1,9 +1,9 @@
 import React from "react";
 //import {NavLink} from "react-router-dom";
-import '../../../assets/styles/css/NavigationHeader.css'
+import './NavigationHeader.scss'
 
 export const NavigationHeader = () => {
-    const navigationBar = [{
+    const navBar = [{
         link: '#',
         title: 'Popular'
     }, {
@@ -19,7 +19,7 @@ export const NavigationHeader = () => {
         link: '#',
         title: 'Subscribe'
     }];
-    let renderNav = navigationBar.map((nav: any, n: number) => {
+    let renderNav = navBar.map((nav: any, n: number) => {
         return <span key={n} className="navigation-bar__item">
                     <a key={n} href={nav.link} className="navigation-bar__link">
                         {nav.title}

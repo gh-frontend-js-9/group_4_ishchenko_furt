@@ -1,0 +1,8 @@
+@import './variables';
+
+@mixin text-styles($font-size, $font-color, $text-padding){
+  padding: $text-padding;
+  font-size:$font-size;
+  color: $font-color;
+  font-family: $open-sans-font;
+}

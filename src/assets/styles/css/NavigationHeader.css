@@ -3,10 +3,10 @@
   color: red; }
 
 .navigation-bar__link {
-  color: #000000;
-  font-family: "Open Sans Semi Bold";
+  padding: 5px 5px 5px 5px;
   font-size: 16px;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-decoration: none;
-  margin: 50px;
-}
+  margin: 50px; }

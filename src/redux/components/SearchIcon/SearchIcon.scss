@@ -1,0 +1,10 @@
+@import '../../../assets/styles/scss/styles.scss';
+
+.fa {
+  color: $black-color;
+
+  &--hovered:hover {
+    color: $pink;
+    cursor: pointer;
+  }
+}

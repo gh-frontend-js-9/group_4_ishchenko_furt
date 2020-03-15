@@ -1,7 +1,7 @@
 import React from "react";
-import './ThematicCardBlogit add .g.scss'
+import './ThematicBlogCard.scss'
 
-export const ThematicCardBlog: React.FC = () => {
+export const ThematicBlogCard: React.FC = () => {
     const items = [{
         theme: 'FREELANCING',
         title: '7 Best WordPress Caching Plugins for 2018',
@@ -16,12 +16,11 @@ export const ThematicCardBlog: React.FC = () => {
         title: '7 Best WordPress Caching Plugins for 2018',
     },]
     let renderItems = items.map((item: any, n: number) => {
-        return <>
-            <div key={n} className="thematic-card-blog thematic-card-blog--hovered">
-                <p className="thematic-card-blog__theme"> {item.theme}</p>
-                <h3 className="thematic-card-blog__title">{item.title}</h3>
+        return <div key={n} className="thematic-blog-card thematic-blog-card--hovered">
+            <p className="thematic-blog-card__theme"> {item.theme}</p>
+                <h3 className="thematic-blog-card__title">{item.title}</h3>
             </div>
-        </>
+
     });
 
     return (

@@ -9,7 +9,10 @@ const App: React.FC = () => {
     return (
         <Wrapper>
             <Header/>
-            <ArticleCard/>
+
+            <main className='main'>
+                <ArticleCard/>
+            </main>
         </Wrapper>
     )
 };

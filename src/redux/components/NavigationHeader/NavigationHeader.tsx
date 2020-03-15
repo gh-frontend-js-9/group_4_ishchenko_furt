@@ -20,12 +20,13 @@ export const NavigationHeader = () => {
         title: 'Subscribe'
     }];
     let renderNav = navBar.map((nav: any, n: number) => {
-        return <span key={n} className="navigation-bar__item">
-                    <a key={n} href={nav.link} className="navigation-bar__link">
+        return <span key={n} className="navigation-bar">
+                    <a key={n} href={nav.link} className="navigation-bar__link navigation-bar__link--hovered">
                         {nav.title}
                     </a>
                 </span>
     });
+
     return (
         <>{renderNav}</>
     )

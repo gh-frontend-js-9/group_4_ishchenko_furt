@@ -5,24 +5,24 @@ import '../../../assets/styles/css/NavigationHeader.css'
 export const NavigationHeader = () => {
     const navigationBar = [{
         link: '#',
-        name: 'Popular'
+        title: 'Popular'
     }, {
         link: '#',
-        name: 'New'
+        title: 'New'
     }, {
         link: '#',
-        name: 'Reading list'
+        title: 'Reading list'
     }, {
         link: '#',
-        name: 'Topics'
+        title: 'Topics'
     }, {
         link: '#',
-        name: 'Subscribe'
+        title: 'Subscribe'
     }];
     let renderNav = navigationBar.map((nav: any, n: number) => {
         return <span key={n} className="navigation-bar__item">
                     <a key={n} href={nav.link} className="navigation-bar__link">
-                        {nav.name}
+                        {nav.title}
                     </a>
                 </span>
     });

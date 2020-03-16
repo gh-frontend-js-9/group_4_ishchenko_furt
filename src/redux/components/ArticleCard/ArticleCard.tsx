@@ -1,16 +1,17 @@
 import React from "react";
-import {DesignProcessCard} from "../DesignProcessCard/DesignProcessCard";
-import {ThematicBlogCard} from "../ThematicCardBlog/ThematicBlogCard";
+import {ThematicBlogCard} from "../ThematicBlogCard/ThematicBlogCard";
 import './ArticleCard.scss'
+import MainCardContainer from "../../containers/MainCardContainer";
+import ThematicBlogCardContainer from "../../containers/ThematicBlogCardContainer";
 
 export const ArticleCard: React.FC = () => {
     return (
         <div className='article-card'>
-            <div className='article-card__design-process-card'>
-                <DesignProcessCard/>
+            <div className='article-card__main-card'>
+                <MainCardContainer/>
             </div>
             <div className='article-card__thematic-blog-card'>
-                <ThematicBlogCard/>
+                <ThematicBlogCardContainer/>
             </div>
         </div>
     );

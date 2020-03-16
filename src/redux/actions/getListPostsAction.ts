@@ -9,7 +9,7 @@ export function getListPostsAction() {
         postsBlogService.getListPosts()
             .then((response:any) => {
                 dispatch(isLoadingAction(false));
-                dispatch(getListPostsReceiveAction(response.data));
+                dispatch(getListPostsReceiveAction(response.data.docs));
             })
             .catch(error =>
                 dispatch((error.response))

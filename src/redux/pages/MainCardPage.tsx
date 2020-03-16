@@ -26,7 +26,7 @@ interface IProps {
     isLoading?: boolean,
 }
 
-export default class MainCardContainer extends Component <IProps, {}> {
+export default class MainCardPage extends Component <IProps, {}> {
 
     render() {
         let getMainCard = data.map((items: any) =>

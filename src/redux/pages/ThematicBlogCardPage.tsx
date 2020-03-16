@@ -24,7 +24,7 @@ interface IProps {
     isLoading?: boolean,
 }
 
-export default class ThematicBlogCardContainer extends Component <IProps, {}> {
+export default class ThematicBlogCardPage extends Component <IProps, {}> {
 
     render() {
         let getThematicBlog = data.map((items: any) =>

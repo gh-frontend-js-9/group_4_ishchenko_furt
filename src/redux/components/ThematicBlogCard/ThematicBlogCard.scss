@@ -8,8 +8,8 @@
   border-radius: 8px;
   background-color: $white-color;
 
-  &--hovered:hover{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  &--hovered:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
 
@@ -25,5 +25,9 @@
     font-weight: $bold-font-weight;
     letter-spacing: -0.11px;
     line-height: 30px;
+
+    &--hovered:hover {
+      color: $pink;
+    }
   }
 }

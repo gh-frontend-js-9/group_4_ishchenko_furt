@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css'
 import {Header} from "./redux/components/Header/Header";
 import {Wrapper} from "./redux/components/Wrapper/Wrapper";
-import BlogPostPage from "./redux/pages/BlogPostPage";
+import {BlockCard} from "./redux/components/BlockCard/BlockCard";
 
 
 const App: React.FC = () => {
@@ -11,7 +11,7 @@ const App: React.FC = () => {
             <Header/>
 
             <main className='main'>
-                <BlogPostPage/>
+                <BlockCard/>
             </main>
         </Wrapper>
     )

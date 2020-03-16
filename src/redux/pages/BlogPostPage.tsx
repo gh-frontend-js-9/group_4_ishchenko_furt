@@ -13,7 +13,6 @@ interface IProps {
 class BlogPostPage extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getListPostsAction();
-
     };
 
     render() {
@@ -39,6 +38,6 @@ const mapDispatchToProps = (dispatch: any) => {
     return {
         getListPostsAction: () => dispatch(getListPostsAction()),
     };
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(BlogPostPage);

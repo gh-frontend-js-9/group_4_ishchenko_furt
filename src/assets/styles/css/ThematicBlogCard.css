@@ -6,7 +6,7 @@
   border-radius: 8px;
   background-color: #ffffff; }
   .thematic-blog-card--hovered:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer; }
   .thematic-blog-card__theme {
     font-size: 16px;
@@ -22,3 +22,5 @@
     font-weight: 600;
     letter-spacing: -0.11px;
     line-height: 30px; }
+    .thematic-blog-card__title--hovered:hover {
+      color: #ff5480; }

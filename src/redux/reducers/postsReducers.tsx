@@ -6,15 +6,16 @@ const initialState = {
     isLoading: false
 };
 
-function postsReducers(state: any = initialState, action: any) {
-    switch (action.type) {
-        case GET_LIST_POSTS_SUCCESS: {
-            return {...state}
-        }
-        case IS_LOADING: {
-            return {...state}
-        }
-        default:
-            return state
-    }
-}
+// export function postsReducers(state: any = initialState, action: any) {
+//     console.log(state)
+//     switch (action.type) {
+//         case GET_LIST_POSTS_SUCCESS: {
+//             return {...state}
+//         }
+//         case IS_LOADING: {
+//             return {...state}
+//         }
+//         default:
+//             return state
+//     }
+// }

@@ -1,0 +1,5 @@
+.fa {
+  color: #000000; }
+  .fa--hovered:hover {
+    color: #ff5480;
+    cursor: pointer; }

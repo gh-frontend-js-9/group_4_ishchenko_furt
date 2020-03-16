@@ -1,0 +1,44 @@
+@import '../../../assets/styles/scss/styles.scss';
+
+.article-header{
+  @include text-styles($xxxl-font-size, $black-color);
+  font-weight: 700;
+  letter-spacing: -0.22px;
+  line-height: 46px;
+  padding: 10px 0px 40px;
+}
+
+.main-card {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  padding: 25px 40px 45px;
+  max-width: 573px;
+  max-height: 358px;
+  border-radius: 8px;
+  background-color: $violet-color;
+
+  &--hovered:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    background-color: $violet-color-hovered;
+  }
+
+  &__author {
+    @include text-styles($md-font-size, $white-color);
+    letter-spacing: -0.1px;
+    line-height: 46px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    @include text-styles($xxl-font-size, $white-color);
+    font-weight: $bold-font-weight;
+    letter-spacing: -0.17px;
+    line-height: 46px;
+  }
+
+  &__paragraph {
+    @include text-styles($md-font-size, $white-color);
+    letter-spacing: -0.1px;
+    line-height: 32px;
+  }
+}

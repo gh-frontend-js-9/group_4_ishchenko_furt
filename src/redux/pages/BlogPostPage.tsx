@@ -30,7 +30,7 @@ class BlogPostPage extends Component <IProps, {}> {
                 <MainCard {...post} key={post._id}/>
             </div>);
         console.log(this.props.listPosts);
-        
+
         return (
             <>
                 {this.props.isLoading ? <Loading/> : <>{renderMainCard} {renderBoxCard} {renderFeaturedPost}</>}

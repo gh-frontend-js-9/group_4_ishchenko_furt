@@ -1,7 +1,28 @@
 @import './variables';
 
-@mixin text-styles($font-size, $font-color){
-  font-size:$font-size;
+@mixin text-styles($font-size, $font-color) {
+  font-size: $font-size;
   color: $font-color;
   font-family: $open-sans-font;
+}
+
+@mixin thematic-blog-card($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+  height: 100vh;
+  max-width: 276px;
+  max-height: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: $white-color;
+}
+
+@mixin main-card($height, $padding, $max-width, $max-height) {
+  height: $height;
+  padding: $padding;
+  max-width: $max-width;
+  max-height: $max-height;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: $violet-color;
 }

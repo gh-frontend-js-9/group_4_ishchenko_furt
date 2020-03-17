@@ -1,7 +1,9 @@
 .thematic-blog-card {
-  padding: 15px 7px;
+  margin: 0px 15px 15px 0px;
+  padding: 25px;
+  height: 100vh;
   max-width: 276px;
-  max-height: 169px;
+  max-height: 150px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   background-color: #ffffff; }

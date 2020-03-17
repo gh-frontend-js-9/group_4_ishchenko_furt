@@ -1,0 +1,17 @@
+.box-card{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 100px 0px;
+
+  &__first-section{
+    width: 49%;
+  }
+  &__second-section{
+    width: 49%;
+  }
+}
+.second-section__row{
+  display: flex;
+}

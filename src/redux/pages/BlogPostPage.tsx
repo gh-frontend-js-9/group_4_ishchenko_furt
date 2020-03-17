@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../components/Healpers/Loading";
 import {getListPostsAction} from "../actions/getListPostsAction";
-import {MainCard} from "../components/MainCard/MainCard";
+import {BoxCard} from "../components/BoxCard/BoxCard";
 
 interface IProps {
     getListPostsAction?: any,
@@ -16,13 +16,13 @@ class BlogPostPage extends Component <IProps, {}> {
     };
 
     render() {
-        let renderPosts = this.props.listPosts.map((post: any) =>
-            <MainCard {...post} key={post._id}/>);
+        let renderBoxCard = this.props.listPosts.map((post: any) =>
+            <BoxCard {...post} key={post._id}/>);
 
         console.log(this.props.listPosts);
         return (
             <>
-                {this.props.isLoading ? <Loading/> : <>{renderPosts}</>}
+                {this.props.isLoading ? <Loading/> : <> {renderBoxCard}</>}
             </>
         )
     }

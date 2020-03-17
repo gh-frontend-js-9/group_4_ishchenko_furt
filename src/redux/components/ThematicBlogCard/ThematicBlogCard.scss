@@ -1,13 +1,7 @@
 @import '../../../assets/styles/scss/styles.scss';
 
 .thematic-blog-card {
-  padding: 15px 7px;
-  max-width: 276px;
-  max-height: 169px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
-  background-color: $white-color;
-
+  @include thematic-blog-card(0px 15px 15px 0px, 25px);
   &--hovered:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;

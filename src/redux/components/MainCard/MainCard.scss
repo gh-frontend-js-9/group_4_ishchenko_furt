@@ -1,20 +1,7 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.article-header{
-  @include text-styles($xxxl-font-size, $black-color);
-  font-weight: 700;
-  letter-spacing: -0.22px;
-  line-height: 46px;
-  padding: 10px 0px 40px;
-}
-
 .main-card {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-  padding: 25px 40px 45px;
-  max-width: 573px;
-  max-height: 358px;
-  border-radius: 8px;
-  background-color: $violet-color;
+  @include main-card(40vh, 35px 40px 35px );
 
   &--hovered:hover{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
@@ -34,6 +21,7 @@
     font-weight: $bold-font-weight;
     letter-spacing: -0.17px;
     line-height: 46px;
+    padding-bottom: 40px;
   }
 
   &__paragraph {

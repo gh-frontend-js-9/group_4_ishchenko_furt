@@ -1,15 +1,7 @@
-.article-header {
-  font-size: 36px;
-  color: #000000;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.22px;
-  line-height: 46px;
-  padding: 10px 0px 40px; }
-
 .main-card {
+  height: 40vh;
+  padding: 35px 40px 35px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-  padding: 25px 40px 45px;
   max-width: 573px;
   max-height: 358px;
   border-radius: 8px;
@@ -31,7 +23,8 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     letter-spacing: -0.17px;
-    line-height: 46px; }
+    line-height: 46px;
+    padding-bottom: 40px; }
   .main-card__paragraph {
     font-size: 16px;
     color: #ffffff;

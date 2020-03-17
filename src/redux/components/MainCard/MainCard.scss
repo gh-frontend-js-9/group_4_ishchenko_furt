@@ -1,7 +1,7 @@
 @import '../../../assets/styles/scss/styles.scss';
 
 .main-card {
-  @include main-card(40vh, 35px 40px 35px );
+  @include main-card(40vh, 35px 40px 35px, 573px, 358px);
 
   &--hovered:hover{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);

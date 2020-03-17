@@ -1,12 +1,12 @@
 @import './variables';
 
-@mixin text-styles($font-size, $font-color){
-  font-size:$font-size;
+@mixin text-styles($font-size, $font-color) {
+  font-size: $font-size;
   color: $font-color;
   font-family: $open-sans-font;
 }
 
-@mixin thematic-blog-card($margin, $padding){
+@mixin thematic-blog-card($margin, $padding) {
   margin: $margin;
   padding: $padding;
   height: 100vh;
@@ -17,12 +17,12 @@
   background-color: $white-color;
 }
 
-@mixin main-card($height, $padding){
-  height:$height;
+@mixin main-card($height, $padding, $max-width, $max-height) {
+  height: $height;
   padding: $padding;
+  max-width: $max-width;
+  max-height: $max-height;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-  max-width: 573px;
-  max-height: 358px;
   border-radius: 8px;
   background-color: $violet-color;
 }

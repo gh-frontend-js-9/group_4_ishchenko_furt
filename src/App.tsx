@@ -8,7 +8,6 @@ const App: React.FC = () => {
     return (
         <Wrapper>
             <Header/>
-
             <main className='main'>
                 <BlogPostPage/>
             </main>

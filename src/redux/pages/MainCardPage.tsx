@@ -2,10 +2,8 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../components/Healpers/Loading";
 import {getListPostsAction} from "../actions/getListPostsAction";
-import {BoxCard} from "../components/BoxCard/BoxCard";
 import {MainCard} from "../components/MainCard/MainCard";
-import {FeaturedImg} from "../components/FeaturedImg/FeaturedImg";
-import './BlogPostPage.scss'
+import './MainCardPage.scss'
 
 interface IProps {
     getListPostsAction?: any,
@@ -19,24 +17,14 @@ class BlogPostPage extends Component <IProps, {}> {
     };
 
     render() {
-
-        let renderBoxCard = this.props.listPosts.map((post: any) =>
-            <BoxCard {...post} key={post._id}>
-                <div className='blog-page-main-card main-card--hovered '>
-                    <MainCard {...post} />
-                </div>
-            </BoxCard>
-        );
-
-        let renderFeaturedPost = this.props.listPosts.map((post: any) =>
-            <div className='blog-page-featured-card' >
-                <FeaturedImg {...post}/>
-                <MainCard {...post}/>
+        let renderMainCard = this.props.listPosts.map((post: any) =>
+            <div className='main-card-page'>
+                <MainCard  {...post}  key={post._id}/>
             </div>);
 
         return (
             <>
-                {this.props.isLoading ? <Loading/> : <> {renderBoxCard} {renderFeaturedPost}</>}
+                {this.props.isLoading ? <Loading/> : <>{renderMainCard} </>}
             </>
         )
     }

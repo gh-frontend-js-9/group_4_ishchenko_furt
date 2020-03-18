@@ -28,3 +28,12 @@ export function listPosts(state:any = [], action:any) {
                 return state;
     }
 }
+export function  isLoading(state=false , action:any) {
+    switch (action.type) {
+        case IS_LOADING:
+            return action.isLoading;
+
+        default:
+            return state;
+    }
+}

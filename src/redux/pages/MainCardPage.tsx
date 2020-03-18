@@ -11,16 +11,16 @@ interface IProps {
     listPosts?: any,
 }
 
-class BlogPostPage extends Component <IProps, {}> {
+class MainCardPage extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getListPostsAction();
     };
 
     render() {
-        let renderMainCard = this.props.listPosts.map((post: any) =>
-            <div className='main-card-page'>
-                <MainCard  {...post}  key={post._id}/>
-            </div>);
+            let renderMainCard = this.props.listPosts.map((post: any) =>
+                <div className='main-card-page'>
+                    <MainCard  {...post}  key={post._id}/>
+                </div>);
 
         return (
             <>
@@ -42,4 +42,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(BlogPostPage);
+export default connect(mapStateToProps, mapDispatchToProps)(MainCardPage);

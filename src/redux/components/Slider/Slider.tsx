@@ -1,7 +1,10 @@
 /** @jsx jsx */
 import React, {useState} from 'react'
 import { css, jsx } from '@emotion/core'
-import { MainCard } from './../MainCard/MainCard'
+import { MainCard } from '../MainCard/MainCard'
+import SliderContent from "../SliderContent/SliderContent";
+import Arrow from "../Arrow/Arrow";
+import Dots from "../Dots/Dots";
 
 const Slider = (props: any) => {
     const getWidth = () => window.innerWidth
@@ -46,23 +49,23 @@ const Slider = (props: any) => {
         })
     }
 
-    return (<div></div>
-        /*<div css={SliderCSS}>
+    return (
+        <div css={SliderCSS}>
             <SliderContent
                 translate={translate}
                 transition={transition}
-                width={getWidth()* cards.length}
+                width={getWidth()* props.length}
             >
-                {cards.map((slide, i) => (
-                    <Slide key={i} content={slide} />
+                {props.map((slide: any, i: any) => (
+                    <MainCard key={i} {...slide} />
                 ))}
             </SliderContent>
 
             <Arrow direction="left" handleClick={prevSlide} />
             <Arrow direction="right" handleClick={nextSlide} />
 
-            <Dots slides={cards} activeIndex={activeIndex} />
-        </div>*/
+            <Dots slides={props} activeIndex={activeIndex} />
+        </div>
     )
 }
 

@@ -1,7 +1,6 @@
 @import '../../../assets/styles/scss/styles.scss';
 
 .main-card {
-  @include main-card(40vh, 35px 40px 35px, 573px, 358px);
 
   &--hovered:hover{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
@@ -10,14 +9,14 @@
   }
 
   &__author {
-    @include text-styles($md-font-size, $white-color);
+    font-size: $md-font-size;
     letter-spacing: -0.1px;
     line-height: 46px;
     text-transform: uppercase;
   }
 
   &__title {
-    @include text-styles($xxl-font-size, $white-color);
+    font-size:$xxl-font-size;
     font-weight: $bold-font-weight;
     letter-spacing: -0.17px;
     line-height: 46px;
@@ -25,7 +24,7 @@
   }
 
   &__paragraph {
-    @include text-styles($md-font-size, $white-color);
+    font-size:$md-font-size;
     letter-spacing: -0.1px;
     line-height: 32px;
   }

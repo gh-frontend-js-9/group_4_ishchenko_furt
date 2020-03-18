@@ -1,0 +1,17 @@
+@import '../../assets/styles/scss/styles';
+
+.box-featured-post{
+  color: $black-color;
+  height: 50vh;
+  max-width: 573px;
+  max-height: 358px;
+}
+
+.blog-page-main-card {
+  @include main-card(35px 40px 35px, 100%, $violet-color);
+  background-color: $violet-color;
+  height: 40vh;
+  color: $white-color;
+  border-radius: 8px;
+}
+

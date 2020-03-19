@@ -1,0 +1,14 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.featured-post-page{
+  padding: 60px 0px 140px;
+
+  &:first-child{
+    padding-right: 23px;
+  }
+}
+@media (max-width: 1190px) {
+  .featured-post-page{
+  padding: 30px;
+  }
+}

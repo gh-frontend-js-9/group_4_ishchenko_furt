@@ -2,8 +2,9 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../components/Healpers/Loading";
 import {getListPostsAction} from "../actions/getListPostsAction";
-import './MainCardPage.scss'
 import {MainCard} from "../components/MainCard/MainCard";
+import {FeaturedImg} from "../components/FeaturedImg/FeaturedImg";
+import './FeaturedPostPage.scss'
 
 interface IProps {
     getListPostsAction?: any,
@@ -11,25 +12,22 @@ interface IProps {
     listPosts?: any,
 }
 
-class MainCardPage extends Component <IProps, {}> {
+class FeaturedPostPage extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getListPostsAction();
     };
 
     render() {
-            let renderMainCard = this.props.listPosts.map((post: any) =>
-                <div className='main-card-page'>
-                    <MainCard  {...post}  key={post._id}/>
-                </div>);
 
-        // let renderMainCard = (
-        //     <div className='main-card-page'>
-        //         <Slider {...this.props.listPosts}/>
-        //     </div>);
+        let renderFeaturedPost = this.props.listPosts.map((post: any) =>
+            <div className='featured-post-page' >
+                <FeaturedImg {...post}/>
+                <MainCard {...post}/>
+            </div>);
 
         return (
             <>
-                {this.props.isLoading ? <Loading/> : <> {renderMainCard}</>}
+                {this.props.isLoading ? <Loading/> : <> {renderFeaturedPost}</>}
             </>
         )
     }
@@ -47,4 +45,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainCardPage);
+export default connect(mapStateToProps, mapDispatchToProps)(FeaturedPostPage);

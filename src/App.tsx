@@ -4,30 +4,36 @@ import {Header} from "./redux/components/Header/Header";
 import {Wrapper} from "./redux/components/Wrapper/Wrapper";
 import BlogPostPage from "./redux/pages/BlogPostPage";
 import MainCardPage from "./redux/pages/MainCardPage";
-import FeaturedPostPage from "./redux/pages/FeaturedPosts";
-import './redux/pages/FeaturedPost.scss'
 import {Footer} from "./redux/components/Footer/Footer";
+import {BrowserRouter} from "react-router-dom";
+import FeaturedPostPage from "./redux/pages/FeaturedPostPage";
+import {FlexBox} from "./redux/components/FlexBox/FlexBox";
+import {Main} from "./redux/components/Main/Main";
 
 const App: React.FC = () => {
     return (
         <>
-            <Wrapper>
-                <Header/>
-            </Wrapper>
+            <BrowserRouter>
+                <Wrapper>
+                    <Header/>
+                </Wrapper>
 
-            <main className='main'>
-                <MainCardPage/>
+                <Main>
+                    <MainCardPage/>
+                    <Wrapper>
+                        <BlogPostPage/>
+
+                        <FlexBox>
+                            <FeaturedPostPage/>
+                        </FlexBox>
+
+                    </Wrapper>
+                </Main>
 
                 <Wrapper>
-                    <BlogPostPage/>
-
-                    <div className='featured-post-page'>
-                        <FeaturedPostPage/>
-                    </div>
+                    <Footer/>
                 </Wrapper>
-            </main>
-
-            <Footer/>
+            </BrowserRouter>
         </>
     )
 };

@@ -1,0 +1,20 @@
+@import '../../../assets/styles/scss/styles.scss';
+
+.fa__footer{
+  width: 20px;
+  height: 20px;
+  color: $white-color;
+}
+.icon{
+  text-align: center;
+  background: $light-gray-color center center;
+  border-radius: 25px;
+  padding: 3px;
+  margin: 5px;
+}
+
+@media (max-width: 680px) {
+  .fa__footer {
+    margin: 10px;
+  }
+}

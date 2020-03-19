@@ -1,9 +1,18 @@
 import React from "react";
-import {Icon} from "./Icon";
+import {Icon} from "../Icon/Icon";
+import {Logo} from "../Logo/Logo";
+import {Copyright} from "../Copyright/Copyright";
+import './Footer.scss'
 
 export const Footer = () => {
 
     return (
-        <Icon/>
-    )
+        <div className='footer'>
+            <Logo/>
+            <div>
+                <Icon/>
+            </div>
+            <Copyright/>
+        </div>
+    );
 };

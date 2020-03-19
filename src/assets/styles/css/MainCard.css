@@ -1,19 +1,31 @@
-.main-card--hovered:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-  cursor: pointer;
-  background-color: #220059; }
-.main-card__author {
-  font-size: 16px;
-  letter-spacing: -0.1px;
-  line-height: 46px;
-  text-transform: uppercase; }
-.main-card__title {
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: -0.17px;
-  line-height: 46px;
-  padding-bottom: 40px; }
-.main-card__paragraph {
-  font-size: 16px;
-  letter-spacing: -0.1px;
-  line-height: 32px; }
+.main-card {
+  font-family: "Open Sans", sans-serif; }
+  .main-card--hovered:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    background-color: #220059; }
+  .main-card__author {
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 46px;
+    text-transform: uppercase; }
+  .main-card__title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.17px;
+    line-height: 46px;
+    padding-bottom: 40px; }
+  .main-card__paragraph {
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 32px; }
+
+@media (max-width: 717px) {
+  .main-card {
+    font-size: 18px; } }
+@media (max-width: 560px) {
+  .main-card {
+    font-size: 16px; } }
+@media (max-width: 560px) {
+  .main-card {
+    font-size: 14px; } }

@@ -1,0 +1,15 @@
+.fa__footer {
+  width: 20px;
+  height: 20px;
+  color: #ffffff; }
+
+.icon {
+  text-align: center;
+  background: #9b9b9b center center;
+  border-radius: 25px;
+  padding: 3px;
+  margin: 5px; }
+
+@media (max-width: 680px) {
+  .fa__footer {
+    margin: 10px; } }

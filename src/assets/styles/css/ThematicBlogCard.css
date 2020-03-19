@@ -1,12 +1,14 @@
 .thematic-blog-card {
-  margin: 0px 15px 15px 0px;
+  font-family: "Open Sans", sans-serif;
   padding: 25px;
-  height: 100vh;
+  height: 50vh;
   max-width: 276px;
   max-height: 150px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   background-color: #ffffff; }
+  .thematic-blog-card:first-child {
+    margin-right: 25px; }
   .thematic-blog-card--hovered:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer; }
@@ -26,3 +28,8 @@
     line-height: 30px; }
     .thematic-blog-card__title--hovered:hover {
       color: #ff5480; }
+
+@media (max-width: 380px) {
+  .thematic-blog-card:first-child {
+    margin-right: 0px;
+    margin-bottom: 15px; } }

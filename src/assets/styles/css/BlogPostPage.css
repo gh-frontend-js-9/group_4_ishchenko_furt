@@ -7,3 +7,7 @@
   height: 40vh;
   color: #ffffff;
   border-radius: 8px; }
+
+@media (max-width: 514px) {
+  .blog-page-main-card {
+    padding: 15px; } }

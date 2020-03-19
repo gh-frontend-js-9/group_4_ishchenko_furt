@@ -1,3 +1,8 @@
 .logo{
   padding-bottom: 7px;
 }
+@media (max-width: 680px) {
+  .logo {
+    padding: 10px;
+  }
+}

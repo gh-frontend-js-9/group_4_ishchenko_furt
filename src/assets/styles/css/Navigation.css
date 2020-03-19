@@ -12,3 +12,7 @@
       background-color: #ff5480;
       border-radius: 10px;
       color: #ffffff; }
+
+@media (max-width: 1000px) {
+  .navigation-bar {
+    padding: 0px; } }

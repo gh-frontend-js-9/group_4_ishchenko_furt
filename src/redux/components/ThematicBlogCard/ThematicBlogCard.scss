@@ -29,3 +29,10 @@
     }
   }
 }
+
+@media (max-width: 380px) {
+  .thematic-blog-card:first-child {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+}

@@ -2,3 +2,7 @@
   padding: 60px 0px 140px; }
   .featured-post-page:first-child {
     padding-right: 23px; }
+
+@media (max-width: 1190px) {
+  .featured-post-page {
+    padding: 30px; } }

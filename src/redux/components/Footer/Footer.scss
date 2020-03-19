@@ -7,3 +7,9 @@
   align-items: center;
   padding: 30px;
 }
+
+@media (max-width: 680px) {
+  .footer {
+      flex-direction: column;
+  }
+}

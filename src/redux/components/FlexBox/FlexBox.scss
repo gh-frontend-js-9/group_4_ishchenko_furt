@@ -1,3 +1,10 @@
 .flex-box{
   display: flex;
 }
+@media (max-width: 1340px) {
+  .flex-box {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+}

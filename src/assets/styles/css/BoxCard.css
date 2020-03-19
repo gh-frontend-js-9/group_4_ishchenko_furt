@@ -11,3 +11,6 @@
 
 .second-section__row {
   display: flex; }
+
+.second-section__row:nth-child(2n) {
+  padding-top: 25px; }

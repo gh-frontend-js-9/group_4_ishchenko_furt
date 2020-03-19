@@ -1,7 +1,11 @@
 @import '../../../assets/styles/scss/styles.scss';
 
 .thematic-blog-card {
-  @include thematic-blog-card(0px 15px 15px 0px, 25px);
+  @include thematic-blog-card( 25px);
+
+  &:first-child{
+    margin-right: 25px;
+  }
   &--hovered:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;

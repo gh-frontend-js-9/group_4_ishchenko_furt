@@ -5,13 +5,17 @@
   align-items: flex-end;
   padding: 100px 0px;
 
+
   &__first-section{
     width: 49%;
   }
-  &__second-section{
+  &__second-section {
     width: 49%;
   }
 }
 .second-section__row{
   display: flex;
+}
+.second-section__row:nth-child(2n){
+  padding-top: 25px;
 }

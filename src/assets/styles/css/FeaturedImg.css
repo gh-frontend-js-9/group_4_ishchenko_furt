@@ -2,3 +2,6 @@
   max-width: 573px;
   max-height: 358px;
   border-radius: 8px; }
+  .featured-img--hovered:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer; }

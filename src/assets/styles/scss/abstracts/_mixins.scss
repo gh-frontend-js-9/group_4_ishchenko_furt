@@ -13,10 +13,9 @@
   background-color: $bg-color;
 }
 
-@mixin thematic-blog-card($margin, $padding) {
-  margin: $margin;
+@mixin thematic-blog-card( $padding) {
   padding: $padding;
-  height: 100vh;
+  height: 50vh;
   max-width: 276px;
   max-height: 150px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);

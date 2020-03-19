@@ -6,6 +6,9 @@ import BlogPostPage from "./redux/pages/BlogPostPage";
 import MainCardPage from "./redux/pages/MainCardPage";
 import {Footer} from "./redux/components/Footer/Footer";
 import {BrowserRouter} from "react-router-dom";
+import FeaturedPostPage from "./redux/pages/FeaturedPostPage";
+import {FlexBox} from "./redux/components/FlexBox/FlexBox";
+import {Main} from "./redux/components/Main/Main";
 
 const App: React.FC = () => {
     return (
@@ -15,19 +18,22 @@ const App: React.FC = () => {
                     <Header/>
                 </Wrapper>
 
-                <main className='main'>
+                <Main>
                     <MainCardPage/>
                     <Wrapper>
                         <BlogPostPage/>
+
+                        <FlexBox>
+                            <FeaturedPostPage/>
+                        </FlexBox>
+
                     </Wrapper>
-                </main>
+                </Main>
 
                 <Wrapper>
                     <Footer/>
                 </Wrapper>
-
             </BrowserRouter>
-
         </>
     )
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import {NavigationHeader} from "../NavigationHeader/NavigationHeader";
+import {Navigation} from "../Navigation/Navigation";
 import {Logo} from "../Logo/Logo";
 import {SearchIcon} from "../SearchIcon/SearchIcon";
 import './Header.scss'
@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
         <header className='header'>
             <div>
                 <Logo/>
-                <NavigationHeader/>
+                <Navigation/>
             </div>
             <div>
                 <SearchIcon/>

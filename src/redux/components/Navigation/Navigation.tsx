@@ -1,29 +1,29 @@
 import React from "react";
-//import {NavLink} from "react-router-dom";
-import './NavigationHeader.scss'
+import {NavLink} from "react-router-dom";
+import './Navigation.scss'
 
-export const NavigationHeader = () => {
+export const Navigation = () => {
     const navBar = [{
-        link: '#',
+        link: '/popular',
         title: 'Popular'
     }, {
-        link: '#',
+        link: '/new',
         title: 'New'
     }, {
-        link: '#',
+        link: '/readingList',
         title: 'Reading list'
     }, {
-        link: '#',
+        link: '/topics',
         title: 'Topics'
     }, {
-        link: '#',
+        link: '/subscribe',
         title: 'Subscribe'
     }];
     let renderNav = navBar.map((nav: any, n: number) => {
         return <span key={n} className="navigation-bar">
-                    <a key={n} href={nav.link} className="navigation-bar__link navigation-bar__link--hovered">
+                    <NavLink key={n} to={nav.link} className="navigation-bar__link navigation-bar__link--hovered">
                         {nav.title}
-                    </a>
+                    </NavLink>
                 </span>
     });
 

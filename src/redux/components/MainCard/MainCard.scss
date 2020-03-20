@@ -31,19 +31,26 @@
   }
 }
 
-@media (max-width: 717px) {
-  .main-card{
+@media (max-width: 800px) {
+  .main-card__title{
+    font-size:$xl-font-size
+  }
+  .main-card__author{
+    font-size:$sm-font-size
+  }
+  .main-card__paragraph{
+    font-size:$sm-font-size
+  }
+}
+
+@media (max-width: 400px) {
+  .main-card__title{
     font-size:$lg-font-size
   }
 }
 
-@media (max-width: 560px) {
-  .main-card{
+@media (max-width: 330px) {
+  .main-card__title{
     font-size:$md-font-size
-  }
-}
-@media (max-width: 560px) {
-  .main-card{
-    font-size:$sm-font-size
   }
 }

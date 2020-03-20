@@ -4,22 +4,21 @@ import {Header} from "./redux/components/Header/Header";
 import {Wrapper} from "./redux/components/Wrapper/Wrapper";
 import BlogPostPage from "./redux/pages/BlogPostPage";
 import MainCardPage from "./redux/pages/MainCardPage";
-import Slider from "./redux/components/Slider/Slider";
+
+
+
+
 
 const App: React.FC = () => {
     return (
         <>
-            <Wrapper>
-                <Header/>
-            </Wrapper>
-
-            <main className='main'>
-                <MainCardPage/>
                 <Wrapper>
-                    <BlogPostPage/>
+                    <Header/>
+                    <MainCardPage/>
+                    <main className={'main'}>
+                        <BlogPostPage/>
+                    </main>
                 </Wrapper>
-            </main>
-
         </>
     )
 };

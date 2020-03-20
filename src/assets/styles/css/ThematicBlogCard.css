@@ -29,7 +29,7 @@
     .thematic-blog-card__title--hovered:hover {
       color: #ff5480; }
 
-@media (max-width: 380px) {
+@media (max-width: 535px) {
   .thematic-blog-card:first-child {
     margin-right: 0px;
     margin-bottom: 15px; } }

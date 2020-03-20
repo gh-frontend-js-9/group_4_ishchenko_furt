@@ -4,3 +4,10 @@
   align-items: baseline;
   padding: 25px;
 }
+
+@media (max-width: 610px) {
+  .header__flex-box  {
+    display: flex;
+    flex-direction: column;
+  }
+}

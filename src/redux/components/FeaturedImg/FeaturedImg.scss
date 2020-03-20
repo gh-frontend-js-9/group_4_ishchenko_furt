@@ -18,30 +18,32 @@
 
 @media (max-width: 534px) {
   .featured-img  {
-    padding: 10px;
     max-width: 323px;
     max-height: 258px;
   }
 }
 @media (max-width: 450px) {
   .featured-img  {
-    padding: 10px;
     max-width: 300px;
     max-height: 200px;
   }
 }
 
-@media (max-width: 334px) {
+@media (max-width: 350px) {
   .featured-img  {
-    padding: 10px;
-    max-width: 273px;
-    max-height: 140px;
+    max-width: 293px;
+    max-height: 160px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 330px) {
   .featured-img  {
-    padding: 10px;
-    max-width: 200px;
-    max-height: 100px;
+    max-width: 230px;
+    max-height: 160px;
+  }
+}
+@media (max-width: 275px) {
+  .featured-img  {
+    max-width: 150px;
+    max-height: 160px;
   }
 }

@@ -11,7 +11,7 @@ export class postsBlogService extends Component  <IProps, {}> {
         return axios.defaults.baseURL;
     }
     static get listOfPostsUrl() {
-        return '/posts/?category=popular&page=1&limit=2'
+        return '/posts/?category=popular&page=1&limit=3'
     }
     static get postUrl() {
         return `/posts/5e6f34f5a3281f9335104043`

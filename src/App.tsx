@@ -10,9 +10,14 @@ import FeaturedPostPage from "./redux/pages/FeaturedPostPage";
 import {FlexBox} from "./redux/components/FlexBox/FlexBox";
 import {Main} from "./redux/components/Main/Main";
 
+
+
+
+
 const App: React.FC = () => {
     return (
         <>
+<<<<<<< HEAD
             <BrowserRouter>
                 <Wrapper>
                     <Header/>
@@ -34,6 +39,15 @@ const App: React.FC = () => {
                     <Footer/>
                 </Wrapper>
             </BrowserRouter>
+=======
+                <Wrapper>
+                    <Header/>
+                    <MainCardPage/>
+                    <main className={'main'}>
+                        <BlogPostPage/>
+                    </main>
+                </Wrapper>
+>>>>>>> main-slider
         </>
     )
 };

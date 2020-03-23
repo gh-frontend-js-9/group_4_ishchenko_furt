@@ -24,13 +24,13 @@ class BlogPostPage extends Component <IProps, {}> {
     };
 
     render() {
-        let propsObject = [
+        let propsData = [
             this.props.popularPost,
             this.props.essentialsPost,
             this.props.freelancePost
         ];
 
-        let renderPosts = propsObject.map((object: any) => {
+        let renderCategoriesPosts = propsData.map((object: any) => {
 
             return object.map((post: any) =>
                 <BoxCard {...post} key={post._id}>
@@ -43,7 +43,7 @@ class BlogPostPage extends Component <IProps, {}> {
 
         return (
             <>
-                {this.props.isLoading ? <Loading/> : <> {renderPosts}</>}
+                {this.props.isLoading ? <Loading/> : <> {renderCategoriesPosts}</>}
             </>
         )
     }

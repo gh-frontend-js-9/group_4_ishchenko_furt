@@ -4,6 +4,7 @@ import {ThematicBlogCard} from "../ThematicBlogCard/ThematicBlogCard";
 import './BoxCard.scss'
 
 export const BoxCard: React.FC = (props: any) => {
+    console.log(props)
 const {children} = props
     return <>
         <div className='box-card'>

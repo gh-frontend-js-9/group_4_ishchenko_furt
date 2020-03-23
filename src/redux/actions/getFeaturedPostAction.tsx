@@ -1,20 +1,19 @@
-import {getFeaturedPostReceiveAction, getListPostsReceiveAction, isLoadingAction} from "./PostsActionsCreators";
+import {getFeaturedPostReceiveAction, isLoadingAction} from "./PostsActionsCreators";
 import {postsBlogService} from "../service/postsBlogService";
 
-export function getListPostsAction() {
+export function getFeaturedPostAction() {
 
     return (dispatch: any) => {
         dispatch(isLoadingAction(true));
 
-        postsBlogService.getListPosts()
+        postsBlogService.getFeaturedPost()
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
-                dispatch(getListPostsReceiveAction(response.data.docs));
-                console.log(response.data.docs)
+                dispatch(getFeaturedPostReceiveAction(response.data));
+                console.log(response.data)
             })
             .catch(error =>
                 dispatch((error.response))
             )
     }
 }
-

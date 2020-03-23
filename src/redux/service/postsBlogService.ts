@@ -14,8 +14,8 @@ export class postsBlogService extends Component  <IProps, {}> {
         return '/posts/?category=popular&page=1&limit=3'
     }
     static get featuredPostsUrl() {
-        return '/posts/?category=popular&page=1&limit=2'
-    }
+        return '/posts/?category=essentials&page=1&limit=2'
+     }
     static get postUrl() {
         return `/posts/5e6f34f5a3281f9335104043`
     }

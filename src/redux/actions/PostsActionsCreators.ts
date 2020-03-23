@@ -1,4 +1,11 @@
-import {GET_LIST_POSTS_SUCCESS, IS_LOADING} from "../reducers/postsReducers";
+import {GET_FEATURED_POST_SUCCESS, GET_LIST_POSTS_SUCCESS, IS_LOADING} from "../reducers/postsReducers";
+
+export function isLoadingAction(bool:boolean) {
+    return {
+        type: IS_LOADING,
+        isLoading: bool
+    };
+}
 
 export function getListPostsReceiveAction(listPosts:any) {
     return {
@@ -7,9 +14,10 @@ export function getListPostsReceiveAction(listPosts:any) {
     };
 }
 
-export function isLoadingAction(bool:boolean) {
+export function getFeaturedPostReceiveAction(featuredPost:any) {
+    console.log((featuredPost))
     return {
-        type: IS_LOADING,
-        isLoading: bool
+        type: GET_FEATURED_POST_SUCCESS,
+        payload: featuredPost
     };
 }

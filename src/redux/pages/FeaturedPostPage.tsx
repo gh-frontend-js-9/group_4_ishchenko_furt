@@ -1,33 +1,34 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../components/Healpers/Loading";
-import {getListPostsAction} from "../actions/getListPostsAction";
-import {MainCard} from "../components/MainCard/MainCard";
-import {FeaturedImg} from "../components/FeaturedImg/FeaturedImg";
+//import {MainCard} from "../components/MainCard/MainCard";
+//import {FeaturedImg} from "../components/FeaturedImg/FeaturedImg";
 import './FeaturedPostPage.scss'
+import {getFeaturedPostAction} from "../actions/getFeaturedPostAction";
 
 interface IProps {
-    getListPostsAction?: any,
+    getFeaturedPostAction?: any,
     isLoading?: boolean,
-    listPosts?: any,
+    featuredPost?: any,
 }
 
 class FeaturedPostPage extends Component <IProps, {}> {
     componentDidMount() {
-        this.props.getListPostsAction();
+         this.props.getFeaturedPostAction();
+        console.log(this.props.getFeaturedPostAction())
     };
 
     render() {
 
-        let renderFeaturedPost = this.props.listPosts.map((post: any, num:number) =>
-            <div className='featured-post-page' key={num}>
-                <FeaturedImg {...post}/>
-                <MainCard greyColor {...post}/>
-            </div>);
+        // let renderFeaturedPost = this.props.featuredPost.map((post: any, num:number) =>
+        //     <div className='featured-post-page' key={num}>
+        //         <FeaturedImg {...post}/>
+        //         <MainCard greyColor {...post}/>
+        //     </div>);
 
         return (
             <>
-                {this.props.isLoading ? <Loading/> : <> {renderFeaturedPost}</>}
+                {this.props.isLoading ? <Loading/> : <> </>}
             </>
         )
     }
@@ -35,14 +36,14 @@ class FeaturedPostPage extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        listPosts: state.listPosts,
+        featuredPost: state.featuredPost,
         isLoading: state.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getListPostsAction: () => dispatch(getListPostsAction()),
+        getFeaturedPostAction: () => dispatch(getFeaturedPostAction()),
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(FeaturedPostPage);
+  export default connect(mapStateToProps, mapDispatchToProps)(FeaturedPostPage);

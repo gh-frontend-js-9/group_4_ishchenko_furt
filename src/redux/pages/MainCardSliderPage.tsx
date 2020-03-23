@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../components/Healpers/Loading";
-import {getListPostsAction} from "../actions/getListPostsAction";
-import './MainCardPage.scss'
 import Slider from "react-slick";
+import './MainCardSliderPage.scss'
 import {MainCard} from "../components/MainCard/MainCard";
+import {getListPostsAction} from "../actions/getPostsActions";
 
 interface IProps {
     getListPostsAction?: any,
@@ -12,21 +12,21 @@ interface IProps {
     listPosts?: any,
 }
 
-class MainCardPage extends Component <IProps, {}> {
+class MainCardSliderPage extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getListPostsAction();
     };
 
     render() {
-
-        let response = Object.values(this.props.listPosts)
+        let response = Object.values(this.props.listPosts);
 
         let renderSlides = response.map((slide: any)=>(
             <div className={'main-card-page'}>
                 <MainCard {...slide} />
             </div>
 
-        ))
+        ));
+
 
         const settings = {
             arrows: false,
@@ -70,7 +70,7 @@ class MainCardPage extends Component <IProps, {}> {
             <Slider className={'slider'} {...settings}>
                 {renderSlides}
             </Slider>
-        )
+        );
 
         return (
             <>
@@ -92,4 +92,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainCardPage);
+export default connect(mapStateToProps, mapDispatchToProps)(MainCardSliderPage);

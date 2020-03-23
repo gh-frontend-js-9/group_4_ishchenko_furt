@@ -1,10 +1,14 @@
-import {listPosts,  isLoading} from "./postsReducers";
+import {listPosts, isLoading, featuredPost, popularPost, essentialsPost, freelancePost} from "./postsReducers";
 import {combineReducers} from 'redux';
 
 const rootReducers = combineReducers({
     // listPosts:postsReducers,
     // isLoading:postsReducers
     listPosts,
-    isLoading
+    isLoading,
+    featuredPost,
+    popularPost,
+    freelancePost,
+    essentialsPost
 });
 export default rootReducers;

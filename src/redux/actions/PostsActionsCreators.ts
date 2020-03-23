@@ -1,4 +1,17 @@
-import {GET_LIST_POSTS_SUCCESS, IS_LOADING} from "../reducers/postsReducers";
+import {
+    GET_ESSENTIALS_POST_SUCCESS,
+    GET_FEATURED_POST_SUCCESS, GET_FREELANCE_POST_SUCCESS,
+    GET_LIST_POSTS_SUCCESS,
+    GET_POPULAR_POST_SUCCESS,
+    IS_LOADING
+} from "../reducers/postsReducers";
+
+export function isLoadingAction(bool:boolean) {
+    return {
+        type: IS_LOADING,
+        isLoading: bool
+    };
+}
 
 export function getListPostsReceiveAction(listPosts:any) {
     return {
@@ -7,9 +20,29 @@ export function getListPostsReceiveAction(listPosts:any) {
     };
 }
 
-export function isLoadingAction(bool:boolean) {
+export function getFeaturedPostReceiveAction(featuredPost:any) {
     return {
-        type: IS_LOADING,
-        isLoading: bool
+        type: GET_FEATURED_POST_SUCCESS,
+        payload: featuredPost
+    };
+}
+export function getPopularPostReceiveAction( popularPost:any) {
+    return {
+        type: GET_POPULAR_POST_SUCCESS,
+        payload: popularPost
+    };
+}
+
+export function getEssentialsPostReceiveAction( essentialsPost:any) {
+    return {
+        type: GET_ESSENTIALS_POST_SUCCESS,
+        payload: essentialsPost
+    };
+}
+
+export function getFreelancePostReceiveAction( freelancePost:any) {
+    return {
+        type: GET_FREELANCE_POST_SUCCESS,
+        payload: freelancePost
     };
 }

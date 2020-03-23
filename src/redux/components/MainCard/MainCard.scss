@@ -29,6 +29,10 @@
     letter-spacing: -0.1px;
     line-height: 32px;
   }
+  &__paragraph--grey {
+    @extend .main-card__paragraph;
+    color:$light-gray-color ;
+  }
 }
 
 @media (max-width: 800px) {

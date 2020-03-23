@@ -19,10 +19,10 @@ class FeaturedPostPage extends Component <IProps, {}> {
 
     render() {
 
-        let renderFeaturedPost = this.props.listPosts.map((post: any) =>
-            <div className='featured-post-page' >
+        let renderFeaturedPost = this.props.listPosts.map((post: any, num:number) =>
+            <div className='featured-post-page' key={num}>
                 <FeaturedImg {...post}/>
-                <MainCard {...post}/>
+                <MainCard greyColor {...post}/>
             </div>);
 
         return (

@@ -13,6 +13,10 @@ const {children} = props
             </div>
 
             <div className='box-card__second-section second-section'>
+                <div className='second-section__view-all'>
+                    <span  className='second-section__view-all--hovered'>View all</span>
+                </div>
+
                 <div className='second-section__row'>
                     <ThematicBlogCard {...props} />
                     <ThematicBlogCard {...props} />

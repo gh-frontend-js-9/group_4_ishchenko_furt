@@ -18,14 +18,9 @@ class MainCardPage extends Component <IProps, {}> {
 
     render() {
         let renderMainCard = this.props.listPosts.map((post: any) =>
-            <div className='main-card-page'>
-                <MainCard  {...post}  key={post._id}/>
+            <div className='main-card-page' key={post._id}>
+                <MainCard  {...post}/>
             </div>);
-
-        // let renderMainCard = (
-        //     <div className='main-card-page'>
-        //         <Slider {...this.props.listPosts}/>
-        //     </div>);
 
         return (
             <>

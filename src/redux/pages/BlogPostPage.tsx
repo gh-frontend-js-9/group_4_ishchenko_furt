@@ -22,7 +22,7 @@ class BlogPostPage extends Component <IProps, {}> {
         let renderBoxCard = this.props.listPosts.map((post: any) =>
             <BoxCard {...post} key={post._id}>
                 <div className='blog-page-main-card main-card--hovered '>
-                    <MainCard {...post} />
+                    <MainCard {...post}/>
                 </div>
             </BoxCard>
         );

@@ -10,6 +10,7 @@ export function getListPostsAction() {
             .then((response:any) => {
                 dispatch(isLoadingAction(false));
                 dispatch(getListPostsReceiveAction(response.data.docs));
+                console.log(response.data.docs)
             })
             .catch(error =>
                 dispatch((error.response))

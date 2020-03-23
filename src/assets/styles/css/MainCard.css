@@ -15,10 +15,12 @@
     letter-spacing: -0.17px;
     line-height: 46px;
     padding-bottom: 40px; }
-  .main-card__paragraph {
+  .main-card__paragraph, .main-card__paragraph--grey {
     font-size: 16px;
     letter-spacing: -0.1px;
     line-height: 32px; }
+  .main-card__paragraph--grey {
+    color: #9b9b9b; }
 
 @media (max-width: 800px) {
   .main-card__title {
@@ -27,7 +29,7 @@
   .main-card__author {
     font-size: 14px; }
 
-  .main-card__paragraph {
+  .main-card__paragraph, .main-card__paragraph--grey {
     font-size: 14px; } }
 @media (max-width: 400px) {
   .main-card__title {

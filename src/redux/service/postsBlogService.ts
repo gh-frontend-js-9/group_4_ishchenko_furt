@@ -11,6 +11,9 @@ export class postsBlogService extends Component  <IProps, {}> {
         return axios.defaults.baseURL;
     }
     static get listOfPostsUrl() {
+        return '/posts/?category=popular&page=1&limit=3'
+    }
+    static get featuredPostsUrl() {
         return '/posts/?category=popular&page=1&limit=2'
     }
     static get postUrl() {
@@ -19,6 +22,9 @@ export class postsBlogService extends Component  <IProps, {}> {
 
     static getListPosts() {
         return  axios.get(this.appUrl + this.listOfPostsUrl)
+    }
+    static getFeaturedPost() {
+        return  axios.get(this.appUrl + this.featuredPostsUrl)
     }
     static getSinglePost() {
         return  axios.get(this.appUrl + this.postUrl)

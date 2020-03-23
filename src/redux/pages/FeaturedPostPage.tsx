@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../components/Healpers/Loading";
-//import {MainCard} from "../components/MainCard/MainCard";
-//import {FeaturedImg} from "../components/FeaturedImg/FeaturedImg";
+import {MainCard} from "../components/MainCard/MainCard";
+import {FeaturedImg} from "../components/FeaturedImg/FeaturedImg";
 import './FeaturedPostPage.scss'
-import {getFeaturedPostAction} from "../actions/getFeaturedPostAction";
+import {getFeaturedPostAction} from "../actions/getPostsActions";
+
 
 interface IProps {
     getFeaturedPostAction?: any,
@@ -14,21 +15,21 @@ interface IProps {
 
 class FeaturedPostPage extends Component <IProps, {}> {
     componentDidMount() {
-         this.props.getFeaturedPostAction();
-        console.log(this.props.getFeaturedPostAction())
+        this.props.getFeaturedPostAction();
+
+
     };
 
     render() {
-
-        // let renderFeaturedPost = this.props.featuredPost.map((post: any, num:number) =>
-        //     <div className='featured-post-page' key={num}>
-        //         <FeaturedImg {...post}/>
-        //         <MainCard greyColor {...post}/>
-        //     </div>);
+        let renderFeaturedPost = this.props.featuredPost.map((post: any, num: number) =>
+            <div className='featured-post-page' key={num}>
+                <FeaturedImg {...post}/>
+                <MainCard greyColor {...post}/>
+            </div>);
 
         return (
             <>
-                {this.props.isLoading ? <Loading/> : <> </>}
+                {this.props.isLoading ? <Loading/> : <> {renderFeaturedPost}</>}
             </>
         )
     }
@@ -46,4 +47,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-  export default connect(mapStateToProps, mapDispatchToProps)(FeaturedPostPage);
+export default connect(mapStateToProps, mapDispatchToProps)(FeaturedPostPage);

@@ -1,25 +1,25 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../components/Healpers/Loading";
-import {getListPostsAction} from "../actions/getListPostsAction";
+import {getPopularPostAction} from "../actions/getPostsActions";
 import {BoxCard} from "../components/BoxCard/BoxCard";
 import {MainCard} from "../components/MainCard/MainCard";
 import './BlogPostPage.scss'
 
 interface IProps {
-    getListPostsAction?: any,
+    getPopularPostAction?: any,
     isLoading?: boolean,
-    listPosts?: any,
+    popularPost?: any,
 }
 
 class BlogPostPage extends Component <IProps, {}> {
     componentDidMount() {
-        this.props.getListPostsAction();
+        this.props.getPopularPostAction();
     };
 
     render() {
 
-        let renderBoxCard = this.props.listPosts.map((post: any) =>
+        let renderPopularPost = this.props.popularPost.map((post: any) =>
             <BoxCard {...post} key={post._id}>
                 <div className='blog-page-main-card main-card--hovered '>
                     <MainCard {...post}/>
@@ -29,7 +29,7 @@ class BlogPostPage extends Component <IProps, {}> {
 
         return (
             <>
-                {this.props.isLoading ? <Loading/> : <> {renderBoxCard} </>}
+                {this.props.isLoading ? <Loading/> : <> {renderPopularPost} </>}
             </>
         )
     }
@@ -37,13 +37,13 @@ class BlogPostPage extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        listPosts: state.listPosts,
+        popularPost: state.popularPost,
         isLoading: state.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getListPostsAction: () => dispatch(getListPostsAction()),
+        getPopularPostAction: () => dispatch(getPopularPostAction()),
     };
 };
 

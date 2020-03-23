@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../components/Healpers/Loading";
-import {getListPostsAction} from "../actions/getListPostsAction";
+import {getPostsActions} from "../actions/getPostsActions";
 import './MainCardPage.scss'
 import {MainCard} from "../components/MainCard/MainCard";
 
@@ -38,7 +38,7 @@ const mapStateToProps = (state: any) => {
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        getListPostsAction: () => dispatch(getListPostsAction()),
+        getListPostsAction: () => dispatch(getPostsActions()),
     };
 };
 

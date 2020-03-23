@@ -1,5 +1,6 @@
 import {
-    GET_FEATURED_POST_SUCCESS,
+    GET_ESSENTIALS_POST_SUCCESS,
+    GET_FEATURED_POST_SUCCESS, GET_FREELANCE_POST_SUCCESS,
     GET_LIST_POSTS_SUCCESS,
     GET_POPULAR_POST_SUCCESS,
     IS_LOADING
@@ -29,5 +30,19 @@ export function getPopularPostReceiveAction( popularPost:any) {
     return {
         type: GET_POPULAR_POST_SUCCESS,
         payload: popularPost
+    };
+}
+
+export function getEssentialsPostReceiveAction( essentialsPost:any) {
+    return {
+        type: GET_ESSENTIALS_POST_SUCCESS,
+        payload: essentialsPost
+    };
+}
+
+export function getFreelancePostReceiveAction( freelancePost:any) {
+    return {
+        type: GET_FREELANCE_POST_SUCCESS,
+        payload: freelancePost
     };
 }

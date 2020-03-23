@@ -1,13 +1,17 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../components/Healpers/Loading";
-import {getPopularPostAction} from "../actions/getPostsActions";
+import {getEssentialsPostAction, getFreelancePostAction, getPopularPostAction} from "../actions/getPostsActions";
 import {BoxCard} from "../components/BoxCard/BoxCard";
 import {MainCard} from "../components/MainCard/MainCard";
 import './BlogPostPage.scss'
 
 interface IProps {
     getPopularPostAction?: any,
+    getEssentialsPostAction?: any,
+    getFreelancePostAction?: any,
+    essentialsPost?: any,
+    freelancePost?: any,
     isLoading?: boolean,
     popularPost?: any,
 }
@@ -15,21 +19,31 @@ interface IProps {
 class BlogPostPage extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getPopularPostAction();
+        this.props.getEssentialsPostAction();
+        this.props.getFreelancePostAction()
     };
 
     render() {
+        let propsObject = [
+            this.props.popularPost,
+            this.props.essentialsPost,
+            this.props.freelancePost
+        ];
 
-        let renderPopularPost = this.props.popularPost.map((post: any) =>
-            <BoxCard {...post} key={post._id}>
-                <div className='blog-page-main-card main-card--hovered '>
-                    <MainCard {...post}/>
-                </div>
-            </BoxCard>
-        );
+        let renderPosts = propsObject.map((object: any) => {
+
+            return object.map((post: any) =>
+                <BoxCard {...post} key={post._id}>
+                    <div className='blog-page-main-card main-card--hovered '>
+                        <MainCard {...post}/>
+                    </div>
+                </BoxCard>
+            );
+        });
 
         return (
             <>
-                {this.props.isLoading ? <Loading/> : <> {renderPopularPost} </>}
+                {this.props.isLoading ? <Loading/> : <> {renderPosts}</>}
             </>
         )
     }
@@ -37,6 +51,8 @@ class BlogPostPage extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
+        essentialsPost: state.essentialsPost,
+        freelancePost: state.freelancePost,
         popularPost: state.popularPost,
         isLoading: state.isLoading,
     };
@@ -44,6 +60,8 @@ const mapStateToProps = (state: any) => {
 const mapDispatchToProps = (dispatch: any) => {
     return {
         getPopularPostAction: () => dispatch(getPopularPostAction()),
+        getEssentialsPostAction: () => dispatch(getEssentialsPostAction()),
+        getFreelancePostAction: () => dispatch(getFreelancePostAction())
     };
 };
 

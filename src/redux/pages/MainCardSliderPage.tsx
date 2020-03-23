@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../components/Healpers/Loading";
 import {getPostsActions} from "../actions/getPostsActions";
-import './MainCardPage.scss'
+import './MainCardSliderPage.scss'
 import {MainCard} from "../components/MainCard/MainCard";
 
 interface IProps {
@@ -11,7 +11,7 @@ interface IProps {
     listPosts?: any,
 }
 
-class MainCardPage extends Component <IProps, {}> {
+class MainCardSliderPage extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getListPostsAction();
     };
@@ -42,4 +42,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainCardPage);
+export default connect(mapStateToProps, mapDispatchToProps)(MainCardSliderPage);

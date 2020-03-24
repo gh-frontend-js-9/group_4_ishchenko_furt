@@ -6,7 +6,6 @@ import {FeaturedImg} from "../components/FeaturedImg/FeaturedImg";
 import './FeaturedPostPage.scss'
 import {getFeaturedPostAction} from "../actions/getPostsActions";
 
-
 interface IProps {
     getFeaturedPostAction?: any,
     isLoading?: boolean,
@@ -16,8 +15,6 @@ interface IProps {
 class FeaturedPostPage extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getFeaturedPostAction();
-
-
     };
 
     render() {
@@ -37,8 +34,8 @@ class FeaturedPostPage extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        featuredPost: state.featuredPost,
-        isLoading: state.isLoading,
+        featuredPost: state.postsReducers.featuredPost,
+        isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {

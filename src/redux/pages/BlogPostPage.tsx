@@ -51,10 +51,10 @@ class BlogPostPage extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        essentialsPost: state.essentialsPost,
-        freelancePost: state.freelancePost,
-        popularPost: state.popularPost,
-        isLoading: state.isLoading,
+        essentialsPost: state.postsReducers.essentialsPost,
+        freelancePost: state.postsReducers.freelancePost,
+        popularPost: state.postsReducers.popularPost,
+        isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {

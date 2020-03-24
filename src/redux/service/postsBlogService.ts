@@ -2,7 +2,6 @@ import axios from "axios";
 import {Component} from "react";
 import './axiosConfig'
 
-
 export class postsBlogService extends Component {
     static get appUrl() {
         return axios.defaults.baseURL;
@@ -28,10 +27,6 @@ export class postsBlogService extends Component {
         return '/posts/?category=popular&page=1&limit=2'
     }
 
-    static get postUrl() {
-        return `/posts/5e6f34f5a3281f9335104043`
-    }
-
     static getListPosts() {
         return axios.get(this.appUrl + this.listOfPostsUrl)
     }
@@ -51,9 +46,4 @@ export class postsBlogService extends Component {
     static getFreelancePost() {
         return axios.get(this.appUrl + this.freelancePostsUrl)
     }
-
-    static getSinglePost() {
-        return axios.get(this.appUrl + this.postUrl)
-    }
-
 }

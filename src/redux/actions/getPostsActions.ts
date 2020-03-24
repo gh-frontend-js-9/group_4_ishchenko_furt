@@ -35,7 +35,7 @@ export function getFeaturedPostAction() {
             })
             .catch(error =>
                 dispatch((error.response))
-            )
+            );
     }
 }
 

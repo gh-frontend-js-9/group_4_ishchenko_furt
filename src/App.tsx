@@ -10,6 +10,9 @@ import {FlexBox} from "./redux/components/FlexBox/FlexBox";
 import {Main} from "./redux/components/Main/Main";
 import {Background} from "./redux/components/Background/Background";
 import MainCardSliderPage from "./redux/pages/MainCardSliderPage";
+import ReadingListPage from "./redux/pages/ReadingListPage";
+
+
 
 const App: React.FC = () => {
     return (
@@ -28,6 +31,8 @@ const App: React.FC = () => {
 
                     <Wrapper>
                         <BlogPostPage/>
+
+                        <ReadingListPage/>
 
                         <FlexBox>
                             <FeaturedPostPage/>

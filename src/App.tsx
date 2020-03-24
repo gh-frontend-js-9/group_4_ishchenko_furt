@@ -9,6 +9,7 @@ import {BrowserRouter} from "react-router-dom";
 import FeaturedPostPage from "./redux/pages/FeaturedPostPage";
 import {FlexBox} from "./redux/components/FlexBox/FlexBox";
 import {Main} from "./redux/components/Main/Main";
+import ReadingListPage from "./redux/pages/ReadingListPage";
 
 
 
@@ -23,13 +24,18 @@ const App: React.FC = () => {
                 </Wrapper>
 
                 <Main>
-                    <MainCardPage/>
                     <Wrapper>
+                        <MainCardPage/>
+
                         <BlogPostPage/>
+
+                        <ReadingListPage/>
 
                         <FlexBox>
                             <FeaturedPostPage/>
+
                         </FlexBox>
+
 
                     </Wrapper>
                 </Main>

@@ -2,11 +2,8 @@ import axios from "axios";
 import {Component} from "react";
 import './axiosConfig'
 
-interface IProps {
-    getListPosts?: any
-}
 
-export class postsBlogService extends Component  <IProps, {}> {
+export class postsBlogService extends Component {
     static get appUrl() {
         return axios.defaults.baseURL;
     }

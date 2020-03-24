@@ -1,32 +1,31 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
 import './Icon.scss'
 
 export const Icon = () => {
     const icons = [{
         name: 'fa-vk',
-        link: '/vk'
+        href: 'https://www.vk.com'
     }, {
         name: 'fa-pinterest',
-        link: '/printerest'
+        href: 'https://www.pinterest.de/'
     }, {
         name: 'fa-instagram',
-        link: '/instagram'
+        href: 'https://www.instagram.com/'
     }, {
         name: 'fa-twitter',
-        link: 'twitter'
+        href: 'https://twitter.com/'
     }, {
         name: 'fa-facebook',
-        link: 'facebook'
+        href: 'https://www.facebook.com/'
     }];
 
     let renderIcon = icons.map((icon: any, n: number) => {
         return <span key={n} className="icon">
-                        <NavLink key={n} to={icon.link}>
+                        <a key={n} href={icon.href}>
                             <i key={n}
                                className={`${icon.name} fa__footer fa fa--color fa--hovered `}
                                aria-hidden="true"> </i>
-                        </NavLink>
+                        </a>
                  </span>
     });
 

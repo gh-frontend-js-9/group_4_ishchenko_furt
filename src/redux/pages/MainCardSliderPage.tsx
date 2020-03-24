@@ -32,8 +32,8 @@ class MainCardSliderPage extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        listPosts: state.listPosts,
-        isLoading: state.isLoading,
+        listPosts: state.postsReducers.listPosts,
+        isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {

@@ -3,7 +3,7 @@
 .navigation-bar {
   padding: 5px;
   &__link {
-    @include text-styles($md-font-size, $black-color);
+    @include text-styles($md-font-size, $white-color);
     padding: 10px;
     font-weight: $bold-font-weight;
     text-decoration: none;

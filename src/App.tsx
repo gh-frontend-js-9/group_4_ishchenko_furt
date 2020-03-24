@@ -9,25 +9,33 @@ import FeaturedPostPage from "./redux/pages/FeaturedPostPage";
 import {FlexBox} from "./redux/components/FlexBox/FlexBox";
 import {Main} from "./redux/components/Main/Main";
 import MainCardSliderPage from "./redux/pages/MainCardSliderPage";
+import {BackgroundBlock} from "./redux/components/BackgroundBlock/BackgroundBlock";
 
 const App: React.FC = () => {
     return (
         <>
             <BrowserRouter>
-                <Wrapper>
-                    <Header/>
-                </Wrapper>
+                <BackgroundBlock>
+                    <Wrapper>
+                        <Header/>
+                    </Wrapper>
+                </BackgroundBlock>
 
                 <Main>
-                    <MainCardSliderPage/>
+                    <BackgroundBlock>
+                        <Wrapper>
+                            <MainCardSliderPage/>
+                        </Wrapper>
+                    </BackgroundBlock>
+
                     <Wrapper>
                         <BlogPostPage/>
 
                         <FlexBox>
                             <FeaturedPostPage/>
                         </FlexBox>
-
                     </Wrapper>
+
                 </Main>
 
                 <Wrapper>
@@ -39,4 +47,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './App.css'
 import {Header} from "./redux/components/Header/Header";
@@ -9,28 +8,31 @@ import {BrowserRouter} from "react-router-dom";
 import FeaturedPostPage from "./redux/pages/FeaturedPostPage";
 import {FlexBox} from "./redux/components/FlexBox/FlexBox";
 import {Main} from "./redux/components/Main/Main";
+import {Background} from "./redux/components/Background/Background";
 import MainCardSliderPage from "./redux/pages/MainCardSliderPage";
-import {BackgroundBlock} from "./redux/components/BackgroundBlock/BackgroundBlock";
+import ReadingListPage from "./redux/pages/ReadingListPage";
 
 const App: React.FC = () => {
     return (
         <>
             <BrowserRouter>
-                <BackgroundBlock>
-                    <Wrapper>
-                        <Header/>
-                    </Wrapper>
-                </BackgroundBlock>
+                <Background>
+                <Wrapper>
+                    <Header/>
+                </Wrapper>
+                </Background>
 
                 <Main>
-                    <BackgroundBlock>
+                    <Background>
                         <Wrapper>
                             <MainCardSliderPage/>
                         </Wrapper>
-                    </BackgroundBlock>
+                    </Background>
 
                     <Wrapper>
                         <BlogPostPage/>
+
+                        <ReadingListPage/>
 
                         <FlexBox>
                             <FeaturedPostPage/>

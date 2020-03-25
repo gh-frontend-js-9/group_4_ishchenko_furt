@@ -1,11 +1,14 @@
 .main-card-page {
-  padding: 150px 0 150px;
+  padding: 150px 0px 150px;
   max-width: 100%;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   background-color: #1b0042; }
 
+@media (max-width: 1190px) {
+  .main-card-page {
+    padding-left: 15px; } }
 .slider {
-  height: 70vh;
+  height: 85vh;
   background-color: #1b0042;
   color: #ffffff;
   font-size: 36px; }

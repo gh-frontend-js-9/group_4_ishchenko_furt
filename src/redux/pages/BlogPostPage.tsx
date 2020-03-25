@@ -3,8 +3,6 @@ import {connect} from 'react-redux'
 import Loading from "../components/Healpers/Loading";
 import {getEssentialsPostAction, getFreelancePostAction, getPopularPostAction} from "../actions/getPostsActions";
 import {BoxCard} from "../components/BoxCard/BoxCard";
-import {MainCard} from "../components/MainCard/MainCard";
-import './BlogPostPage.scss'
 
 interface IProps {
     getPopularPostAction?: any,
@@ -30,14 +28,9 @@ class BlogPostPage extends Component <IProps, {}> {
             this.props.freelancePost
         ];
 
-        let renderCategoriesPosts = propsData.map((object: any) => {
-
-            return object.map((post: any) =>
-                <BoxCard {...post} key={post._id}>
-                    <div className='blog-page-main-card main-card--hovered '>
-                        <MainCard {...post}/>
-                    </div>
-                </BoxCard>
+        let renderCategoriesPosts = propsData.map((data: any) => {
+            return data.map((post: any) =>
+                <BoxCard {...post} key={post._id}/>
             );
         });
 
@@ -51,10 +44,10 @@ class BlogPostPage extends Component <IProps, {}> {
 
 const mapStateToProps = (state: any) => {
     return {
-        essentialsPost: state.essentialsPost,
-        freelancePost: state.freelancePost,
-        popularPost: state.popularPost,
-        isLoading: state.isLoading,
+        essentialsPost: state.postsReducers.essentialsPost,
+        freelancePost: state.postsReducers.freelancePost,
+        popularPost: state.postsReducers.popularPost,
+        isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {

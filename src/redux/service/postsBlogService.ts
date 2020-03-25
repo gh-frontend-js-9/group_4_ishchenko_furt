@@ -2,11 +2,7 @@ import axios from "axios";
 import {Component} from "react";
 import './axiosConfig'
 
-interface IProps {
-    getListPosts?: any
-}
-
-export class postsBlogService extends Component  <IProps, {}> {
+export class postsBlogService extends Component {
     static get appUrl() {
         return axios.defaults.baseURL;
     }
@@ -31,8 +27,8 @@ export class postsBlogService extends Component  <IProps, {}> {
         return '/posts/?category=popular&page=1&limit=2'
     }
 
-    static get postUrl() {
-        return `/posts/5e6f34f5a3281f9335104043`
+    static get freelanceThematicPostsUrl() {
+        return '/posts/?category=freelance&page=1&limit=4&fields=title,tags'
     }
 
     static getListPosts() {
@@ -55,8 +51,7 @@ export class postsBlogService extends Component  <IProps, {}> {
         return axios.get(this.appUrl + this.freelancePostsUrl)
     }
 
-    static getSinglePost() {
-        return axios.get(this.appUrl + this.postUrl)
+    static getFreelanceThematicPost() {
+        return axios.get(this.appUrl + this.freelanceThematicPostsUrl)
     }
-
 }

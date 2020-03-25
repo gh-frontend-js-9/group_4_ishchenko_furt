@@ -10,6 +10,7 @@ import {FlexBox} from "./redux/components/FlexBox/FlexBox";
 import {Main} from "./redux/components/Main/Main";
 import MainCardSliderPage from "./redux/pages/MainCardSliderPage";
 import {BackgroundBlock} from "./redux/components/BackgroundBlock/BackgroundBlock";
+import {BurgerMenu} from "./redux/components/BurgerMenu/BurgerMenu";
 
 const App: React.FC = () => {
     return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
                 <BackgroundBlock>
                     <Wrapper>
                         <Header/>
+                        <BurgerMenu/>
                     </Wrapper>
                 </BackgroundBlock>
 

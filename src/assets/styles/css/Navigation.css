@@ -14,14 +14,5 @@
       color: #ffffff; }
 
 @media (max-width: 1000px) {
-  .navigation-bar {
-    padding: 0px; } }
-@media (max-width: 610px) {
-  .navigation-bar {
-    padding: 10px; } }
-@media (max-width: 1000px) {
   .navigation-bar__link {
     margin: 15px; } }
-@media (max-width: 755px) {
-  .navigation-bar__link {
-    margin: 0px; } }

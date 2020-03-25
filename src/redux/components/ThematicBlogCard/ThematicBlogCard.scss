@@ -3,10 +3,6 @@
 .thematic-blog-card {
   @include thematic-blog-card(25px);
 
-  &:first-child {
-    margin-right: 25px;
-  }
-
   &--hovered:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
@@ -28,12 +24,5 @@
     &--hovered:hover {
       color: $pink;
     }
-  }
-}
-
-@media (max-width: 535px) {
-  .thematic-blog-card:first-child {
-    margin-right: 0px;
-    margin-bottom: 15px;
   }
 }

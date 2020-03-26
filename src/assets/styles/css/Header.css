@@ -8,3 +8,6 @@
   .header__flex-box {
     display: flex;
     flex-direction: column; } }
+@media (max-width: 805px) {
+  .header {
+    display: none; } }

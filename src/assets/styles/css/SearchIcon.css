@@ -3,3 +3,7 @@
   .fa--hovered:hover {
     color: #ff5480;
     cursor: pointer; }
+
+.search-icon--black-color {
+  color: #000000;
+  padding-top: 15px; }

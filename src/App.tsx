@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css'
 import {Header} from "./redux/components/Header/Header";
 import {Wrapper} from "./redux/components/Wrapper/Wrapper";
 import BlogPostPage from "./redux/pages/BlogPostPage";
@@ -11,17 +10,20 @@ import {Main} from "./redux/components/Main/Main";
 import {Background} from "./redux/components/Background/Background";
 import MainCardSliderPage from "./redux/pages/MainCardSliderPage";
 import ReadingListPage from "./redux/pages/ReadingListPage";
+import {BackgroundBlock} from "./redux/components/BackgroundBlock/BackgroundBlock";
+import {BurgerMenu} from "./redux/components/BurgerMenu/BurgerMenu";
 
 const App: React.FC = () => {
     return (
         <>
             <BrowserRouter>
-                <Background>
-                <Wrapper>
-                    <Header/>
-                </Wrapper>
-                </Background>
 
+                <BackgroundBlock>
+                    <Wrapper>
+                        <Header/>
+                        <BurgerMenu/>
+                    </Wrapper>
+                </BackgroundBlock>
                 <Main>
                     <Background>
                         <Wrapper>
@@ -38,7 +40,6 @@ const App: React.FC = () => {
                             <FeaturedPostPage/>
                         </FlexBox>
                     </Wrapper>
-
                 </Main>
 
                 <Wrapper>

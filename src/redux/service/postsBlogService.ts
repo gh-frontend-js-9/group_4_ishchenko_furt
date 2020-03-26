@@ -27,8 +27,16 @@ export class postsBlogService extends Component {
         return '/posts/?category=popular&page=1&limit=2'
     }
 
+    static get popularThematicPostsUrl() {
+        return '/posts/?category=popular&page=1&limit=4&fields=title,tags'
+    }
+
     static get freelanceThematicPostsUrl() {
         return '/posts/?category=freelance&page=1&limit=4&fields=title,tags'
+    }
+
+    static get essentialsThematicPostsUrl() {
+        return '/posts/?category=essentials&page=1&limit=4&fields=title,tags'
     }
 
     static getListPosts() {
@@ -51,7 +59,16 @@ export class postsBlogService extends Component {
         return axios.get(this.appUrl + this.freelancePostsUrl)
     }
 
+    static getPopularThematicPost() {
+        return axios.get(this.appUrl + this.popularThematicPostsUrl)
+    }
+
     static getFreelanceThematicPost() {
         return axios.get(this.appUrl + this.freelanceThematicPostsUrl)
     }
+
+    static getEssentialsThematicPost() {
+        return axios.get(this.appUrl + this.essentialsThematicPostsUrl)
+    }
+
 }

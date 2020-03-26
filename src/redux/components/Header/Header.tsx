@@ -10,9 +10,10 @@ export const Header: React.FC = () => {
     return (
         <header className='header'>
             <div className='header__flex-box'>
-                <Logo/>
-                <Navigation/>
+                <Logo headerElem/>
+                <Navigation hoverElem/>
             </div>
+
             <div>
                 <SearchIcon/>
             </div>

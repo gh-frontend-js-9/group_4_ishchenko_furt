@@ -10,6 +10,7 @@ import {Main} from "./redux/components/Main/Main";
 import MainCardSliderPage from "./redux/pages/MainCardSliderPage";
 import {BackgroundBlock} from "./redux/components/BackgroundBlock/BackgroundBlock";
 import {BurgerMenu} from "./redux/components/BurgerMenu/BurgerMenu";
+import ThematicPostPage from "./redux/pages/ThematicPostPage";
 
 const App: React.FC = () => {
     return (

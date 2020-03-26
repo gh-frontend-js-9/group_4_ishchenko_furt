@@ -15,7 +15,7 @@ export const MainCard: React.FC = (props: any) => {
                 <span className={classForAuthor}>
                     IN &nbsp;
                 </span>
-                DESIGN PROCESS
+                    {props.tags}
             </p>
             <h3 className="main-card__title">{props.title}</h3>
             <p className={classForDescription}>{props.description}</p>

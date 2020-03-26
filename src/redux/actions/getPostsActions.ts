@@ -1,8 +1,8 @@
 import {
-    getEssentialsPostReceiveAction,
+    getEssentialsPostReceiveAction, getEssentialsThematicPostReceiveAction,
     getFeaturedPostReceiveAction, getFreelancePostReceiveAction, getFreelanceThematicPostReceiveAction,
     getListPostsReceiveAction,
-    getPopularPostReceiveAction,
+    getPopularPostReceiveAction, getPopularThematicPostReceiveAction,
     isLoadingAction
 } from "./PostsActionsCreators";
 import {postsBlogService} from "../service/postsBlogService";
@@ -96,7 +96,38 @@ export function getFreelanceThematicPostAction() {
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
                 dispatch(getFreelanceThematicPostReceiveAction(response.data.docs));
-                console.log(response.data.docs)
+            })
+            .catch(error =>
+                dispatch((error.response))
+            )
+    }
+}
+
+export function getPopularThematicPostAction() {
+
+    return (dispatch: any) => {
+        dispatch(isLoadingAction(true));
+
+        postsBlogService.getPopularThematicPost()
+            .then((response: any) => {
+                dispatch(isLoadingAction(false));
+                dispatch(getPopularThematicPostReceiveAction(response.data.docs));
+            })
+            .catch(error =>
+                dispatch((error.response))
+            )
+    }
+}
+
+export function getEssentialsThematicPostAction() {
+
+    return (dispatch: any) => {
+        dispatch(isLoadingAction(true));
+
+        postsBlogService.getEssentialsThematicPost()
+            .then((response: any) => {
+                dispatch(isLoadingAction(false));
+                dispatch(getEssentialsThematicPostReceiveAction(response.data.docs));
             })
             .catch(error =>
                 dispatch((error.response))

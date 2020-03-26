@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import Loading from "../components/Healpers/Loading";
+import Loading from "../../components/Healpers/Loading";
 import {connect} from "react-redux";
-import {ThematicBlogCard} from "../components/ThematicBlogCard/ThematicBlogCard";
-import {getFreelanceThematicPostAction} from '../actions/getPostsActions'
+import {ThematicBlogCard} from "../../components/ThematicBlogCard/ThematicBlogCard";
+import {getFreelanceThematicPostAction} from '../../actions/getPostsActions'
 
 interface IProps {
     getFreelanceThematicPostAction?: any,

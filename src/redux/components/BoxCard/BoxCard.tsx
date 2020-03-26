@@ -1,8 +1,8 @@
 import React from "react";
 import {CategoryBlogCard} from "../CategoryBlogCard/CategoryBlogCard";
 import './BoxCard.scss'
-import ThematicPostPage from "../../pages/ThematicPostPage";
 import {MainCard} from "../MainCard/MainCard";
+import ThematicPostPage from "../../pages/ThematicPostPage/ThematicPostPage";
 
 export const BoxCard: React.FC = (props: any) => {
 

@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import Loading from "../components/Healpers/Loading";
-import {MainCard} from "../components/MainCard/MainCard";
-import {FeaturedImg} from "../components/FeaturedImg/FeaturedImg";
+import Loading from "../../components/Healpers/Loading";
+import {MainCard} from "../../components/MainCard/MainCard";
+import {FeaturedImg} from "../../components/FeaturedImg/FeaturedImg";
 import './FeaturedPostPage.scss'
-import {getFeaturedPostAction} from "../actions/getPostsActions";
+import {getFeaturedPostAction} from "../../actions/getPostsActions";
 
 interface IProps {
     getFeaturedPostAction?: any,

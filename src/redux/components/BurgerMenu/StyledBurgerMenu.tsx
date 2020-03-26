@@ -17,7 +17,7 @@ export const StyledBurgerMenu = styled.button <IProps>`
   background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 10;
+  z-index: 101;
   
   @media (min-width:805px) {
        display:none;
@@ -64,7 +64,7 @@ export const StyledMenu = styled.nav <IProps>`
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
-
+  z-index: 100;
   @media (max-width: 576px) {
       width: 100%;
     }

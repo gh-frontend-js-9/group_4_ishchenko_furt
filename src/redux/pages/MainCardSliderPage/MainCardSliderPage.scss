@@ -1,11 +1,12 @@
-@import '../../assets/styles/scss/styles.scss';
+@import '../../../assets/styles/scss/styles.scss';
 
 .main-card-page{
   @include main-card( 150px 0px 150px, 100%, $violet-color);
 }
 @media (max-width: 1190px) {
   .main-card-page {
-    padding-left: 15px;
+    padding-left: 20px ;
+    padding-right: 20px ;
   }
 }
 

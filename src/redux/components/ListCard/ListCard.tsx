@@ -8,4 +8,4 @@ export const ListCard: React.FC = (props:any) => {
             <h3 className={'list-title'}>{props.listTitle}</h3>
         </div>
     )
-}
+};

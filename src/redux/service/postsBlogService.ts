@@ -27,6 +27,10 @@ export class postsBlogService extends Component {
         return '/posts/?category=popular&page=1&limit=2'
     }
 
+    static get freelanceThematicPostsUrl() {
+        return '/posts/?category=freelance&page=1&limit=4&fields=title,tags'
+    }
+
     static getListPosts() {
         return axios.get(this.appUrl + this.listOfPostsUrl)
     }
@@ -45,5 +49,9 @@ export class postsBlogService extends Component {
 
     static getFreelancePost() {
         return axios.get(this.appUrl + this.freelancePostsUrl)
+    }
+
+    static getFreelanceThematicPost() {
+        return axios.get(this.appUrl + this.freelanceThematicPostsUrl)
     }
 }

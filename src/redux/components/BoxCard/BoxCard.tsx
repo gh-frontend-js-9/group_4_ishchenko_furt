@@ -1,15 +1,18 @@
 import React from "react";
 import {CategoryBlogCard} from "../CategoryBlogCard/CategoryBlogCard";
-import {ThematicBlogCard} from "../ThematicBlogCard/ThematicBlogCard";
 import './BoxCard.scss'
+import ThematicPostPage from "../../pages/ThematicPostPage";
+import {MainCard} from "../MainCard/MainCard";
 
 export const BoxCard: React.FC = (props: any) => {
-const {children} = props
+
     return <>
         <div className='box-card'>
             <div className='box-card__first-section'>
                 <CategoryBlogCard {...props}/>
-                {children}
+                <div className='box-card__main-card main-card--hovered '>
+                    <MainCard {...props}/>
+                </div>
             </div>
 
             <div className='box-card__second-section second-section'>
@@ -17,13 +20,8 @@ const {children} = props
                     <span  className='second-section__view-all--hovered'>View all</span>
                 </div>
 
-                <div className='second-section__row'>
-                    <ThematicBlogCard {...props} />
-                    <ThematicBlogCard {...props} />
-                </div>
-                <div className='second-section__row'>
-                    <ThematicBlogCard {...props}/>
-                    <ThematicBlogCard {...props}/>
+                <div className='second-section__table'>
+                    <ThematicPostPage />
                 </div>
             </div>
 

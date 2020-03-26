@@ -1,6 +1,6 @@
 import {
     getEssentialsPostReceiveAction,
-    getFeaturedPostReceiveAction, getFreelancePostReceiveAction,
+    getFeaturedPostReceiveAction, getFreelancePostReceiveAction, getFreelanceThematicPostReceiveAction,
     getListPostsReceiveAction,
     getPopularPostReceiveAction,
     isLoadingAction
@@ -80,6 +80,23 @@ export function getFreelancePostAction() {
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
                 dispatch(getFreelancePostReceiveAction(response.data.docs));
+            })
+            .catch(error =>
+                dispatch((error.response))
+            )
+    }
+}
+
+export function getFreelanceThematicPostAction() {
+
+    return (dispatch: any) => {
+        dispatch(isLoadingAction(true));
+
+        postsBlogService.getFreelanceThematicPost()
+            .then((response: any) => {
+                dispatch(isLoadingAction(false));
+                dispatch(getFreelanceThematicPostReceiveAction(response.data.docs));
+                console.log(response.data.docs)
             })
             .catch(error =>
                 dispatch((error.response))

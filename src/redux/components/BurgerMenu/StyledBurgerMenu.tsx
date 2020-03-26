@@ -5,7 +5,7 @@ type IProps = {
     setOpen?: any
 }
 
-export const StyledBurger = styled.button <IProps>`
+export const StyledBurgerMenu = styled.button <IProps>`
   position: absolute;
   top: 3%;
   left: 3%;

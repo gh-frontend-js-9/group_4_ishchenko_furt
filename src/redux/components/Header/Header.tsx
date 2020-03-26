@@ -11,7 +11,7 @@ export const Header: React.FC = () => {
         <header className='header'>
             <div className='header__flex-box'>
                 <Logo headerElem/>
-                <Navigation elemHover/>
+                <Navigation hoverElem/>
             </div>
 
             <div>

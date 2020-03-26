@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navigation} from "../Navigation/Navigation";
-import {StyledBurger, StyledMenu} from "./StyledBurger";
+import {StyledBurgerMenu, StyledMenu} from "./StyledBurgerMenu";
 import {Logo} from "../Logo/Logo";
 import {SearchIcon} from "../SearchIcon/SearchIcon";
 
@@ -16,11 +16,11 @@ const Menu = ({open, setOpen}) => {
 
 const Burger = ({open, setOpen}) => {
     return (
-        <StyledBurger open={open} onClick={() => setOpen(!open)}>
+        <StyledBurgerMenu open={open} onClick={() => setOpen(!open)}>
             <div> </div>
             <div> </div>
             <div> </div>
-        </StyledBurger>
+        </StyledBurgerMenu>
     )
 };
 

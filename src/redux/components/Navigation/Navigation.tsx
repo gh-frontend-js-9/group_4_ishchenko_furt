@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import './Navigation.scss'
 
 export const Navigation = (props) => {
-    const linkNavClass = (props.elemHover
+    const linkNavClass = (props.hoverElem
         ? "navigation-bar__link navigation-bar__link--hovered"
         : 'navigation-bar__link');
 

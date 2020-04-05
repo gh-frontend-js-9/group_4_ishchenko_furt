@@ -1,9 +1,8 @@
 .thematic-blog-card {
   font-family: "Open Sans", sans-serif;
   padding: 25px;
-  height: 50vh;
+  height: 16.2vh;
   max-width: 276px;
-  max-height: 150px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   background-color: #ffffff; }

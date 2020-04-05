@@ -1,8 +1,8 @@
 import {
-    GET_ESSENTIALS_POST_SUCCESS,
+    GET_ESSENTIALS_POST_SUCCESS, GET_ESSENTIALS_THEMATIC_POST_SUCCESS,
     GET_FEATURED_POST_SUCCESS, GET_FREELANCE_POST_SUCCESS, GET_FREELANCE_THEMATIC_POST_SUCCESS,
     GET_LIST_POSTS_SUCCESS,
-    GET_POPULAR_POST_SUCCESS,
+    GET_POPULAR_POST_SUCCESS, GET_POPULAR_THEMATIC_POST_SUCCESS,
     IS_LOADING
 } from "../reducers/postsReducers";
 
@@ -57,14 +57,14 @@ export function getFreelanceThematicPostReceiveAction(freelanceThematicPost: any
 
 export function getPopularThematicPostReceiveAction(popularThematicPost: any) {
     return {
-        type: GET_POPULAR_POST_SUCCESS,
+        type: GET_POPULAR_THEMATIC_POST_SUCCESS,
         payload: popularThematicPost
     };
 }
 
 export function getEssentialsThematicPostReceiveAction(essentialsThematicPost: any) {
     return {
-        type: GET_ESSENTIALS_POST_SUCCESS,
+        type: GET_ESSENTIALS_THEMATIC_POST_SUCCESS,
         payload: essentialsThematicPost
     };
 }

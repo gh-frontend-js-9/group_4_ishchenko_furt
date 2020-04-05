@@ -1,9 +1,6 @@
 .box-card {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 100px 0px; }
+  width: 49%;
+  padding-right: 25px; }
   .box-card__main-card {
     padding: 35px 40px 19px;
     max-width: 100%;
@@ -13,45 +10,15 @@
     height: 40vh;
     color: #ffffff;
     border-radius: 8px; }
-  .box-card__first-section {
-    width: 49%; }
-  .box-card__second-section {
-    width: 49%; }
 
 @media (max-width: 514px) {
   .box-card__main-card {
     padding: 15px; } }
-.second-section__view-all {
-  font-size: 16px;
-  color: #9b9b9b;
-  font-family: "Open Sans", sans-serif;
-  text-align: right;
-  padding-bottom: 50px; }
-  .second-section__view-all--hovered:hover {
-    color: #ff5480;
-    cursor: pointer; }
-
 @media (max-width: 1340px) {
   .box-card {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start; }
-
-  .second-section__view-all {
-    text-align: left; } }
-@media (max-width: 1340px) {
-  .box-card__first-section {
-    width: 85%;
-    padding: 20px; } }
-@media (max-width: 1340px) {
-  .box-card__second-section {
-    width: 90%;
-    padding: 20px; } }
-.second-section__table {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 25px;
-  grid-row-gap: 25px; }
-
-@media (max-width: 510px) {
-  .second-section__table {
-    grid-template-columns: 1fr; } }
+    align-items: flex-start; } }
+@media (max-width: 1142px) {
+  .box-card {
+    width: 80%; } }

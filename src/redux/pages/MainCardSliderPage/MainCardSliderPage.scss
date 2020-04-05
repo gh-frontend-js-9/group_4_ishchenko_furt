@@ -1,4 +1,4 @@
-@import '../../assets/styles/scss/styles.scss';
+@import '../../../assets/styles/scss/styles.scss';
 
 .main-card-page{
   @include main-card( 150px 100px 150px, 100%, $violet-color);

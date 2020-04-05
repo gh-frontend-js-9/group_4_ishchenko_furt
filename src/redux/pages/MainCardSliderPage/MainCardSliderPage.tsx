@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import Loading from "../components/Healpers/Loading";
-import {getPostsActions} from "../actions/getPostsActions";
+import Loading from "../../components/Healpers/Loading";
 import './MainCardSliderPage.scss'
-import {MainCard} from "../components/MainCard/MainCard";
+import {MainCard} from "../../components/MainCard/MainCard";
+import {getPostsActions} from "../../actions/getPostsActions";
 
 interface IProps {
     getListPostsAction?: any,

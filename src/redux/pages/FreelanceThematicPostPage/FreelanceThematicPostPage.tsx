@@ -1,8 +1,9 @@
 import React, {Component} from "react";
-import Loading from "../components/Healpers/Loading";
+import Loading from "../../components/Healpers/Loading";
 import {connect} from "react-redux";
-import {ThematicBlogCard} from "../components/ThematicBlogCard/ThematicBlogCard";
-import {getFreelanceThematicPostAction} from '../actions/getPostsActions'
+import {ThematicBlogCard} from "../../components/ThematicBlogCard/ThematicBlogCard";
+import {getFreelanceThematicPostAction} from '../../actions/getPostsActions'
+import '../../components/BoxCard/BoxCard.scss'
 
 interface IProps {
     getFreelanceThematicPostAction?: any,
@@ -10,7 +11,7 @@ interface IProps {
     freelanceThematicPost?: any,
 }
 
-class ThematicPostPage extends Component <IProps, {}> {
+class FreelanceThematicPostPage extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getFreelanceThematicPostAction();
     };
@@ -39,4 +40,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ThematicPostPage);
+export default connect(mapStateToProps, mapDispatchToProps)(FreelanceThematicPostPage);

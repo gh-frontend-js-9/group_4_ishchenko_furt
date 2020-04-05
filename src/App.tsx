@@ -5,36 +5,58 @@ import {Footer} from "./redux/components/Footer/Footer";
 import {BrowserRouter} from "react-router-dom";
 import {FlexBox} from "./redux/components/FlexBox/FlexBox";
 import {Main} from "./redux/components/Main/Main";
-import {Background} from "./redux/components/Background/Background";
 import {BackgroundBlock} from "./redux/components/BackgroundBlock/BackgroundBlock";
 import {BurgerMenu} from "./redux/components/BurgerMenu/BurgerMenu";
-import BlogPostPage from "./redux/pages/BlogPostPage/BlogPostPage";
 import MainCardSliderPage from "./redux/pages/MainCardSliderPage/MainCardSliderPage";
-import ReadingListPage from "./redux/pages/ReadingListPage/ReadingListPage";
 import FeaturedPostPage from "./redux/pages/FeaturedPostPage/FeaturedPostPage";
+import PopularPostPage from "./redux/pages/PopularPostPage/PopularPostPage";
+import FreelanceThematicPostPage from "./redux/pages/FreelanceThematicPostPage/FreelanceThematicPostPage";
+import EssentialsPostPage from "./redux/pages/EssentialsPostPage/EssentialsPostPage";
+import FreelancePostPage from "./redux/pages/FreelancePostPage/FreelancePostPage";
+import EssentialsThematicPostPage from "./redux/pages/EssentialsThematicPostPage/EssentialsThematicPostPage";
+import PopularThematicPostPage from "./redux/pages/PopularThematicPostPage/PopularThematicPostPage";
+import {PostsBox} from "./redux/components/PostsBox/PostsBox";
+import {ViewAllBox} from "./redux/components/ViewAllBox/ViewAllBox";
 
 const App: React.FC = () => {
     return (
         <>
             <BrowserRouter>
-
                 <BackgroundBlock>
                     <Wrapper>
                         <Header/>
                         <BurgerMenu/>
                     </Wrapper>
                 </BackgroundBlock>
+
                 <Main>
-                    <Background>
+                    <BackgroundBlock>
                         <Wrapper>
                             <MainCardSliderPage/>
                         </Wrapper>
-                    </Background>
+                    </BackgroundBlock>
 
                     <Wrapper>
-                        <BlogPostPage/>
+                        <PostsBox>
+                            <PopularPostPage/>
+                            <ViewAllBox>
+                                <PopularThematicPostPage/>
+                            </ViewAllBox>
+                        </PostsBox>
 
-                        <ReadingListPage/>
+                        <PostsBox>
+                            <EssentialsPostPage/>
+                            <ViewAllBox>
+                                <EssentialsThematicPostPage/>
+                            </ViewAllBox>
+                        </PostsBox>
+
+                        <PostsBox>
+                            <FreelancePostPage/>
+                            <ViewAllBox>
+                                <FreelanceThematicPostPage/>
+                            </ViewAllBox>
+                        </PostsBox>
 
                         <FlexBox>
                             <FeaturedPostPage/>

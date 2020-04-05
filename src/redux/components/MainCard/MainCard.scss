@@ -3,7 +3,7 @@
 .main-card {
   font-family: $open-sans-font;
 
-  &--hovered:hover {
+   &--hovered:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     cursor: pointer;
     background-color: $violet-color-hovered;

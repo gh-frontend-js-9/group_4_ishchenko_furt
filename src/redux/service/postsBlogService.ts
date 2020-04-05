@@ -70,5 +70,4 @@ export class postsBlogService extends Component {
     static getEssentialsThematicPost() {
         return axios.get(this.appUrl + this.essentialsThematicPostsUrl)
     }
-
 }

@@ -1,11 +1,9 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../../components/Healpers/Loading";
-import Slider from "react-slick";
 import './MainCardSliderPage.scss'
 import {MainCard} from "../../components/MainCard/MainCard";
 import {getListPostsAction} from "../../actions/getPostsActions";
-import {settings} from "./MainCardSettings";
 
 interface IProps {
     getListPostsAction?: any,
@@ -19,23 +17,14 @@ class MainCardSliderPage extends Component <IProps, {}> {
     };
 
     render() {
-        let response = Object.values(this.props.listPosts);
-
-        let renderSlides = response.map((slide: any)=>(
-            <div className={'main-card-page'}>
-                <MainCard {...slide} />
-            </div>
-        ));
-
-        let renderSlider = (
-            <Slider className={'slider'} {...settings}>
-                {renderSlides}
-            </Slider>
-        );
+        let renderMainCard = this.props.listPosts.map((post: any) =>
+            <div className='main-card-page' key={post._id}>
+                <MainCard  {...post}/>
+            </div>);
 
         return (
             <>
-                {this.props.isLoading ? <Loading/> : <>{renderSlider} </>}
+                {this.props.isLoading ? <Loading/> : <> {renderMainCard}</>}
             </>
         )
     }
@@ -47,7 +36,6 @@ const mapStateToProps = (state: any) => {
         isLoading: state.postsReducers.isLoading,
     };
 };
-
 const mapDispatchToProps = (dispatch: any) => {
     return {
         getListPostsAction: () => dispatch(getListPostsAction()),

@@ -16,3 +16,6 @@
 @media (max-width: 1000px) {
   .navigation-bar__link {
     margin: 15px; } }
+@media (max-width: 600px) {
+  .navigation-bar__link {
+    cursor: auto; } }

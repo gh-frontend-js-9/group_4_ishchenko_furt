@@ -5,7 +5,7 @@ export const ViewAllBox: React.FC = (props: any) => {
     const {children} = props;
 
     return <>
-        <div>
+        <div >
             <div className='view-all'>
                 <span className='view-all--hovered'>View all</span>
             </div>

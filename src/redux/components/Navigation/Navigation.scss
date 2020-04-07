@@ -21,3 +21,9 @@
     margin: 15px;
   }
 }
+
+@media (max-width: 600px) {
+  .navigation-bar__link  {
+    cursor: auto;
+  }
+}

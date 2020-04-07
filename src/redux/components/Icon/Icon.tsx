@@ -21,7 +21,7 @@ export const Icon = () => {
 
     let renderIcon = icons.map((icon: any, n: number) => {
         return <span key={n} className="icon">
-                        <a key={n} href={icon.href}>
+                        <a className="icon__anchor" key={n} href={icon.href}>
                             <i key={n}
                                className={`${icon.name} fa__footer fa fa--color fa--hovered `}
                                aria-hidden="true"> </i>

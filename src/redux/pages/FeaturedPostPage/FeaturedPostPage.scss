@@ -12,3 +12,12 @@
   padding: 30px;
   }
 }
+
+@media (max-width:  1340px) {
+  .featured-post-page {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+  }
+}

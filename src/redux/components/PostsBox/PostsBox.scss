@@ -10,3 +10,9 @@
     align-items: center;
   }
 }
+
+@media (max-width: 600px) {
+  .posts-box:hover * {
+    cursor:auto;
+  }
+}

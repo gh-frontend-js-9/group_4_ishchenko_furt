@@ -1,10 +1,31 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.fa__footer{
+.fa {
+  color: $white-color;
+
+  &--hovered:hover {
+    color: $pink;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 600px) {
+  .fa--hovered:hover {
+    cursor: auto;
+    color: $white-color;
+  }
+  .icon__anchor {
+    cursor: auto;
+  }
+}
+
+
+.fa__footer {
   width: 24px;
   color: $white-color;
 }
-.icon{
+
+.icon {
   text-align: center;
   background: $light-gray-color center center;
   border-radius: 25px;
@@ -12,8 +33,10 @@
   margin: 5px;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 805px) {
   .fa__footer {
     margin: 10px;
+    padding-bottom: 10px;
   }
 }
+

@@ -47,3 +47,9 @@
     max-height: 160px;
   }
 }
+@media (max-width: 600px) {
+  .featured-img--hovered:hover {
+    box-shadow: none;
+    cursor: auto;
+  }
+}

@@ -1,14 +1,5 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.fa {
-  color: $white-color;
-
-  &--hovered:hover {
-    color: $pink;
-    cursor: pointer;
-  }
-}
-
 .search-icon--black-color {
   color: $black-color;
   padding-top: 15px;

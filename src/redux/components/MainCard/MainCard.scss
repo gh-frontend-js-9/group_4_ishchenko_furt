@@ -3,10 +3,14 @@
 .main-card {
   font-family: $open-sans-font;
 
-   &--hovered:hover {
+  &--hovered:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     cursor: pointer;
     background-color: $violet-color-hovered;
+  }
+  .touch &--hovered:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    cursor: none;
   }
 
   &__author {
@@ -29,33 +33,41 @@
     letter-spacing: -0.1px;
     line-height: 32px;
   }
+
   &__paragraph--grey {
     @extend .main-card__paragraph;
-    color:$light-gray-color ;
+    color: $light-gray-color;
   }
 }
 
 @media (max-width: 800px) {
-  .main-card__title{
-    font-size:$xl-font-size
+  .main-card__title {
+    font-size: $xl-font-size
   }
-  .main-card__author{
-    font-size:$sm-font-size
+  .main-card__author {
+    font-size: $sm-font-size
   }
-  .main-card__paragraph{
-    font-size:$sm-font-size
+  .main-card__paragraph {
+    font-size: $sm-font-size
   }
 }
 
 @media (max-width: 400px) {
-  .main-card__title{
-    font-size:$lg-font-size
+  .main-card__title {
+    font-size: $lg-font-size
   }
 }
 
 @media (max-width: 330px) {
-  .main-card__title{
-    font-size:$md-font-size
+  .main-card__title {
+    font-size: $md-font-size
+  }
+}
+
+@media (max-width: 600px) {
+  .main-card--hovered:hover  {
+    background-color: $violet-color;
+    box-shadow:none;
   }
 }
 

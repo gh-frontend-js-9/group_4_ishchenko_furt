@@ -25,7 +25,10 @@ export const StyledBurgerMenu = styled.button <IProps>`
   &:focus {
     outline: none;
   }
-
+   @media (max-width:600px) {
+      cursor:auto;
+   }
+     
   div {
     width: 2rem;
     height: 0.25rem;

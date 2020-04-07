@@ -26,3 +26,18 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .thematic-blog-card__title--hovered:hover {
+    color:black;
+  }
+}
+
+@media (max-width: 600px) {
+  .thematic-blog-card--hovered:hover {
+    color:black;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  }
+}
+
+

@@ -17,6 +17,7 @@ import EssentialsThematicPostPage from "./redux/pages/EssentialsThematicPostPage
 import PopularThematicPostPage from "./redux/pages/PopularThematicPostPage/PopularThematicPostPage";
 import {PostsBox} from "./redux/components/PostsBox/PostsBox";
 import {ViewAllBox} from "./redux/components/ViewAllBox/ViewAllBox";
+import ReadingListPage from "./redux/pages/ReadingListPage/ReadingListPage";
 
 const App: React.FC = () => {
     return (
@@ -57,6 +58,8 @@ const App: React.FC = () => {
                                 <FreelanceThematicPostPage/>
                             </ViewAllBox>
                         </PostsBox>
+
+                        <ReadingListPage/>
 
                         <FlexBox>
                             <FeaturedPostPage/>

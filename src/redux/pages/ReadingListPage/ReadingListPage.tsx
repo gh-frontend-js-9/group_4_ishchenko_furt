@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Slider from "react-slick";
+ import Slider from "react-slick";
 import lists from "../../components/ListCard/lists";
 import {CategoryBlogCard} from "../../components/CategoryBlogCard/CategoryBlogCard";
 import {ListCard} from "../../components/ListCard/ListCard";

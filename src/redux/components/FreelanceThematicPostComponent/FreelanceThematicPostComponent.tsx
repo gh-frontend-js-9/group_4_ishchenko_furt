@@ -11,7 +11,7 @@ interface IProps {
     freelanceThematicPost?: any,
 }
 
-class FreelanceThematicPostPage extends Component <IProps, {}> {
+class FreelanceThematicPostComponent extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getFreelanceThematicPostAction();
     };
@@ -40,4 +40,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(FreelanceThematicPostPage);
+export default connect(mapStateToProps, mapDispatchToProps)(FreelanceThematicPostComponent);

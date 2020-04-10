@@ -11,7 +11,7 @@ interface IProps {
     isLoading?: boolean,
 }
 
-class FreelancePostPage extends Component <IProps, {}> {
+class FreelancePostComponent extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getFreelancePostAction()
     };
@@ -41,4 +41,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(FreelancePostPage);
+export default connect(mapStateToProps, mapDispatchToProps)(FreelancePostComponent);

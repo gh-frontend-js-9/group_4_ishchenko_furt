@@ -1,11 +1,11 @@
 import React, {Component} from "react";
- import Slider from "react-slick";
-import lists from "../../components/ListCard/lists";
-import {CategoryBlogCard} from "../../components/CategoryBlogCard/CategoryBlogCard";
-import {ListCard} from "../../components/ListCard/ListCard";
+import Slider from "react-slick";
+import lists from "../ListCard/lists";
+import {CategoryBlogCard} from "../CategoryBlogCard/CategoryBlogCard";
+import {ListCard} from "../ListCard/ListCard";
 import {settings, title} from "./ReadingListSettings";
 
-class ReadingListPage extends Component {
+class ReadingList extends Component {
     render() {
         let renderReadingList = lists.map((list: any) => (
             <ListCard {...list}/>
@@ -23,4 +23,4 @@ class ReadingListPage extends Component {
     }
 }
 
-export default ReadingListPage
+export default ReadingList;

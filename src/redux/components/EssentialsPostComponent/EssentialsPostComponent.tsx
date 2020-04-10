@@ -10,7 +10,7 @@ interface IProps {
     isLoading?: boolean,
 }
 
-class EssentialsPostPage extends Component <IProps, {}> {
+class EssentialsPostComponent extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getEssentialsPostAction();
     };
@@ -40,4 +40,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(EssentialsPostPage);
+export default connect(mapStateToProps, mapDispatchToProps)(EssentialsPostComponent);

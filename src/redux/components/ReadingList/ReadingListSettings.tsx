@@ -1,4 +1,4 @@
-import {Arrow} from "../../components/Arrow/Arrow";
+import {Arrow} from "../Arrow/Arrow";
 import React from "react";
 
 export const settings = {

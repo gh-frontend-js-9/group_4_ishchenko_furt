@@ -11,7 +11,7 @@ interface IProps {
     popularThematicPost?: any,
 }
 
-class PopularThematicPostPage extends Component <IProps, {}> {
+class PopularThematicPostComponent extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getPopularThematicPostAction();
     };
@@ -40,4 +40,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(PopularThematicPostPage);
+export default connect(mapStateToProps, mapDispatchToProps)(PopularThematicPostComponent);

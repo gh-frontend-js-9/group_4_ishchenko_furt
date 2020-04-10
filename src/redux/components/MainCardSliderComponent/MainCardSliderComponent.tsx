@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../../components/Healpers/Loading";
 import Slider from "react-slick";
-import './MainCardSliderPage.scss'
-import {MainCard} from "../../components/MainCard/MainCard";
+import './MainCardSliderComponent.scss';
 import {getListPostsAction} from "../../actions/getPostsActions";
 import {settings} from "./MainCardSettings";
+import {MainCard} from '../MainCard/MainCard';
 
 interface IProps {
     getListPostsAction?: any,
@@ -13,7 +13,7 @@ interface IProps {
     listPosts?: any,
 }
 
-class MainCardSliderPage extends Component <IProps, {}> {
+class MainCardSliderComponent extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getListPostsAction();
     };
@@ -54,4 +54,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainCardSliderPage);
+export default connect(mapStateToProps, mapDispatchToProps)(MainCardSliderComponent);

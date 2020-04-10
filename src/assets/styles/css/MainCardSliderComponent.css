@@ -3,29 +3,22 @@
   max-width: 100%;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   background-color: #1b0042;
-  max-height: 800px;
-  color: #ffffff;
-  font-size: 36px; }
+  max-height: 800px; }
 
-@media (max-width: 1190px) {
-  .main-card-page {
-    padding-left: 20px;
-    padding-right: 20px; } }
 .slider {
-  height: 85vh;
+  height: 70vh;
   background-color: #1b0042;
   color: #ffffff;
   font-size: 36px; }
 
 .slick-dots {
-  background-color: white;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  position: absolute;
+  bottom: 20px;
   font-size: 0; }
 
-div.slick-dots {
-  display: none; }
+.slick-dots li {
+  background-color: white;
+  border-radius: 50%; }
 
 li.slick-active {
   background-color: pink;

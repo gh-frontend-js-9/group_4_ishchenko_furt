@@ -22,6 +22,9 @@ export const Navigation = (props) => {
     }, {
         link: '/subscribe',
         title: 'Subscribe'
+    }, {
+        link: '/',
+        title: 'Home'
     }];
     let renderNav = navBar.map((nav: any, n: number) => {
         return <span key={n} className="navigation-bar">

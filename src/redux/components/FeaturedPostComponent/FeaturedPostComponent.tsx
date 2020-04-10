@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import Loading from "../../components/Healpers/Loading";
 import {MainCard} from "../../components/MainCard/MainCard";
 import {FeaturedImg} from "../../components/FeaturedImg/FeaturedImg";
-import './FeaturedPostPage.scss'
+import './FeaturedPostComponent.scss'
 import {getFeaturedPostAction} from "../../actions/getPostsActions";
 
 interface IProps {
@@ -12,7 +12,7 @@ interface IProps {
     featuredPost?: any,
 }
 
-class FeaturedPostPage extends Component <IProps, {}> {
+class FeaturedPostComponent extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getFeaturedPostAction();
     };
@@ -44,4 +44,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(FeaturedPostPage);
+export default connect(mapStateToProps, mapDispatchToProps)(FeaturedPostComponent);

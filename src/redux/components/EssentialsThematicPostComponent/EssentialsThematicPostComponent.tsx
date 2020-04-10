@@ -11,7 +11,7 @@ interface IProps {
     essentialsThematicPost?: any,
 }
 
-class EssentialsThematicPostPage extends Component <IProps, {}> {
+class EssentialsThematicPostComponent extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getEssentialsThematicPostAction();
     };
@@ -40,4 +40,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(EssentialsThematicPostPage);
+export default connect(mapStateToProps, mapDispatchToProps)(EssentialsThematicPostComponent);

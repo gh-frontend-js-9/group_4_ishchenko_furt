@@ -10,7 +10,7 @@ interface IProps {
     popularPost?: any,
 }
 
-class PopularPostPage extends Component <IProps, {}> {
+class PopularPostComponent extends Component <IProps, {}> {
     componentDidMount() {
         this.props.getPopularPostAction();
     };
@@ -40,4 +40,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(PopularPostPage);
+export default connect(mapStateToProps, mapDispatchToProps)(PopularPostComponent);

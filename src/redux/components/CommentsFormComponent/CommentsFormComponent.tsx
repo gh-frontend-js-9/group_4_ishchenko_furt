@@ -3,14 +3,18 @@ import {connect} from 'react-redux'
 import {NameInput} from "../NameInput/NameInput";
 import {EmailInput} from "../EmailInput/EmailInput";
 import {Button} from "../Button/Button";
+import './CommentsFormComponent.scss'
 
 interface IState {
     comment?: any,
-    name: any,
-    email: any,
+    name?: any,
+    email?: any,
 }
 
 interface IProps {
+    comment?: any,
+    name?: any,
+    email?: any,
     sendComment?: string,
     sendCommentAction?: any,
 }
@@ -28,19 +32,14 @@ class CommentsFormComponent extends Component <IProps, IState> {
     }
 
     handleChange(event: any) {
-        const {value} = event.target;
+        const {name, value} = event.target;
         this.setState({
-            comment: value
+            [name]:value
         })
     }
 
     handleSubmit(event: any) {
         event.preventDefault();
-        this.setState({
-            comment: '',
-            name: '',
-            email: ''
-        })
     };
 
     render() {
@@ -50,6 +49,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
                   name='comments-form'
                   onSubmit={this.handleSubmit}>
                 <textarea required
+                          className='entry-field'
                           placeholder='Comment'
                           value={comment}
                           onChange={this.handleChange}/>
@@ -57,9 +57,9 @@ class CommentsFormComponent extends Component <IProps, IState> {
                            onChange={this.handleChange}/>
                 <EmailInput value={email}
                             onChange={this.handleChange}/>
-                <Button disabled={!comment} type="submit">
+                <div><Button disabled={!comment} type="submit">
                     Post Comment
-                </Button>
+                </Button></div>
             </form>
         )
     }
@@ -72,7 +72,7 @@ const mapStateToProps = (state: any) => {
 
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        // sendCommentAction: (url: string, message: string) => dispatch(sendCommentAction(url, message)),
+         // sendCommentAction: () => dispatch(sendCommentAction()),
     };
 };
 

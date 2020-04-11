@@ -38,6 +38,9 @@ export class postsBlogService extends Component {
     static get essentialsThematicPostsUrl() {
         return '/posts/?category=essentials&page=1&limit=4&fields=title,tags'
     }
+    static get commentsListUrl() {
+        return 'http://www.mocky.io/v2/5e9234023100002a00462bea'
+    }
 
     static getListPosts() {
         return axios.get(this.appUrl + this.listOfPostsUrl)
@@ -69,5 +72,8 @@ export class postsBlogService extends Component {
 
     static getEssentialsThematicPost() {
         return axios.get(this.appUrl + this.essentialsThematicPostsUrl)
+    }
+    static getCommentsList() {
+        return axios.get( this.commentsListUrl)
     }
 }

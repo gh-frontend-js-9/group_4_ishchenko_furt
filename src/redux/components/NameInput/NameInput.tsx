@@ -4,7 +4,7 @@ export const NameInput = (props: any) => {
     return (
         <input {...props}
                required
-               className="input"
+               className="entry-field"
                placeholder="Name"/>
     )
 };

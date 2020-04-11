@@ -7,6 +7,7 @@ export const GET_FREELANCE_POST_SUCCESS = 'GET_FREELANCE_POST_SUCCESS';
 export const GET_FREELANCE_THEMATIC_POST_SUCCESS = 'GET_FREELANCE_THEMATIC_POST_SUCCESS';
 export const GET_POPULAR_THEMATIC_POST_SUCCESS = 'GET_POPULAR_THEMATIC_POST_SUCCESS'
 export const GET_ESSENTIALS_THEMATIC_POST_SUCCESS = 'GET_FREELANCE_ESSENTIALS_POST_SUCCESS'
+export const GET_COMMENTS_LIST_SUCCESS = 'GET_COMMENTS_LIST_SUCCESS';
 
 const initialState = {
     popularPost: [],
@@ -17,6 +18,7 @@ const initialState = {
     freelanceThematicPost: [],
     popularThematicPost: [],
     essentialsThematicPost: [],
+    commentsList:[],
     isLoading: false
 };
 
@@ -61,6 +63,11 @@ export function postsReducers(state: any = initialState, action: any) {
             return {
                 ...state,
                 essentialsThematicPost: action.payload,
+            };
+        case GET_COMMENTS_LIST_SUCCESS:
+            return {
+                ...state,
+                commentsList: action.payload,
             };
         case IS_LOADING:
             return {

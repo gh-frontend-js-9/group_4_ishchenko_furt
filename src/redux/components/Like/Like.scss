@@ -1,0 +1,23 @@
+@import '../../../assets/styles/scss/styles.scss';
+
+@media (max-width: 600px) {
+  .like-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.like-card{
+  margin: 20px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+}
+
+.like-icon{
+  font-size: 24px;
+  width: 34px;
+  height: 34px;
+  color: $black-color;
+}

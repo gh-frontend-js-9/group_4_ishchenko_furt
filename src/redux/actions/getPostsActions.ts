@@ -16,6 +16,7 @@ export function getPostsActions() {
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
                 dispatch(getListPostsReceiveAction(response.data.docs));
+                console.log(response.data)
             })
             .catch(error =>
                 dispatch((error.response))

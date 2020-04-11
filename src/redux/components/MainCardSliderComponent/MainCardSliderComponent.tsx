@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../../components/Healpers/Loading";
 import './MainCardSliderComponent.scss'
-import {MainCard} from "../../components/MainCard/MainCard";
+import {MainCard} from "../MainCard/MainCard";
 import {getPostsActions} from "../../actions/getPostsActions";
 
 interface IProps {

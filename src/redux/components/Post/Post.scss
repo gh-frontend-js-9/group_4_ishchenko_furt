@@ -1,0 +1,10 @@
+.post{
+  display: flex;
+}
+
+
+@media(max-width: 600px) {
+  .post{
+    flex-direction: column;
+  }
+}

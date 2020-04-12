@@ -4,6 +4,7 @@ import {NameInput} from "../NameInput/NameInput";
 import {EmailInput} from "../EmailInput/EmailInput";
 import {Button} from "../Button/Button";
 import './CommentsFormComponent.scss'
+import {Checkbox} from "../Checkbox/Checkbox";
 
 interface IState {
     comment?: any,
@@ -34,7 +35,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
     handleChange(event: any) {
         const {name, value} = event.target;
         this.setState({
-            [name]:value
+            [name]: value
         })
     }
 
@@ -57,9 +58,17 @@ class CommentsFormComponent extends Component <IProps, IState> {
                            onChange={this.handleChange}/>
                 <EmailInput value={email}
                             onChange={this.handleChange}/>
-                <div><Button disabled={!comment} type="submit">
-                    Post Comment
-                </Button></div>
+                <Checkbox>
+                    <span>
+                        I agree to the <a>Terms and Conditions</a> and <a>Privacy Policy</a>
+                    </span>
+                </Checkbox>
+
+                <div>
+                    <Button disabled={!comment} type="submit">
+                        Post Comment
+                    </Button>
+                </div>
             </form>
         )
     }
@@ -72,7 +81,7 @@ const mapStateToProps = (state: any) => {
 
 const mapDispatchToProps = (dispatch: any) => {
     return {
-         // sendCommentAction: () => dispatch(sendCommentAction()),
+        // sendCommentAction: () => dispatch(sendCommentAction()),
     };
 };
 

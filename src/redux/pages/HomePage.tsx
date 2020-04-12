@@ -1,7 +1,7 @@
 import React from "react";
 import {Wrapper} from "../components/Wrapper/Wrapper";
 import {BackgroundBlock} from "../components/BackgroundBlock/BackgroundBlock";
-import {ViewAllBox} from "../components/ViewAllBox/ViewAllBox";
+import {GridBox} from "../components/GridBox/GridBox";
 import {FlexBox} from "../components/FlexBox/FlexBox";
 import {PostsBox} from "../components/PostsBox/PostsBox";
 import MainCardSliderComponent from "../components/MainCardSliderComponent/MainCardSliderComponent";
@@ -28,23 +28,23 @@ export const HomePage: React.FC = () => {
             <Wrapper>
                 <PostsBox>
                     <PopularPostComponent/>
-                    <ViewAllBox>
+                    <GridBox>
                         <PopularThematicPostComponent/>
-                    </ViewAllBox>
+                    </GridBox>
                 </PostsBox>
 
                 <PostsBox>
                     <EssentialsPostComponent/>
-                    <ViewAllBox>
+                    <GridBox>
                         <EssentialsThematicPostComponent/>
-                    </ViewAllBox>
+                    </GridBox>
                 </PostsBox>
 
                 <PostsBox>
                     <FreelancePostComponent/>
-                    <ViewAllBox>
+                    <GridBox>
                         <FreelanceThematicPostComponent/>
-                    </ViewAllBox>
+                    </GridBox>
                 </PostsBox>
 
                 <FlexBox>

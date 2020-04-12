@@ -1,16 +1,19 @@
 import React from "react";
 import './Post.scss'
-import {Media} from "../Media/Media";
 import ImagePlace from "../ImagePlace/ImagePlace";
 import {Like} from "../Like/Like";
+import {Icon} from "../Icon/Icon";
+import {IconBox} from "../IconBox/IconBox";
 
 
-export const Post: React.FC = () =>{
-    return(
+export const Post: React.FC = () => {
+    return (
         <div className={'post'}>
-            <Media />
+            <IconBox>
+                <Icon postElement/>
+            </IconBox>
             <ImagePlace/>
-            <Like />
+            <Like/>
         </div>
     )
 }

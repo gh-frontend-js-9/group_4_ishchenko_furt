@@ -15,12 +15,15 @@
   width: 24px;
   color: #ffffff; }
 
-.icon {
+.icon, .icon--post-styles {
   text-align: center;
-  background: #9b9b9b center center;
+  background-color: #9b9b9b;
   border-radius: 25px;
-  padding: 3px;
+  padding: 6px 2px;
   margin: 5px; }
+  .icon--post-styles {
+    margin: 12px;
+    padding: 7px 3px; }
 
 @media (max-width: 805px) {
   .fa__footer {

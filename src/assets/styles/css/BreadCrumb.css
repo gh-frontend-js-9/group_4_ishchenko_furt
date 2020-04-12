@@ -1,0 +1,10 @@
+.bread-crumb {
+  width: 100%;
+  height: 19px;
+  color: #9b9b9b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px; }
+
+@media (max-width: 600px) {
+  .bread-crumb {
+    font-size: 8px; } }

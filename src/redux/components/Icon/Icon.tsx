@@ -1,7 +1,9 @@
 import React from "react";
 import './Icon.scss'
 
-export const Icon = () => {
+export const Icon = (props) => {
+    const iconClass = (props.postElement ? 'icon--post-styles' : 'icon');
+
     const icons = [{
         name: 'fa-vk',
         href: 'https://www.vk.com'
@@ -20,7 +22,7 @@ export const Icon = () => {
     }];
 
     let renderIcon = icons.map((icon: any, n: number) => {
-        return <span key={n} className="icon">
+        return <span key={n} className={iconClass}>
                         <a className="icon__anchor" key={n} href={icon.href}>
                             <i key={n}
                                className={`${icon.name} fa__footer fa fa--color fa--hovered `}
@@ -28,6 +30,10 @@ export const Icon = () => {
                         </a>
                  </span>
     });
+
+    if (props.postElement) {
+        renderIcon.reverse().pop()
+    }
 
     return (
         <>{renderIcon}</>

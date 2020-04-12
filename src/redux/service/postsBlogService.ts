@@ -39,7 +39,7 @@ export class postsBlogService extends Component {
         return '/posts/?category=essentials&page=1&limit=4&fields=title,tags'
     }
     static get commentsListUrl() {
-        return 'http://www.mocky.io/v2/5e9234023100002a00462bea'
+        return 'http://www.mocky.io/v2/5e9345b330000091001569c5'
     }
 
     static getListPosts() {

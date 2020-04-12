@@ -6,3 +6,7 @@
   letter-spacing: -0.22px;
   line-height: 46px;
   padding: 10px 0px 40px; }
+  .title--lg-font-size {
+    font-size: 18px;
+    color: #000000;
+    font-family: "Open Sans", sans-serif; }

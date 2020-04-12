@@ -1,8 +1,8 @@
 import React from 'react'
 
 export const Content = (props) => {
-    const classContent = (props.mdFontSize ? "content--md-font-size" : 'lg-20px-font-size');
-    // (props.greyColor ? "main-card__paragraph--grey" : '')
+    const classContent = (props.mdFontSize ? "content--md-font-size" : 'content--lg-20px-font-size');
+
     const {children} = props;
 
     return (

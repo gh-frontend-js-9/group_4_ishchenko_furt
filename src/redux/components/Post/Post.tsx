@@ -1,7 +1,7 @@
 import React from "react";
 import './Post.scss'
 import {Media} from "../Media/Media";
-import {ImagePlace} from "../ImagePlace/ImagePlace";
+import ImagePlace from "../ImagePlace/ImagePlace";
 import {Like} from "../Like/Like";
 
 

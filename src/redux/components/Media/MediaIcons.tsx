@@ -3,7 +3,6 @@ import './../Icon/Icon.scss';
 import './Media.scss'
 
 export const Icon: React.FC = (props:any) =>{
-    console.log(props);
     return(
         <div className={'media-container'}>
             <i

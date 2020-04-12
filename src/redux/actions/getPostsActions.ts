@@ -1,4 +1,5 @@
 import {
+    getCommentsListReceiveAction,
     getEssentialsPostReceiveAction, getEssentialsThematicPostReceiveAction,
     getFeaturedPostReceiveAction, getFreelancePostReceiveAction, getFreelanceThematicPostReceiveAction,
     getListPostsReceiveAction,
@@ -16,6 +17,7 @@ export function getListPostsAction() {
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
                 dispatch(getListPostsReceiveAction(response.data.docs));
+                console.log(response.data)
             })
             .catch(error =>
                 dispatch((error.response))
@@ -128,6 +130,23 @@ export function getEssentialsThematicPostAction() {
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
                 dispatch(getEssentialsThematicPostReceiveAction(response.data.docs));
+            })
+            .catch(error =>
+                dispatch((error.response))
+            )
+    }
+}
+
+export function getCommentsListAction() {
+
+    return (dispatch: any) => {
+        dispatch(isLoadingAction(true));
+
+        postsBlogService.getCommentsList()
+            .then((response: any) => {
+                dispatch(isLoadingAction(false));
+                dispatch(getCommentsListReceiveAction(response.data.comments));
+                console.log(response.data.comments)
             })
             .catch(error =>
                 dispatch((error.response))

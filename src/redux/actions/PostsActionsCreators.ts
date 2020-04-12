@@ -1,4 +1,5 @@
 import {
+    GET_COMMENTS_LIST_SUCCESS,
     GET_ESSENTIALS_POST_SUCCESS, GET_ESSENTIALS_THEMATIC_POST_SUCCESS,
     GET_FEATURED_POST_SUCCESS, GET_FREELANCE_POST_SUCCESS, GET_FREELANCE_THEMATIC_POST_SUCCESS,
     GET_LIST_POSTS_SUCCESS,
@@ -66,5 +67,12 @@ export function getEssentialsThematicPostReceiveAction(essentialsThematicPost: a
     return {
         type: GET_ESSENTIALS_THEMATIC_POST_SUCCESS,
         payload: essentialsThematicPost
+    };
+}
+
+export function getCommentsListReceiveAction(commentsList: any) {
+    return {
+        type: GET_COMMENTS_LIST_SUCCESS,
+        payload: commentsList
     };
 }

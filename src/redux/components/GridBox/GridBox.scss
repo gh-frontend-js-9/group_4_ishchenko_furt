@@ -1,17 +1,6 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.thematic-cards-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
-}
-@media (max-width: 700px) {
-  .thematic-cards-box {
-    grid-template-columns: 1fr;
-  }
-}
-.view-all {
+.grid-box {
   @include text-styles($md-font-size, $light-gray-color);
   text-align: right;
   padding-bottom: 50px;
@@ -23,8 +12,20 @@
 }
 
 @media (max-width: 1142px) {
-  .view-all {
+  .grid-box {
     text-align: left;
     padding-top: 50px;
+  }
+}
+
+.thematic-cards-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+@media (max-width: 700px) {
+  .thematic-cards-box {
+    grid-template-columns: 1fr;
   }
 }

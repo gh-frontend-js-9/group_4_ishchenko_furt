@@ -6,6 +6,8 @@ import './MainCardSliderComponent.scss';
 import {getListPostsAction} from "../../actions/getPostsActions";
 import {settings} from "./MainCardSettings";
 import {MainCard} from '../MainCard/MainCard';
+import './MainCardSliderComponent.scss'
+
 
 interface IProps {
     getListPostsAction?: any,

@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
 import lists from "../ListCard/lists";
-import {CategoryBlogCard} from "../CategoryBlogCard/CategoryBlogCard";
+import {Title} from "../Title/Title";
 import {ListCard} from "../ListCard/ListCard";
 import {settings, title} from "./ReadingListSettings";
 
@@ -13,7 +13,7 @@ class ReadingList extends Component {
 
         return (
             <div>
-                <CategoryBlogCard {...title} />
+                <Title {...title} />
 
                 <Slider {...settings}>
                     {renderReadingList}

@@ -1,6 +1,6 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.category-title{
+.title{
   @include text-styles($xxxl-font-size, $black-color);
   font-weight: 700;
   letter-spacing: -0.22px;

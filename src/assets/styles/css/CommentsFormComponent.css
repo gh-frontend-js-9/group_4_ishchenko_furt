@@ -1,0 +1,5 @@
+.comments-form {
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  display: grid;
+  max-width: 500px; }

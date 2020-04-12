@@ -20,9 +20,6 @@ export const Navigation = (props) => {
         link: '/topics',
         title: 'Topics'
     }, {
-        link: '/subscribe',
-        title: 'Subscribe'
-    }, {
         link: '/',
         title: 'Home'
     }];

@@ -7,7 +7,7 @@ import {SearchIcon} from "../SearchIcon/SearchIcon";
 const Menu = ({open, setOpen}) => {
     return (
         <StyledMenu open={open}>
-            <Logo/>
+            <Logo headerElem/>
             <Navigation/>
             <SearchIcon burgerMenuElem/>
         </StyledMenu>

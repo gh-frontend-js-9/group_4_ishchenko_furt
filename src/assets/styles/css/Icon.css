@@ -17,9 +17,9 @@
 
 .icon {
   text-align: center;
-  background: #9b9b9b center center;
+  background-color: #9b9b9b;
   border-radius: 25px;
-  padding: 3px;
+  padding: 6px 2px;
   margin: 5px; }
 
 @media (max-width: 805px) {

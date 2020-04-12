@@ -7,7 +7,7 @@
   line-height: 46px;
   padding: 10px 0px 40px;
 
-  &--lg-font-size {
-    @include text-styles($lg-font-size, $black-color);
+  &--xxl-font-size {
+    @include text-styles($xxl-font-size, $black-color);
   }
 }

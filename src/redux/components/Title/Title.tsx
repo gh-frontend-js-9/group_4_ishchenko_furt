@@ -1,10 +1,9 @@
 import React from "react";
 import './Title.scss'
 
-export const Title: React.FC = (props: any) => {
+export const Title = (props: any) => {
+    const fontSizeContent = (props.xxlFontSize ? "title title--xxl-font-size" : 'title');
     const {children} = props;
-
-    const fontSizeContent = (props.lgFontSize ? "title title--lg-font-size" : 'title');
 
     return (
         <h3 className={fontSizeContent}>

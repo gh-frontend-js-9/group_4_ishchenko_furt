@@ -1,7 +1,13 @@
 import React, {Component} from "react";
-import './ImagePlace.scss';
+import './PostContent.scss'
+import {Content} from "../Content/Content";
+import {ImageBox} from "../ImageBox/ImageBox";
+import {IconBox} from "../IconBox/IconBox";
+import {Icon} from "../Icon/Icon";
+import {Like} from "../Like/Like";
 import {connect} from 'react-redux';
 import {getPopularPostAction} from "../../actions/getPostsActions";
+
 
 interface IProps {
     getPopularPostAction?: any,
@@ -9,19 +15,27 @@ interface IProps {
     popularPost?: any,
 }
 
-class ImagePlace extends Component<IProps, {}>{
+class PostContent extends Component<IProps, {}>{
     componentDidMount() {
         this.props.getPopularPostAction();
-    };
+    }
 
     render(){
         console.log(this.props.popularPost);
-        const imageUrl = this.props.popularPost.featuredImage;
+        let renderPost = this.props.popularPost.map((post: any)=> {
+            console.log(post.content)
+        })
 
 
         return(
-            <div>
-                <img src="" alt=""/>
+            <div className={'post'}>
+                <IconBox>
+                    <Icon postElement/>
+                </IconBox>
+                <div className={'post__content'}>
+                    {renderPost}
+                </div>
+                <Like/>
             </div>
         )
     }
@@ -39,4 +53,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ImagePlace);
+export default connect(mapStateToProps, mapDispatchToProps)(PostContent);

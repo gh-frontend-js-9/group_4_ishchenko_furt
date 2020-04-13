@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import {connect} from 'react-redux'
-import {getCommentsListAction} from "../../actions/getPostsActions";
 import Loading from "../Healpers/Loading";
 import {CommentCard} from "../CommentCard/CommentCard";
+import {getCommentsListAction} from "../../actions/getPostsActions";
 
 interface IProps {
     getCommentsListAction?: any,
@@ -17,7 +17,7 @@ class CommentsListComponent extends Component <IProps, {}> {
 
     render() {
         let renderComment = this.props.commentsList.map((comment: any) =>
-             <CommentCard{...comment} key={comment.id}/>);
+             <CommentCard{...comment} key={comment._id}/>);
 
         return (
             <>

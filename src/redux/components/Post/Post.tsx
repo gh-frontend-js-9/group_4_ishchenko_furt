@@ -6,14 +6,14 @@ import {Icon} from "../Icon/Icon";
 import {IconBox} from "../IconBox/IconBox";
 
 
-export const Post: React.FC = () => {
+export const Post: React.FC = (props:any) => {
     return (
         <div className={'post'}>
             <IconBox>
                 <Icon postElement/>
             </IconBox>
-            <ImagePlace/>
+            <ImagePlace {...props.postImage}/>
             <Like/>
         </div>
     )
-}
+};

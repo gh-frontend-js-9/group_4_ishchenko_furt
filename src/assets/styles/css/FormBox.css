@@ -1,0 +1,7 @@
+.form-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff; }

@@ -6,6 +6,9 @@ export class postsBlogService extends Component {
     static get appUrl() {
         return axios.defaults.baseURL;
     }
+    static get appFakeUrl() {
+        return 'http://www.mocky.io/v2/';
+    }
 
     static get listOfPostsUrl() {
         return '/posts/?category=popular&page=1&limit=3'
@@ -39,7 +42,11 @@ export class postsBlogService extends Component {
         return '/posts/?category=essentials&page=1&limit=4&fields=title,tags'
     }
     static get commentsListUrl() {
-        return 'http://www.mocky.io/v2/5e9234023100002a00462bea'
+        return '5e9345b330000091001569c5'
+    }
+
+    static get newPostUrl() {
+        return '5e9483ee310000ca9c5e3251'
     }
 
     static getListPosts() {
@@ -74,6 +81,9 @@ export class postsBlogService extends Component {
         return axios.get(this.appUrl + this.essentialsThematicPostsUrl)
     }
     static getCommentsList() {
-        return axios.get( this.commentsListUrl)
+        return axios.get( this.appFakeUrl + this.commentsListUrl)
+    }
+    static getNewPost() {
+        return axios.get( this.appFakeUrl + this.newPostUrl)
     }
 }

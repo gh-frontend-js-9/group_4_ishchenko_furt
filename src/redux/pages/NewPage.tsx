@@ -14,7 +14,7 @@ export const NewPage: React.FC = () => {
                 <NewPostComponent/>
                 <div>
                     <Title font={'xxlFontSize'}> Comments </Title>
-                    <OutlineButton pinkColor>
+                    <OutlineButton >
                         Leave a Comment
                     </OutlineButton>
                 </div>

@@ -60,7 +60,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
                             onChange={this.handleChange}/>
                 <Checkbox>
                     <span>
-                        I agree to the <a>Terms and Conditions</a> and <a>Privacy Policy</a>
+                        I agree to the <a href='/'>Terms and Conditions</a> and <a href='/'>Privacy Policy</a>
                     </span>
                 </Checkbox>
 

@@ -1,5 +1,9 @@
 @import '../../../assets/styles/scss/styles.scss';
 
 .content--md-font-size{
-  @include text-styles($md-font-size, $black-color)
+  font-size: $md-font-size;
+}
+
+.content--lg-20px-font-size{
+  font-size:$lg-20px-font-size;
 }

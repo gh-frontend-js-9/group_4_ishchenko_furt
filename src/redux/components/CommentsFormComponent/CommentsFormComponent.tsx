@@ -13,9 +13,6 @@ interface IState {
 }
 
 interface IProps {
-    comment?: any,
-    name?: any,
-    email?: any,
     sendComment?: string,
     sendCommentAction?: any,
 }
@@ -50,7 +47,8 @@ class CommentsFormComponent extends Component <IProps, IState> {
                   name='comments-form'
                   onSubmit={this.handleSubmit}>
                 <textarea required
-                          className='entry-field'
+                          rows={8}
+                          className='entry-field textarea'
                           placeholder='Comment'
                           value={comment}
                           onChange={this.handleChange}/>

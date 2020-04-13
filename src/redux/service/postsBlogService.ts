@@ -46,7 +46,7 @@ export class postsBlogService extends Component {
     }
 
     static get newPostUrl() {
-        return '5e9483ee310000ca9c5e3251'
+        return '5e94c2ea31000057bf5e34b3'
     }
 
     static getListPosts() {

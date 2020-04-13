@@ -146,7 +146,6 @@ export function getCommentsListAction() {
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
                 dispatch(getCommentsListReceiveAction(response.data.comments));
-                console.log(response.data.comments)
             })
             .catch(error =>
                 dispatch((error.response))
@@ -163,7 +162,6 @@ export function getNewPostAction() {
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
                 dispatch(getNewPostReceiveAction(response.data.post));
-                console.log(response.data.post)
             })
             .catch(error =>
                 dispatch((error.response))

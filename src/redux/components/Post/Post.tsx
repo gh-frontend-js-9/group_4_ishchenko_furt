@@ -1,16 +1,10 @@
 import React from "react";
-import {Like} from "../Like/Like";
-import {Icon} from "../Icon/Icon";
-import {IconBox} from "../IconBox/IconBox";
-
 
 export const Post: React.FC = (props:any) => {
+    const {children} = props
     return (
-        <div className={'post'}>
-            <IconBox>
-                <Icon postElement/>
-            </IconBox>
-            <Like/>
+        <div>
+            {children}
         </div>
     )
 };

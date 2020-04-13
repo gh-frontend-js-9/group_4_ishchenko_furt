@@ -2,7 +2,7 @@ import {
     GET_COMMENTS_LIST_SUCCESS,
     GET_ESSENTIALS_POST_SUCCESS, GET_ESSENTIALS_THEMATIC_POST_SUCCESS,
     GET_FEATURED_POST_SUCCESS, GET_FREELANCE_POST_SUCCESS, GET_FREELANCE_THEMATIC_POST_SUCCESS,
-    GET_LIST_POSTS_SUCCESS,
+    GET_LIST_POSTS_SUCCESS, GET_NEW_POST_SUCCESS,
     GET_POPULAR_POST_SUCCESS, GET_POPULAR_THEMATIC_POST_SUCCESS,
     IS_LOADING
 } from "../reducers/postsReducers";
@@ -74,5 +74,12 @@ export function getCommentsListReceiveAction(commentsList: any) {
     return {
         type: GET_COMMENTS_LIST_SUCCESS,
         payload: commentsList
+    };
+}
+
+export function getNewPostReceiveAction(newPost: any) {
+    return {
+        type: GET_NEW_POST_SUCCESS,
+        payload: newPost
     };
 }

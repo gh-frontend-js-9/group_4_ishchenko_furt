@@ -8,7 +8,7 @@ export const CommentCard = (props) => {
         <>
             <div className='comment-card'>
                 <img alt='photo' src={require('../../../assets/images/photo.png')}/>
-                <Title>
+                <Title font = {'lgFontSize'}>
                     {props.name}
                 </Title>
                 <Content mdFontSize greyColor>

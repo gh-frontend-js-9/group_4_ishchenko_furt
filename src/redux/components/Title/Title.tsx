@@ -2,13 +2,30 @@ import React from "react";
 import './Title.scss'
 
 export const Title = (props: any) => {
-    const fontSizeContent = (props.xxlFontSize ? "title title--xxl-font-size" : 'title');
     const {children} = props;
 
-    return (
-        <h3 className={fontSizeContent}>
+    const renderTitle = () => {
+        let classes;
+        switch (props.font) {
+            case ('xxxlFontSize'):
+                classes = 'title--xxxl-font-size';
+                break;
+            case ('xxlFontSize'):
+                classes = 'title--xxl-font-size';
+                break;
+            case ('lgFontSize'):
+                classes = 'title--lg-font-size title';
+                break;
+            default:
+                classes = 'title'
+        }
+        return <h3 className={classes}>
             {props.category}
             {children}
-        </h3>
+        </h3>;
+    };
+
+    return (
+        <>{renderTitle()}</>
     )
 };

@@ -1,19 +1,22 @@
 import React from "react";
 import {Wrapper} from "../components/Wrapper/Wrapper";
+import {Post} from "../components/Post/Post";
 import {BreadCrumb} from "../components/BreadCrumb/BreadCrumb";
+import PostContent from "../components/PostContent/PostContent";
 import CommentsListComponent from "../components/CommentsListComponent/CommentsListComponent";
 import {Title} from "../components/Title/Title";
 import {FormBox} from "../components/FormBox/FormBox";
 import {OutlineButton} from "../components/OutlineButton/OutlineButton";
 import {Content} from "../components/Content/Content";
-import NewPostComponent from "../components/NewPostComponent/NewPostComponent";
 
 export const NewPage: React.FC = () => {
     return (
         <>
             <Wrapper>
-                <BreadCrumb/>
-                <NewPostComponent/>
+                <Post>
+                    <BreadCrumb/>
+                    <PostContent/>
+                </Post>
 
                 <div>
                     <Title font={'xxlFontSize'}> Comments </Title>

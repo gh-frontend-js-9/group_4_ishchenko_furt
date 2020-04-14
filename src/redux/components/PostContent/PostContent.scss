@@ -1,8 +1,15 @@
 .post{
   display: flex;
-  &__content{
-    width: 100%;
-  }
+}
+
+.content{
+  margin: 0 40px;
+}
+
+.figure-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media(max-width: 600px) {

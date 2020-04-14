@@ -7,7 +7,9 @@ import {IconBox} from "../IconBox/IconBox";
 import {Icon} from "../Icon/Icon";
 import {Like} from "../Like/Like";
 import {Figure} from "../Figure/Figure";
+import {List} from "../List/List";
 import {FigCaption} from "../FigCaption/FigCaption";
+import {Author} from "../Author/Author";
 import {connect} from 'react-redux';
 import {getNewPostAction} from "../../actions/getPostsActions";
 
@@ -24,46 +26,43 @@ class PostContent extends Component<IProps, {}>{
     }
 
     render(){
+
         let renderPost= this.props.newPost.map((post: any)=>(
             <>
                 <ImageBox {...post} imagePost/>
-                <Content greyColor>
+                <Content greyColor mdFontSize postPadding>
                     {post.paragraphReason}
                 </Content>
-                <Title font = {'lgFontSize'}>
+                <Title font = {'xxlFontSize'} postPadding>
                     {post.titleAbout}
                 </Title>
-                <Content greyColor>
-                    {post.paragrapgAbout}
+                <Content greyColor mdFontSize postPadding>
+                    {post.paragraphAbout}
                 </Content>
-                <Title>
+                <ImageBox {...post} imagePost/>
+                <Content greyColor mdFontSize postPadding>
                     {post.titleList}
-                </Title>
-                {/*<Content>
-                    {post.list.map((item: any)=>(
-                        <div>1</div>
-                    ))}
-                </Content>*/}
+                </Content>
+                <List {...post}/>
                 <Figure>
-                    <div className={'post'}>
-                        <ImageBox {...post} />
-                        <ImageBox {...post} />
+                    <div className={'figure-image'}>
+                        <ImageBox {...post} imageFigure/>
+                        <ImageBox {...post} imageFigure/>
                     </div>
                     <FigCaption>
-                        “ WP Page Builder offers a lot of ready-to-use design blocks to make your site development process a lot faster and easier “
+                        {post.figCaption}
+                        <Author {...post}/>
                     </FigCaption>
                 </Figure>
             </>
         ))
-
-
 
         return (
             <div className={'post'}>
                 <IconBox>
                     <Icon postElement/>
                 </IconBox>
-                <div className={'post__content'}>
+                <div className={'content'}>
                     {renderPost}
                 </div>
                 <Like/>

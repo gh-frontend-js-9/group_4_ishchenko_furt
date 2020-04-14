@@ -1,0 +1,20 @@
+.author{
+  font-style: normal;
+  color: #000;
+  line-height: 25px;
+  font-weight: 600;
+  &__name{
+    font-family: "Open Sans Semi Bold", sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.11px;
+    text-transform: uppercase;
+  }
+  &__social{
+    font-size: 16px;
+    letter-spacing: -0.1px;
+  }
+  &__link{
+    color: deepskyblue;
+    text-decoration: none;
+  }
+}

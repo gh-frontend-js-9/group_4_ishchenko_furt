@@ -1,19 +1,18 @@
 import React from "react";
-import {Title} from "../Title/Title";
-import {Content} from "../Content/Content";
+import './Author.scss'
 
 export const Author: React.FC = (props: any) =>{
     return(
-        <div>
+        <div className={'author'}>
             <img alt='user' src={require('../../../assets/images/photo.png')}/>
-            <Content>
+            <div className={'author__name'}>
                 {props.author}
-            </Content>
-            <span>
+            </div>
+            <span className={'author__social'}>
                 Follow me
-                <span>
+                <a href='' className={'author__link'}>
                     {props.media}
-                </span>
+                </a>
             </span>
         </div>
     )

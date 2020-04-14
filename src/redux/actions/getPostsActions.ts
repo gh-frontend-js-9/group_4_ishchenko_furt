@@ -4,7 +4,7 @@ import {
     getFeaturedPostReceiveAction, getFreelancePostReceiveAction, getFreelanceThematicPostReceiveAction,
     getListPostsReceiveAction, getNewPostReceiveAction,
     getPopularPostReceiveAction, getPopularThematicPostReceiveAction,
-    isLoadingAction
+    isLoadingAction, sendCommentReceiveAction
 } from "./PostsActionsCreators";
 import {postsBlogService} from "../service/postsBlogService";
 
@@ -145,8 +145,24 @@ export function getCommentsListAction() {
         postsBlogService.getCommentsList()
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
-                dispatch(getCommentsListReceiveAction(response.data.comments));
-                console.log(response.data.comments)
+                dispatch(getCommentsListReceiveAction(response.data));
+            })
+            .catch(error =>
+                dispatch((error.response))
+            )
+    }
+}
+
+export function sendCommentAction(comment, name, email) {
+
+    return (dispatch: any) => {
+        dispatch(isLoadingAction(true));
+
+        postsBlogService.sendComment(comment, name, email)
+            .then((response: any) => {
+                dispatch(isLoadingAction(false));
+                dispatch(sendCommentReceiveAction(response.data));
+                console.log(response)
             })
             .catch(error =>
                 dispatch((error.response))
@@ -163,7 +179,6 @@ export function getNewPostAction() {
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
                 dispatch(getNewPostReceiveAction(response.data.post));
-                console.log(response.data.post)
             })
             .catch(error =>
                 dispatch((error.response))

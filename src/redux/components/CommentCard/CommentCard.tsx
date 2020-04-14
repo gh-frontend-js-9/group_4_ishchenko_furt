@@ -9,12 +9,12 @@ export const CommentCard = (props) => {
     return (
         <div className='comment-card'>
             <div className='comment-card__first-block'>
-                <img alt='user' src={require('../../../assets/images/photo.png')}/>
+                <img className='avatar' alt='user' src={(props.avatar)}/>
                 <Title font={'lgFontSize'}>
                     {props.name}
                 </Title>
                 <Content mdFontSize greyColor>
-                    {props.date}
+                    {props.created_at}
                 </Content>
                 <OutlineButton>
                     Reply

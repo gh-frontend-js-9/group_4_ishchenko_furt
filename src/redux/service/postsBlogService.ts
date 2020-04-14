@@ -6,6 +6,11 @@ export class postsBlogService extends Component {
     static get appUrl() {
         return axios.defaults.baseURL;
     }
+
+    static get appFakeURL() {
+        return 'https://5e961c9a5b19f10016b5e2ad.mockapi.io';
+    }
+
     static get appFakeUrl() {
         return 'http://www.mocky.io/v2/';
     }
@@ -41,8 +46,9 @@ export class postsBlogService extends Component {
     static get essentialsThematicPostsUrl() {
         return '/posts/?category=essentials&page=1&limit=4&fields=title,tags'
     }
-    static get commentsListUrl() {
-        return '5e9345b330000091001569c5'
+
+    static get commentsUrl() {
+        return '/comments'
     }
 
     static get newPostUrl() {
@@ -80,10 +86,16 @@ export class postsBlogService extends Component {
     static getEssentialsThematicPost() {
         return axios.get(this.appUrl + this.essentialsThematicPostsUrl)
     }
+
     static getCommentsList() {
-        return axios.get( this.appFakeUrl + this.commentsListUrl)
+        return axios.get(this.appFakeURL + this.commentsUrl)
     }
+
+    static sendComment(comment, name, email) {
+        return axios.post(this.appFakeURL + this.commentsUrl, {comment, name, email})
+    }
+
     static getNewPost() {
-        return axios.get( this.appFakeUrl + this.newPostUrl)
+        return axios.get(this.appFakeUrl + this.newPostUrl)
     }
 }

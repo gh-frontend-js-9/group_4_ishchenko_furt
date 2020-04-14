@@ -4,7 +4,7 @@ import {
     GET_FEATURED_POST_SUCCESS, GET_FREELANCE_POST_SUCCESS, GET_FREELANCE_THEMATIC_POST_SUCCESS,
     GET_LIST_POSTS_SUCCESS, GET_NEW_POST_SUCCESS,
     GET_POPULAR_POST_SUCCESS, GET_POPULAR_THEMATIC_POST_SUCCESS,
-    IS_LOADING
+    IS_LOADING, SEND_COMMENT_SUCCESS
 } from "../reducers/postsReducers";
 
 export function isLoadingAction(bool: boolean) {
@@ -74,6 +74,13 @@ export function getCommentsListReceiveAction(commentsList: any) {
     return {
         type: GET_COMMENTS_LIST_SUCCESS,
         payload: commentsList
+    };
+}
+
+export function sendCommentReceiveAction(sendComment: any) {
+    return {
+        type: SEND_COMMENT_SUCCESS,
+        payload: sendComment
     };
 }
 

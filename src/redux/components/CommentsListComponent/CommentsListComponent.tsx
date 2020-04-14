@@ -16,6 +16,7 @@ class CommentsListComponent extends Component <IProps, {}> {
     }
 
     render() {
+        console.log(this.props.commentsList)
         let renderComment = this.props.commentsList.map((comment: any) =>
              <CommentCard{...comment} key={comment._id}/>);
 

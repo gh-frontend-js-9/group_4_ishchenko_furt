@@ -3,6 +3,7 @@ import './Title.scss'
 
 export const Title = (props: any) => {
     const {children} = props;
+    const paddingSize = (props.postPadding ? 'title--post-pd' : '');
 
     const renderTitle = () => {
         let classes;
@@ -19,7 +20,7 @@ export const Title = (props: any) => {
             default:
                 classes = 'title'
         }
-        return <h3 className={classes}>
+        return <h3 className={`${classes} ${paddingSize}`}>
             {props.category}
             {children}
         </h3>;

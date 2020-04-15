@@ -6,7 +6,7 @@ export const Checkbox: React.FC = (props: any) => {
 
     return (
             <label>
-                <input type="checkbox" id="scales" name="scales"/>
+                <input required type="checkbox" id="scales" name="scales"/>
                 {children}
             </label>
     );

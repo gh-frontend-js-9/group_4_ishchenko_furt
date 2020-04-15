@@ -12,7 +12,7 @@ export const CommentPolicyBox = () => {
                     Comments
                 </Title>
 
-                <OutlineButton pinkColor>
+                <OutlineButton >
                     Leave a Comment
                 </OutlineButton>
 

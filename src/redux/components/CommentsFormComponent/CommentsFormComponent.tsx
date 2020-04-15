@@ -8,6 +8,7 @@ import {Checkbox} from "../Checkbox/Checkbox";
 import {sendCommentAction} from "../../actions/getPostsActions";
 import {Content} from "../Content/Content";
 
+
 interface IState {
     comment?: string,
     name?: string,
@@ -15,8 +16,9 @@ interface IState {
 }
 
 interface IProps {
-    sendComment?: string,
     sendCommentAction?: any,
+    userName?: any,
+    userId?: any
 }
 
 class CommentsFormComponent extends Component <IProps, IState> {
@@ -25,10 +27,19 @@ class CommentsFormComponent extends Component <IProps, IState> {
         this.state = {
             comment: '',
             name: '',
-            email: ''
+            email: '',
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.userId !== this.props.userId) {
+            this.setState({
+                comment: "Reply to " + this.props.userName + ': '
+            })
+        }
+        console.log(prevProps, prevState)
     }
 
     handleChange(event: any) {
@@ -42,6 +53,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
         event.preventDefault();
         const {email, name, comment} = this.state;
         this.props.sendCommentAction(comment, name, email);
+
         this.setState({
             comment: '',
             name: '',
@@ -50,6 +62,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
     };
 
     render() {
+
         const {email, name, comment} = this.state;
         return (
             <form className="comments-form"
@@ -70,7 +83,9 @@ class CommentsFormComponent extends Component <IProps, IState> {
                             onChange={this.handleChange}/>
                 <Checkbox>
                     <Content greyColor>
-                        I agree to the <a className='link' href='/'>Terms and Conditions</a> and <a className='link' href='/'>Privacy Policy</a>
+                        I agree to the <a className='link' href='/'>Terms and Conditions</a> and <a className='link'
+                                                                                                    href='/'>Privacy
+                        Policy</a>
                     </Content>
                 </Checkbox>
 
@@ -83,12 +98,13 @@ class CommentsFormComponent extends Component <IProps, IState> {
         )
     }
 };
+
 const mapStateToProps = (state: any) => {
     return {
-        sendComment: state.postsReducers.sendComment,
+        userName: state.postsReducers.userName,
+        userId: state.postsReducers.userId
     };
 };
-
 const mapDispatchToProps = (dispatch: any) => {
     return {
         sendCommentAction: (comment: string, name: string, email: string) => dispatch(sendCommentAction(comment, name, email)),

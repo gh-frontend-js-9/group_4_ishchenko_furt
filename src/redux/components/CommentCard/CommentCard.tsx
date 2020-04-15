@@ -1,11 +1,11 @@
 import React from 'react'
 import {Content} from "../Content/Content";
 import {Title} from "../Title/Title";
-import {OutlineButton} from "../OutlineButton/OutlineButton";
 import './CommentCard.scss'
 import moment from "moment";
 
 export const CommentCard = (props) => {
+    const {children} = props;
     let date = moment(props.created_at).format('LLL');
 
     return (
@@ -22,9 +22,8 @@ export const CommentCard = (props) => {
                         <Content mdFontSize greyColor>
                             {date}
                         </Content>
-                        <OutlineButton>
-                            Reply
-                        </OutlineButton>
+
+                        {children}
                     </div>
 
                     <div className='comment-card__second-container'>
@@ -33,7 +32,6 @@ export const CommentCard = (props) => {
                         </Content>
                     </div>
                 </div>
-
 
             </div>
             <img className='line-image' alt='line' src={require('../../../assets/images/line.png')}/>

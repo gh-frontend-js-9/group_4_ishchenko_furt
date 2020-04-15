@@ -9,7 +9,8 @@ export const GET_POPULAR_THEMATIC_POST_SUCCESS = 'GET_POPULAR_THEMATIC_POST_SUCC
 export const GET_ESSENTIALS_THEMATIC_POST_SUCCESS = 'GET_FREELANCE_ESSENTIALS_POST_SUCCESS'
 export const GET_COMMENTS_LIST_SUCCESS = 'GET_COMMENTS_LIST_SUCCESS';
 export const SEND_COMMENT_SUCCESS = 'SEND_COMMENT_SUCCESS';
-export const  GET_NEW_POST_SUCCESS = 'GET_NEW_POST_SUCCESS'
+export const GET_NEW_POST_SUCCESS = 'GET_NEW_POST_SUCCESS'
+export const GET_USER_ID = 'GET_USER_ID'
 
 const initialState = {
     popularPost: [],
@@ -20,9 +21,11 @@ const initialState = {
     freelanceThematicPost: [],
     popularThematicPost: [],
     essentialsThematicPost: [],
-    commentsList:[],
+    commentsList: [],
     sendComment: [],
     newPost: [],
+    userId:[],
+    userName:'',
     isLoading: false
 };
 
@@ -82,6 +85,12 @@ export function postsReducers(state: any = initialState, action: any) {
             return {
                 ...state,
                 newPost: action.payload,
+            };
+        case GET_USER_ID:
+            return {
+                ...state,
+                userId: action.payload,
+                userName: action.payloadL
             };
         case IS_LOADING:
             return {

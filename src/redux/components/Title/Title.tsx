@@ -3,7 +3,7 @@ import './Title.scss'
 
 export const Title = (props: any) => {
     const {children} = props;
-    const paddingSize = (props.postPadding ? 'title--post-pd' : '');
+    const paddingSize = (props.postPadding ? 'title--post-styles' : '');
 
     const renderTitle = () => {
         let classes;

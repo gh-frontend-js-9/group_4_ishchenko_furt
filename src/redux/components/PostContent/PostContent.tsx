@@ -30,17 +30,17 @@ class PostContent extends Component<IProps, {}>{
         let renderPost= this.props.newPost.map((post: any)=>(
             <>
                 <ImageBox {...post} imagePost/>
-                <Content greyColor mdFontSize postPadding>
+                <Content greyColor postPadding>
                     {post.paragraphReason}
                 </Content>
                 <Title font = {'xxlFontSize'} postPadding>
                     {post.titleAbout}
                 </Title>
-                <Content greyColor mdFontSize postPadding>
+                <Content greyColor postPadding>
                     {post.paragraphAbout}
                 </Content>
                 <ImageBox {...post} imagePost/>
-                <Content greyColor mdFontSize postPadding>
+                <Content greyColor postPadding>
                     {post.titleList}
                 </Content>
                 <List {...post}/>
@@ -58,7 +58,7 @@ class PostContent extends Component<IProps, {}>{
         ))
 
         return (
-            <div className={'post'}>
+            <div className={'blog'}>
                 <IconBox>
                     <Icon postElement/>
                 </IconBox>

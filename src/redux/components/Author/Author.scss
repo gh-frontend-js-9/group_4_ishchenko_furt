@@ -1,8 +1,12 @@
 .author{
   font-style: normal;
   color: #000;
+  margin: 30px;
   line-height: 25px;
   font-weight: 600;
+  &__image{
+    margin-bottom: 15px;
+  }
   &__name{
     font-family: "Open Sans Semi Bold", sans-serif;
     font-size: 18px;

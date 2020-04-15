@@ -20,11 +20,17 @@
     cursor: pointer;
   }
 }
+
 @media (max-width: 700px) {
   .featured-img  {
     padding: 10px;
     max-width: 473px;
     max-height: 258px;
+  }
+
+  .featured-img--post-styles{
+    display: block;
+    margin: 0 auto;
   }
 }
 

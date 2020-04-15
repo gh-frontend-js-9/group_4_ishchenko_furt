@@ -9,8 +9,8 @@ export const Content = (props) => {
     const classContent = ` ${fontSizeContent} ${colorContent} ${paddingSize}`;
 
     return (
-        <p className={classContent}>
-            {children}
+        <p className={classContent} dangerouslySetInnerHTML={{__html: children}} >
+
         </p>
     )
 };

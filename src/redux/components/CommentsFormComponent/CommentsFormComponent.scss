@@ -1,3 +1,5 @@
+@import '../../../assets/styles/scss/styles.scss';
+
 .comments-form {
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -8,4 +10,8 @@
 
 .textarea{
   resize: none;
+}
+.link{
+  text-decoration: none;
+  color: $blue-color;
 }

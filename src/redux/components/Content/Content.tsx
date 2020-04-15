@@ -9,8 +9,8 @@ export const Content = (props) => {
     const classes = ` ${fontSizeContent} ${colorContent}`;
 
     return (
-        <p className={classes}>
+        <span className={classes}>
             {children}
-        </p>
+        </span>
     )
 };

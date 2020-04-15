@@ -6,11 +6,12 @@ import {Button} from "../Button/Button";
 import './CommentsFormComponent.scss'
 import {Checkbox} from "../Checkbox/Checkbox";
 import {sendCommentAction} from "../../actions/getPostsActions";
+import {Content} from "../Content/Content";
 
 interface IState {
-    comment?: any,
-    name?: any,
-    email?: any,
+    comment?: string,
+    name?: string,
+    email?: string,
 }
 
 interface IProps {
@@ -68,9 +69,9 @@ class CommentsFormComponent extends Component <IProps, IState> {
                             name='email'
                             onChange={this.handleChange}/>
                 <Checkbox>
-                    <span>
-                        I agree to the <a href='/'>Terms and Conditions</a> and <a href='/'>Privacy Policy</a>
-                    </span>
+                    <Content greyColor>
+                        I agree to the <a className='link' href='/'>Terms and Conditions</a> and <a className='link' href='/'>Privacy Policy</a>
+                    </Content>
                 </Checkbox>
 
                 <div>

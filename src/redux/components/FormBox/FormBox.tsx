@@ -6,7 +6,7 @@ import CommentsFormComponent from "../CommentsFormComponent/CommentsFormComponen
 export const FormBox = () => {
     return (
         <div className='form-box'>
-            <Title font = {'xxlFontSize'}>Leave a Reply</Title>
+            <Title font = 'xxlFontSize'>Leave a Reply</Title>
             <CommentsFormComponent/>
         </div>
     )

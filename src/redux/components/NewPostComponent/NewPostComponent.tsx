@@ -15,7 +15,6 @@ class NewPostComponent extends Component <IProps, {}> {
     };
 
     render() {
-        console.log(this.props.newPost)
         return (
             <>
                 {this.props.isLoading ? <Loading/> : <> </>}

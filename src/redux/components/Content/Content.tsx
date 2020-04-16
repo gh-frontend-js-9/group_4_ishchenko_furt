@@ -12,7 +12,7 @@ export const Content = (props) => {
 
     return (
         <p className={classContent} dangerouslySetInnerHTML={{__html: children}} >
-          
+
         </p>
         // <p className={classContent}  >
         //     {children}

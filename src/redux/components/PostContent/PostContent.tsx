@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import './PostContent.scss'
 import {Content} from "../Content/Content";
 import {Title} from "../Title/Title";
+import {FlexBox} from "../FlexBox/FlexBox";
 import {ImageBox} from "../ImageBox/ImageBox";
 import {IconBox} from "../IconBox/IconBox";
 import {Icon} from "../Icon/Icon";
@@ -45,10 +46,10 @@ class PostContent extends Component<IProps, {}>{
                 </Content>
                 <List {...post}/>
                 <Figure>
-                    <div className={'figure-image'}>
+                    <FlexBox post center>
                         <ImageBox {...post} imageFigure/>
                         <ImageBox {...post} imageFigure/>
-                    </div>
+                    </FlexBox>
                     <FigCaption>
                         {post.figCaption}
                         <Author {...post}/>
@@ -58,7 +59,7 @@ class PostContent extends Component<IProps, {}>{
         ))
 
         return (
-            <div className={'blog'}>
+            <FlexBox post>
                 <IconBox>
                     <Icon postElement/>
                 </IconBox>
@@ -66,7 +67,7 @@ class PostContent extends Component<IProps, {}>{
                     {renderPost}
                 </div>
                 <Like/>
-            </div>
+            </FlexBox>
         )
     }
 }

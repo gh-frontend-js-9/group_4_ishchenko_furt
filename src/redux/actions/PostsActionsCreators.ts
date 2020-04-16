@@ -83,11 +83,11 @@ export function sendCommentReceiveAction(sendComment: any) {
         payload: sendComment
     };
 }
-export function getUserIdAction(userId: string, userName:string) {
+
+export function getUserIdAction(userData: string) {
     return {
         type: GET_USER_ID,
-        payload: userId,
-        payloadL:userName
+        payload: userData
     };
 }
 

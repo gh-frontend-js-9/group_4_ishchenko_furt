@@ -24,8 +24,7 @@ const initialState = {
     commentsList: [],
     sendComment: [],
     newPost: [],
-    userId:[],
-    userName:'',
+    userData: [],
     isLoading: false
 };
 
@@ -89,8 +88,7 @@ export function postsReducers(state: any = initialState, action: any) {
         case GET_USER_ID:
             return {
                 ...state,
-                userId: action.payload,
-                userName: action.payloadL
+                userData: action.payload
             };
         case IS_LOADING:
             return {

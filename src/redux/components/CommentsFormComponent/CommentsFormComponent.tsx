@@ -17,8 +17,7 @@ interface IState {
 
 interface IProps {
     sendCommentAction?: any,
-    userName?: any,
-    userId?: any
+    userData?: any
 }
 
 class CommentsFormComponent extends Component <IProps, IState> {
@@ -34,9 +33,10 @@ class CommentsFormComponent extends Component <IProps, IState> {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (prevProps.userId !== this.props.userId) {
+
+        if (prevProps.userData.id !== this.props.userData.id) {
             this.setState({
-                comment: "Reply to " + this.props.userName + ': '
+                comment: `Re: ${this.props.userData.name} (id:${this.props.userData.id}), `
             })
         }
         console.log(prevProps, prevState)
@@ -62,7 +62,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
     };
 
     render() {
-
+        console.log(this.props.userData.id)
         const {email, name, comment} = this.state;
         return (
             <form className="comments-form"
@@ -101,8 +101,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
 
 const mapStateToProps = (state: any) => {
     return {
-        userName: state.postsReducers.userName,
-        userId: state.postsReducers.userId
+        userData: state.postsReducers.userData,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {

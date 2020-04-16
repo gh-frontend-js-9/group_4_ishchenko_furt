@@ -3,9 +3,10 @@ import './Wrapper.scss'
 
 export const Wrapper = (props: any) => {
     const {children} = props;
+    const classes = (props.secondaryWrap ? 'secondary-wrapper' : 'wrapper');
 
     return (
-        <div className='wrapper'>
+        <div className = {classes}>
             {children}
         </div>
     )

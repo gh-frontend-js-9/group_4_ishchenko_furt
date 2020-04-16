@@ -4,6 +4,7 @@ import lists from "../ListCard/lists";
 import {Title} from "../Title/Title";
 import {ListCard} from "../ListCard/ListCard";
 import {settings} from "./ReadingListSettings";
+import './ReadingList.scss'
 
 export const ReadingList: React.FC = () => {
 
@@ -12,7 +13,7 @@ export const ReadingList: React.FC = () => {
     ));
 
     return (
-        <div>
+        <div className= 'reading-list-box'>
             <Title xxxlFontSize>
                 Reading List
             </Title>

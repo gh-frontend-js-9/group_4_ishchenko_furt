@@ -26,6 +26,9 @@
     .thematic-blog-card__title--hovered:hover {
       color: #ff5480; }
 
+@media (max-width: 850px) {
+  .thematic-blog-card {
+    max-width: 80%; } }
 @media (max-width: 400px) {
   .thematic-blog-card {
     height: 30vh;

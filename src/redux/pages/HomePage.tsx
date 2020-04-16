@@ -21,38 +21,40 @@ export const HomePage: React.FC = () => {
         <>
             <BackgroundBlock>
                 <Wrapper>
-                    <MainCardSliderComponent/>
+                    <Wrapper secondaryWrap>
+                        <MainCardSliderComponent/>
+                    </Wrapper>
                 </Wrapper>
             </BackgroundBlock>
 
             <Wrapper>
+                <Wrapper secondaryWrap>
+                    <PostsBox>
+                        <PopularPostComponent/>
+                        <GridBox>
+                            <PopularThematicPostComponent/>
+                        </GridBox>
+                    </PostsBox>
 
-                <PostsBox>
-                    <PopularPostComponent/>
-                    <GridBox>
-                        <PopularThematicPostComponent/>
-                    </GridBox>
-                </PostsBox>
+                    <PostsBox>
+                        <EssentialsPostComponent/>
+                        <GridBox>
+                            <EssentialsThematicPostComponent/>
+                        </GridBox>
+                    </PostsBox>
 
-                <PostsBox>
-                    <EssentialsPostComponent/>
-                    <GridBox>
-                        <EssentialsThematicPostComponent/>
-                    </GridBox>
-                </PostsBox>
+                    <PostsBox>
+                        <FreelancePostComponent/>
+                        <GridBox>
+                            <FreelanceThematicPostComponent/>
+                        </GridBox>
+                    </PostsBox>
 
-                <PostsBox>
-                    <FreelancePostComponent/>
-                    <GridBox>
-                        <FreelanceThematicPostComponent/>
-                    </GridBox>
-                </PostsBox>
-
-                <ReadingList/>
-                <FlexBox>
-                    <FeaturedPostComponent/>
-                </FlexBox>
-
+                    <ReadingList/>
+                    <FlexBox>
+                        <FeaturedPostComponent/>
+                    </FlexBox>
+                </Wrapper>
             </Wrapper>
         </>
     )

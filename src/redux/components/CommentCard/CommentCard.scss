@@ -21,6 +21,12 @@
   padding: 35px 0px 35px;
 }
 
+@media (max-width: 800px) {
+  .line-image {
+    max-width: 100%;
+  }
+}
+
 .avatar {
   max-width: 79px;
   max-height: 79px;

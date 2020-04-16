@@ -35,9 +35,16 @@ class CommentsFormComponent extends Component <IProps, IState> {
     componentDidUpdate(prevProps, prevState) {
 
         if (prevProps.userData.id !== this.props.userData.id) {
-            this.setState({
-                comment: `Re: ${this.props.userData.name} (id:${this.props.userData.id}), `
-            })
+
+            if (this.props.userData.id.length === 0) {
+                this.setState({
+                    comment: ''
+                })
+            } else {
+                this.setState({
+                    comment: `Re: ${this.props.userData.name} (id:${this.props.userData.id}), `
+                })
+            }
         }
         console.log(prevProps, prevState)
     }
@@ -65,7 +72,8 @@ class CommentsFormComponent extends Component <IProps, IState> {
         console.log(this.props.userData.id)
         const {email, name, comment} = this.state;
         return (
-            <form className="comments-form"
+            <form id='form'
+                  className="comments-form"
                   name='comments-form'
                   onSubmit={this.handleSubmit}>
                 <textarea required
@@ -83,9 +91,16 @@ class CommentsFormComponent extends Component <IProps, IState> {
                             onChange={this.handleChange}/>
                 <Checkbox>
                     <Content greyColor>
-                        I agree to the <a className='link' href='/'>Terms and Conditions</a> and <a className='link'
-                                                                                                    href='/'>Privacy
-                        Policy</a>
+                        <span>
+                            I agree to the
+                        <a className='link' href='/'>
+                            Terms and Conditions
+                        </a>
+                            and
+                        <a className='link' href='/'>Privacy
+                            Policy
+                        </a>
+                        </span>
                     </Content>
                 </Checkbox>
 

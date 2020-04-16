@@ -1,18 +1,15 @@
 import React from "react";
 import './MainCard.scss'
+import {Title} from "../Title/Title";
+import {Content} from "../Content/Content";
+import {PostAuthor} from "../PostAuthor/PostAuthor";
 
-export const MainCard: React.FC = (props: any) => {
-    const classForContent = (props.greyColor ? "main-card__paragraph--grey" : "main-card__paragraph");
+export const MainCard = (props: any) => {
 
     return (
         <div className="main-card">
-            <p className="main-card__author">
-                <span className={classForContent}>BY </span>
-                <span> TOMAS LAURINAVICIUS </span>
-                <span className={classForContent}>IN </span>
-                {props.tags}
-            </p>
-            <h3 className="main-card__title">{props.title}</h3>
-            <p className={classForContent}>{props.description}</p>
+            <PostAuthor {...props} textWhite mdFontSize/>
+            <Title xxxlFontSize mixin='main-card__title' xxlFontSize>{props.title}</Title>
+            <Content mdFontSize textWhite>{props.description}</Content>
         </div>)
 };

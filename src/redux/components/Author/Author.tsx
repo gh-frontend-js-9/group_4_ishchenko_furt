@@ -1,8 +1,8 @@
 import React from "react";
 import './Author.scss'
 
-export const Author: React.FC = (props: any) =>{
-    return(
+export const Author: React.FC = (props: any) => {
+    return (
         <div className={'author'}>
             <img alt='user' className={'author__image'} src={require('../../../assets/images/photo.png')}/>
             <div className={'author__name'}>

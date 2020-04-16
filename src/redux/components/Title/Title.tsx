@@ -1,33 +1,25 @@
 import React from "react";
 import './Title.scss'
+import '../../../assets/styles/scss/common/_common.scss'
 
 export const Title = (props: any) => {
     const {children} = props;
     const paddingSize = (props.postPadding ? 'title--post-styles' : '');
+    let mixin = props.mixin;
 
-    const renderTitle = () => {
-        let classes;
-        switch (props.font) {
-            case ('xxxlFontSize'):
-                classes = 'title--xxxl-font-size';
-                break;
-            case ('xxlFontSize'):
-                classes = 'title--xxl-font-size';
-                break;
-            case ('lgFontSize'):
-                classes = 'title--lg-font-size';
-                break;
-            default:
-                classes = 'title'
-        }
+    const fontSize = (
+        props.mdFontSize ? "md-font-size"
+        : props.lgSecondFontSize ? 'lg-second-font-size'
+            : props.xxlFontSize ? 'xxl-font-size'
+                : props.xxxlFontSize ? 'xxxl-font-size' : "");
 
-        return <h3 className={`${classes} ${paddingSize}`}>
-            {props.category}
-            {children}
-        </h3>;
-    };
+    const color = (props.white ? "text-white" : props.primary
+        ? "primary" : "");
 
     return (
-        <>{renderTitle()}</>
+        <h3 className={`title ${color} ${fontSize} ${mixin} ${paddingSize}`}>
+            {props.category}
+            {children}
+        </h3>
     )
 };

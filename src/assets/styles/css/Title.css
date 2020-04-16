@@ -1,18 +1,17 @@
-.title, .title--lg-font-size, .title--xxl-font-size, .title--xxxl-font-size {
+.title {
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   letter-spacing: -0.22px;
   line-height: 46px; }
   .title--post-styles {
     padding: 50px 0 0 0; }
-  .title--lg-font-size {
-    font-size: 18px;
-    color: #000000;
-    font-family: "Open Sans", sans-serif; }
-  .title--xxl-font-size {
-    font-size: 28px;
-    color: #000000;
-    font-family: "Open Sans", sans-serif; }
-  .title--xxxl-font-size {
-    font-size: 36px;
-    color: #000000;
-    font-family: "Open Sans", sans-serif; }
+
+@media (max-width: 800px) {
+  .title {
+    font-size: 24px; } }
+@media (max-width: 400px) {
+  .title {
+    font-size: 18px; } }
+@media (max-width: 330px) {
+  .title {
+    font-size: 16px; } }

@@ -1,10 +1,12 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../../components/Healpers/Loading";
-import {MainCard} from "../MainCard/MainCard";
 import {ImageBox} from "../ImageBox/ImageBox";
 import './FeaturedPostComponent.scss'
 import {getFeaturedPostAction} from "../../actions/getPostsActions";
+import {Title} from "../Title/Title";
+import {Content} from "../Content/Content";
+import {PostAuthor} from "../PostAuthor/PostAuthor";
 
 interface IProps {
     getFeaturedPostAction?: any,
@@ -19,9 +21,14 @@ class FeaturedPostComponent extends Component <IProps, {}> {
 
     render() {
         let renderFeaturedPost = this.props.featuredPost.map((post: any, num: number) =>
-            <div className='featured-post-page' key={num}>
+            <div className='featured-post' key={num}>
                 <ImageBox {...post}/>
-                <MainCard greyColor {...post}/>
+
+                <div className="main-card">
+                    <PostAuthor {...post}  mdFontSize/>
+                    <Title mixin = 'featured-post__title' xxlFontSize>{post.title}</Title>
+                    <Content primary>{post.description}</Content>
+                </div>
             </div>);
 
         return (

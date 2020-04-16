@@ -15,12 +15,12 @@ export const CommentCard = (props) => {
                 <div className='comment-card__box'>
 
                     <div className='comment-card__first-container'>
-                        <Title font='lgFontSize'>
+                        <Title lgFontSize>
                             {props.name}
-                            <Content mdFontSize greyColor> id: {props._id}</Content>
+                            <Content mdFontSize primary> id: {props._id}</Content>
                         </Title>
 
-                        <Content mdFontSize greyColor>
+                        <Content mdFontSize primary>
                             {date}
                         </Content>
 

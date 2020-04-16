@@ -1,4 +1,4 @@
-.featured-img, .featured-img--post-styles, .featured-img--figure-styles {
+.featured-img {
   max-width: 573px;
   max-height: 358px;
   border-radius: 8px; }
@@ -13,7 +13,7 @@
     cursor: pointer; }
 
 @media (max-width: 700px) {
-  .featured-img, .featured-img--post-styles, .featured-img--figure-styles {
+  .featured-img {
     padding: 10px;
     max-width: 473px;
     max-height: 258px; }
@@ -22,23 +22,23 @@
     display: block;
     margin: 0 auto; } }
 @media (max-width: 534px) {
-  .featured-img, .featured-img--post-styles, .featured-img--figure-styles {
+  .featured-img {
     max-width: 323px;
     max-height: 258px; } }
 @media (max-width: 450px) {
-  .featured-img, .featured-img--post-styles, .featured-img--figure-styles {
+  .featured-img {
     max-width: 300px;
     max-height: 200px; } }
 @media (max-width: 350px) {
-  .featured-img, .featured-img--post-styles, .featured-img--figure-styles {
+  .featured-img {
     max-width: 293px;
     max-height: 160px; } }
 @media (max-width: 330px) {
-  .featured-img, .featured-img--post-styles, .featured-img--figure-styles {
+  .featured-img {
     max-width: 230px;
     max-height: 160px; } }
 @media (max-width: 275px) {
-  .featured-img, .featured-img--post-styles, .featured-img--figure-styles {
+  .featured-img {
     max-width: 150px;
     max-height: 160px; } }
 @media (max-width: 600px) {

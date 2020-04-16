@@ -1,17 +1,12 @@
 .flex-box {
   display: flex;
-  &--center{
-    @extend .flex-box;
+
+  &--center {
     justify-content: center;
   }
-  &--post-styles{
-    display: flex;
-  }
-}
 
-@media (max-width: 805px) {
-  .flex-box--post-styles{
-    flex-direction: column;
+  &--post-styles {
+    display: flex;
   }
 }
 
@@ -22,3 +17,10 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 805px) {
+  .flex-box--post-styles {
+    flex-direction: column;
+  }
+}
+

@@ -1,9 +1,9 @@
 import React from "react";
-import './Copyright.scss'
+import {Content} from "../Content/Content";
 
 export const Copyright = () => {
 
     return (
-            <span className='copyright'>All Rights Reserved 2018 BehindMars</span>
+        <Content primary>All Rights Reserved 2018 BehindMars</Content>
     )
 };

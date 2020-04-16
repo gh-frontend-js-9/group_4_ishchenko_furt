@@ -1,17 +1,15 @@
 import React from "react";
-import '../Content/Content.scss';
 
 export const InnerHTML = (props: any) => {
     const {children} = props;
-
     const paddingSize = (props.postPadding ? 'content--post-pd' : '');
-    const fontSizeContent = (props.mdFontSize ? "content--md-font-size" : 'content--lg-20px-font-size' );
-    const colorContent = (props.greyColor ? "main-card__paragraph--grey" : '');
+    const fontSize = (props.mdFontSize ? "md-font-size" : 'lg-second-font-size');
+    const color = (props.primary ? "primary" : '');
 
-    const classContent = ` ${fontSizeContent} ${colorContent} ${paddingSize}`;
+    const classes = ` ${fontSize} ${color} ${paddingSize}`;
 
     return (
-        <p className={classContent}  dangerouslySetInnerHTML={{__html: children}}>
+        <p className={classes} dangerouslySetInnerHTML={{__html: children}}>
 
         </p>
     )

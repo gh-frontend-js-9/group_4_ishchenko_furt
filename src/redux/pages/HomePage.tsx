@@ -16,7 +16,6 @@ import FreelancePostComponent from "../components/FreelancePostComponent/Freelan
 import EssentialsPostComponent from "../components/EssentialsPostComponent/EssentialsPostComponent";
 import ReadingListPage from "../components/ReadingList/ReadingList";
 
-
 export const HomePage: React.FC = () => {
     return (
         <>
@@ -27,6 +26,7 @@ export const HomePage: React.FC = () => {
             </BackgroundBlock>
 
             <Wrapper>
+
                 <PostsBox>
                     <PopularPostComponent/>
                     <GridBox>
@@ -53,6 +53,7 @@ export const HomePage: React.FC = () => {
                 <FlexBox>
                     <FeaturedPostComponent/>
                 </FlexBox>
+
             </Wrapper>
         </>
     )

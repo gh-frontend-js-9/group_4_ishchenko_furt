@@ -3,7 +3,7 @@ import './Like.scss';
 import './../Icon/Icon.scss';
 
 
-export const Like: React.FC = () =>{
+export const Like: React.FC = () => {
     const icons = [{
         name: 'fa-heart',
         quantity: '12K'
@@ -17,8 +17,7 @@ export const Like: React.FC = () =>{
             <div key={n} className={'like-card'}>
                 <i key={n}
                    className={`fa ${icon.name} like-icon fa--hovered`}
-                   aria-hidden="true"
-                >
+                   aria-hidden="true">
                 </i>
                 <div>
                     {icon.quantity}

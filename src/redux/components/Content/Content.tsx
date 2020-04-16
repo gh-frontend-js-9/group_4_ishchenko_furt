@@ -1,17 +1,24 @@
 import React from 'react'
 import './Content.scss'
+import '../../../assets/styles/scss/common/_common.scss'
 
 export const Content = (props) => {
     const {children} = props;
-
     const paddingSize = (props.postPadding ? 'content--post-pd' : '');
-    const fontSizeContent = (props.mdFontSize ? "content--md-font-size" : 'content--lg-20px-font-size' );
-    const colorContent = (props.greyColor ? "main-card__paragraph--grey" : '');
 
-    const classContent = ` ${fontSizeContent} ${colorContent} ${paddingSize}`;
+    const fontSize = (
+        props.smFontSize ? "sm-font-size"
+            : props.mdFontSize ? "md-font-size"
+            : props.lgSecondFontSize ? 'lg-second-font-size'
+                : props.xxlFontSize ? 'xxl-font-size'
+                    : props.xxxlFontSize ? 'xxxl-font-size' : "");
+
+    const color = (props.textWhite ? "text-white" : props.primary ? "primary" : "");
+
+    const classes = `content ${fontSize} ${color} ${paddingSize}`;
 
     return (
-        <p className={classContent}>
+        <p className={classes}>
             {children}
         </p>
     )

@@ -91,7 +91,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
                             name='email'
                             onChange={this.handleChange}/>
                 <Checkbox>
-                    <Content greyColor>
+                    <Content primary mdFontSize>
                         <span>
                             I agree to the
                             <a className='link' href='#'> Terms and Conditions </a>

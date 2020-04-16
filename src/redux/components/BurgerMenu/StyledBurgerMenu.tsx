@@ -33,7 +33,6 @@ export const StyledBurgerMenu = styled.button <IProps>`
     width: 2rem;
     height: 0.25rem;
     background: black;
-    border:1px solid white;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

@@ -6,6 +6,7 @@ import {ListCard} from "../ListCard/ListCard";
 import {settings, title} from "./ReadingListSettings";
 
 class ReadingList extends Component {
+
     render() {
         let renderReadingList = lists.map((list: any) => (
             <ListCard {...list}/>
@@ -13,7 +14,7 @@ class ReadingList extends Component {
 
         return (
             <div>
-                <Title {...title} />
+                <Title xxlFontSize {...title} />
 
                 <Slider {...settings}>
                     {renderReadingList}

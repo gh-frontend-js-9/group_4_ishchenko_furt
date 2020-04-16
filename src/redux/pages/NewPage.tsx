@@ -13,23 +13,21 @@ import {Title} from "../components/Title/Title";
 export const NewPage: React.FC = () => {
 
     return (
-        <>
-            <Wrapper>
-                <Post>
-                    <BreadCrumb/>
-                    <PostContent/>
-                </Post>
-                <Title font={'xxxlFontSize'}>
-                    You might also like...
-                </Title>
-                <FlexBox>
-                    <FeaturedPostComponent/>
-                </FlexBox>
+        <Wrapper>
+            <Post>
+                <BreadCrumb/>
+                <PostContent/>
+            </Post>
+            <Title xxxlFontSize>
+                You might also like...
+            </Title>
+            <FlexBox>
+                <FeaturedPostComponent/>
+            </FlexBox>
 
-                <InsideWrapper>
-                    <CommentsBox/>
-                </InsideWrapper>
-            </Wrapper>
-        </>
+            <InsideWrapper>
+                <CommentsBox/>
+            </InsideWrapper>
+        </Wrapper>
     );
 };

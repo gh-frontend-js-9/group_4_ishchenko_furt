@@ -31,17 +31,17 @@ class PostContent extends Component<IProps, {}>{
         let renderPost= this.props.newPost.map((post: any)=>(
             <>
                 <ImageBox {...post} imagePost/>
-                <InnerHTML greyColor postPadding>
+                <InnerHTML  postPadding>
                     {post.paragraphReason}
                 </InnerHTML>
-                <Title font = {'xxlFontSize'} postPadding>
+                <Title xxlFontSize postPadding>
                     {post.titleAbout}
                 </Title>
-                <InnerHTML greyColor postPadding>
+                <InnerHTML postPadding>
                     {post.paragraphAbout}
                 </InnerHTML>
                 <ImageBox {...post} imagePost/>
-                <InnerHTML greyColor postPadding>
+                <InnerHTML  postPadding>
                     {post.titleList}
                 </InnerHTML>
                 <List {...post}/>

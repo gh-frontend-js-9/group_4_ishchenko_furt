@@ -8,6 +8,9 @@ export const Navigation = (props) => {
         : 'navigation-bar__link');
 
     const navBar = [{
+        link: '/',
+        title: 'Home'
+    }, {
         link: '#',
         title: 'Popular'
     }, {
@@ -19,10 +22,8 @@ export const Navigation = (props) => {
     }, {
         link: '/author',
         title: 'Author'
-    }, {
-        link: '#',
-        title: 'Home'
     }];
+
     let renderNav = navBar.map((nav: any, n: number) => {
         return <span key={n} className="navigation-bar">
                     <NavLink key={n} to={nav.link} className={linkNavClass}>

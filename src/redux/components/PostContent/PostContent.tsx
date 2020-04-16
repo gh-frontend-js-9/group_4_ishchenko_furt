@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 import './PostContent.scss'
-import {Content} from "../Content/Content";
 import {Title} from "../Title/Title";
 import {FlexBox} from "../FlexBox/FlexBox";
 import {ImageBox} from "../ImageBox/ImageBox";
 import {IconBox} from "../IconBox/IconBox";
 import {Icon} from "../Icon/Icon";
+import {InnerHTML} from "../InnerHTML/InnerHTML";
 import {Like} from "../Like/Like";
 import {Figure} from "../Figure/Figure";
 import {List} from "../List/List";
@@ -31,19 +31,19 @@ class PostContent extends Component<IProps, {}>{
         let renderPost= this.props.newPost.map((post: any)=>(
             <>
                 <ImageBox {...post} imagePost/>
-                <Content greyColor postPadding>
+                <InnerHTML greyColor postPadding>
                     {post.paragraphReason}
-                </Content>
+                </InnerHTML>
                 <Title font = {'xxlFontSize'} postPadding>
                     {post.titleAbout}
                 </Title>
-                <Content greyColor postPadding>
+                <InnerHTML greyColor postPadding>
                     {post.paragraphAbout}
-                </Content>
+                </InnerHTML>
                 <ImageBox {...post} imagePost/>
-                <Content greyColor postPadding>
+                <InnerHTML greyColor postPadding>
                     {post.titleList}
-                </Content>
+                </InnerHTML>
                 <List {...post}/>
                 <Figure>
                     <FlexBox post center>

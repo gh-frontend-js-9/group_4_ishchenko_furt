@@ -1,7 +1,7 @@
-import React from 'react'
-import './Content.scss'
+import React from "react";
+import '../Content/Content.scss';
 
-export const Content = (props) => {
+export const InnerHTML = (props: any) => {
     const {children} = props;
 
     const paddingSize = (props.postPadding ? 'content--post-pd' : '');
@@ -11,8 +11,8 @@ export const Content = (props) => {
     const classContent = ` ${fontSizeContent} ${colorContent} ${paddingSize}`;
 
     return (
-        <p className={classContent}  >
-            {children}
+        <p className={classContent}  dangerouslySetInnerHTML={{__html: children}}>
+
         </p>
     )
 };

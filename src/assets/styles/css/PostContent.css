@@ -1,12 +1,5 @@
-.blog {
-  display: flex; }
-
 .content {
   margin: 0 40px; }
-
-.page-link {
-  color: #27aeff;
-  text-decoration: none; }
 
 @media (max-width: 1000px) {
   .content {
@@ -14,14 +7,6 @@
 @media (max-width: 800px) {
   .content {
     margin: 0 20px; } }
-.figure-image {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-@media (max-width: 700px) {
-  .blog {
-    flex-direction: column; }
-
-  .figure-image {
-    flex-direction: column; } }
+.page-link {
+  color: #27aeff;
+  text-decoration: none; }

@@ -2,6 +2,11 @@
   margin-top: 20px;
   margin-bottom: 200px; }
 
+@media (max-width: 1000px) {
+  .post {
+    margin-top: 70px;
+    margin-bottom: 100px; } }
 @media (max-width: 805px) {
   .post {
-    margin-top: 70px; } }
+    margin-top: 70px;
+    margin-bottom: 50px; } }

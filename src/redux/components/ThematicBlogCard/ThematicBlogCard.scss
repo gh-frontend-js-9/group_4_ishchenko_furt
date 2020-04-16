@@ -26,7 +26,12 @@
     }
   }
 }
-
+@media (max-width: 400px) {
+  .thematic-blog-card {
+    height: 30vh;
+    margin: 20px
+  }
+}
 @media (max-width: 600px) {
   .thematic-blog-card__title--hovered:hover {
     color: black;

@@ -9,14 +9,7 @@
   &--post-styles {
     margin-bottom: 10px;
   }
-  //&--post-styles{
-  //  padding: 50px 0 0 0;
-  //}
 }
-
-//&--lg-font-size {
-//  @extend .title;
-//  @include text-styles($lg-font-size, $black-color);
 
 @media (max-width: 800px) {
   .title {
@@ -36,15 +29,4 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .title{
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 900px) {
-  .title{
-    text-align: center;
-  }
-}
 

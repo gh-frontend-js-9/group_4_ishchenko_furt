@@ -21,12 +21,12 @@ class FeaturedPostComponent extends Component <IProps, {}> {
 
     render() {
         let renderFeaturedPost = this.props.featuredPost.map((post: any, num: number) =>
-            <div className='featured-post-page' key={num}>
+            <div className='featured-post' key={num}>
                 <ImageBox {...post}/>
 
                 <div className="main-card">
                     <Author {...post}  mdFontSize/>
-                    <Title xxlFontSize>{post.title}</Title>
+                    <Title mixin = 'featured-post__title' xxlFontSize>{post.title}</Title>
                     <Content secondary>{post.description}</Content>
                 </div>
             </div>);

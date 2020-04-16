@@ -1,11 +1,14 @@
 .text-white {
   color: #ffffff; }
 
-.text-primary {
+.primary {
   color: #9b9b9b; }
 
-.text-secondary {
+.secondary {
   color: #ff5480; }
+
+.sm-font-size {
+  font-size: 14px; }
 
 .md-font-size {
   font-size: 16px; }

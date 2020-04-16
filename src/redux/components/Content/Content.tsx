@@ -4,10 +4,16 @@ import './Content.scss'
 export const Content = (props) => {
     const {children} = props;
 
-    const fontSize = (props.mdFontSize ? "content--md-font-size" : props.lgSecondFontSize
-        ? 'content--lg-second-font-size' : '');
-    const color = (props.primary ? "content--white-color" : props.secondary
-        ? "content--grey-color" : "");
+    const fontSize = (
+        props.smFontSize ? "sm-font-size"
+            : props.mdFontSize ? "md-font-size"
+            : props.lgSecondFontSize ? 'lg-second-font-size'
+                : props.xxlFontSize ? 'xxl-font-size'
+                    : props.xxxlFontSize ? 'xxxl-font-size' : "");
+
+    const color = (props.textWhite ? "text-white"
+        : props.primary
+            ? "primary" : "");
 
     const classes = ` ${fontSize} ${color}`;
 

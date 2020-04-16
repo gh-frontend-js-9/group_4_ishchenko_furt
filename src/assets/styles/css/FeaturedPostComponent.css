@@ -1,11 +1,14 @@
 .text-white {
   color: #ffffff; }
 
-.text-primary {
+.primary {
   color: #9b9b9b; }
 
-.text-secondary {
+.secondary {
   color: #ff5480; }
+
+.sm-font-size {
+  font-size: 14px; }
 
 .md-font-size {
   font-size: 16px; }
@@ -19,16 +22,18 @@
 .xxxl-font-size {
   font-size: 36px; }
 
-.featured-post-page {
+.featured-post {
   padding: 60px 0px 140px; }
-  .featured-post-page:first-child {
+  .featured-post:first-child {
     padding-right: 23px; }
 
 @media (max-width: 1190px) {
-  .featured-post-page {
+  .featured-post {
     padding: 30px; } }
 @media (max-width: 1340px) {
-  .featured-post-page {
+  .featured-post {
     display: flex;
     text-align: center;
     flex-direction: column; } }
+.featured-post__title {
+  padding-bottom: 30px; }

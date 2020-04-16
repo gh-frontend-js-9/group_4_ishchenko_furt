@@ -7,11 +7,12 @@
   &__main-card {
     @include main-card(35px 40px 19px, 100%, $violet-color);
     background-color: $violet-color;
-    height: 40vh;
+    height: 41vh;
     color: $white-color;
     border-radius: 8px;
   }
-  &__title{
+
+  &__title {
     padding-bottom: 40px;
   }
 }
@@ -29,9 +30,10 @@
     align-items: flex-start;
   }
 }
+
 @media (max-width: 1142px) {
-  .box-card  {
-   width: 80%;
+  .box-card {
+    width: 80%;
     padding-right: 0px;
   }
 }

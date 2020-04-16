@@ -21,7 +21,7 @@ class CommentPolicyBox extends Component <IProps, {}> {
         return (
             <>
                 <div className='comment-policy-box'>
-                    <Title font='xxlFontSize'>
+                    <Title xxlFontSize>
                         Comments
                     </Title>
 
@@ -30,7 +30,7 @@ class CommentPolicyBox extends Component <IProps, {}> {
                     </OutlineButton>
 
                 </div>
-                <Content>
+                <Content mdFontSize>
                     Comment policy: We love comments and appreciate the time that readers spend to share ideas and
                     give feedback.
                     However, all comments are manually moderated and those deemed to be spam or solely promotional will

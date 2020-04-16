@@ -4,14 +4,16 @@
   color: $white-color;
 }
 
-.text-primary {
+.primary {
   color: $light-gray-color;
 }
 
-.text-secondary {
+.secondary {
   color: $pink;
 }
-
+.sm-font-size{
+  font-size: $sm-font-size;
+}
 .md-font-size {
   font-size: $md-font-size;
 }

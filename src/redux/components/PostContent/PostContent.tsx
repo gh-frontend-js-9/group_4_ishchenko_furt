@@ -34,17 +34,23 @@ class PostContent extends Component<IProps, {}> {
                 <InnerHTML postPadding>
                     {post.paragraphReason}
                 </InnerHTML>
+
                 <Title xxlFontSize postPadding>
                     {post.titleAbout}
                 </Title>
+
                 <InnerHTML postPadding>
                     {post.paragraphAbout}
                 </InnerHTML>
+
                 <ImageBox {...post} imagePost/>
+
                 <InnerHTML postPadding>
                     {post.titleList}
                 </InnerHTML>
+
                 <List {...post}/>
+
                 <Figure>
                     <FlexBox post center>
                         <ImageBox {...post} imageFigure/>

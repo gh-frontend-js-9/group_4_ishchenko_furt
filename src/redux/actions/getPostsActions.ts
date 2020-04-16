@@ -177,7 +177,7 @@ export function getNewPostAction() {
         postsBlogService.getNewPost()
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
-                dispatch(getNewPostReceiveAction(response.data.post));
+                dispatch(getNewPostReceiveAction(response.data));
             })
             .catch(error =>
                 dispatch((error.response))

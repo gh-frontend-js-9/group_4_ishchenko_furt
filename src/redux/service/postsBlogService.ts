@@ -11,10 +11,6 @@ export class postsBlogService extends Component {
         return 'https://5e961c9a5b19f10016b5e2ad.mockapi.io';
     }
 
-    static get appFakeUrl() {
-        return 'http://www.mocky.io/v2/';
-    }
-
     static get listOfPostsUrl() {
         return '/posts/?category=popular&page=1&limit=3'
     }
@@ -52,7 +48,7 @@ export class postsBlogService extends Component {
     }
 
     static get newPostUrl() {
-        return '5e9754303000006000b6dde5'
+        return '/post'
     }
 
     static getListPosts() {
@@ -96,6 +92,6 @@ export class postsBlogService extends Component {
     }
 
     static getNewPost() {
-        return axios.get(this.appFakeUrl + this.newPostUrl)
+        return axios.get(this.appFakeURL + this.newPostUrl)
     }
 }

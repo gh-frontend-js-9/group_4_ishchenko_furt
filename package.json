@@ -22,6 +22,7 @@
     "@types/styled-components": "^5.0.1",
     "axios": "^0.19.2",
     "combine-reducers": "^1.0.0",
+    "moment": "^2.24.0",
     "node-sass": "^4.13.1",
     "prop-types": "latest",
     "react": "^16.13.0",

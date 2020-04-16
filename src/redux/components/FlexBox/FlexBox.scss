@@ -1,6 +1,7 @@
-.flex-box{
+.flex-box {
   display: flex;
 }
+
 @media (max-width: 1340px) {
   .flex-box {
     flex-direction: column;

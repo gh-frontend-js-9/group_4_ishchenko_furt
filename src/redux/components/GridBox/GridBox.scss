@@ -24,6 +24,7 @@
   grid-column-gap: 25px;
   grid-row-gap: 25px;
 }
+
 @media (max-width: 700px) {
   .thematic-cards-box {
     grid-template-columns: 1fr;

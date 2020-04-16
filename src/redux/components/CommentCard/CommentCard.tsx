@@ -1,24 +1,42 @@
 import React from 'react'
 import {Content} from "../Content/Content";
 import {Title} from "../Title/Title";
+import './CommentCard.scss'
+import moment from "moment";
 
 export const CommentCard = (props) => {
+    const {children} = props;
+    let date = moment(props.created_at).format('LLL');
 
     return (
         <>
             <div className='comment-card'>
-                <img alt='user' src={require('../../../assets/images/photo.png')}/>
-                <Title font = {'lgFontSize'}>
-                    {props.name}
-                </Title>
-                <Content mdFontSize greyColor>
-                    {props.date}
-                </Content>
+                <img className='avatar' alt='user' src={(props.avatar)}/>
+                <div className='comment-card__box'>
+
+                    <div className='comment-card__first-container'>
+                        <Title font='lgFontSize'>
+                            {props.name}
+                            <Content mdFontSize greyColor> id: {props._id}</Content>
+                        </Title>
+
+                        <Content mdFontSize greyColor>
+                            {date}
+                        </Content>
+
+                        {children}
+                    </div>
+
+                    <div className='comment-card__second-container'>
+                        <Content mdFontSize>
+                            {props.comment}
+                        </Content>
+                    </div>
+                </div>
+
             </div>
 
-            <Content mdFontSize>
-                {props.comment}
-            </Content>
+            <img className='line-image' alt='line' src={require('../../../assets/images/line.png')}/>
         </>
     )
 }

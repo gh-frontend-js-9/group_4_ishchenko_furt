@@ -3,21 +3,34 @@ import {connect} from 'react-redux'
 import Loading from "../Healpers/Loading";
 import {CommentCard} from "../CommentCard/CommentCard";
 import {getCommentsListAction} from "../../actions/getPostsActions";
+import {OutlineButton} from "../OutlineButton/OutlineButton";
+import {getUserIdAction} from "../../actions/PostsActionsCreators";
 
 interface IProps {
     getCommentsListAction?: any,
+    getUserIdAction?: any,
     commentsList?: any,
     isLoading?: boolean,
 }
 
 class CommentsListComponent extends Component <IProps, {}> {
+
     componentDidMount(): void {
         this.props.getCommentsListAction();
     }
 
+    getUserData(id, name) {
+        let userData = {id, name};
+        this.props.getUserIdAction(userData)
+    }
+
     render() {
         let renderComment = this.props.commentsList.map((comment: any) =>
-             <CommentCard{...comment} key={comment._id}/>);
+            <CommentCard{...comment} key={comment._id}>
+                <OutlineButton onClick={() => this.getUserData(comment._id, comment.name)}>
+                    Reply
+                </OutlineButton>
+            </CommentCard>);
 
         return (
             <>
@@ -36,6 +49,7 @@ const mapStateToProps = (state: any) => {
 const mapDispatchToProps = (dispatch: any) => {
     return {
         getCommentsListAction: () => dispatch(getCommentsListAction()),
+        getUserIdAction: (userDate) => dispatch(getUserIdAction(userDate))
     };
 };
 

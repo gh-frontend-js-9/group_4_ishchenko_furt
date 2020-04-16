@@ -1,11 +1,11 @@
 import React from "react";
-import './PostsBox.scss'
+import './InsideWrapper.scss'
 
-export const PostsBox: React.FC = (props: any) => {
+export const InsideWrapper = (props: any) => {
     const {children} = props;
 
     return (
-        <div className='posts-box'>
+        <div className='inside-wrapper'>
             {children}
         </div>
     )

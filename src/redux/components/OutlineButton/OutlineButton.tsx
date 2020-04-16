@@ -6,9 +6,9 @@ export const OutlineButton = (props: any) => {
     const classes = (props.pinkColor ? 'outline-button--pink' : 'outline-button--gray');
 
     return (
-        <button {...props}
+        <a href='#form' {...props}
                 className={`${classes} outline-button--hovered`}>
             {children}
-        </button>
+        </a>
     )
 };

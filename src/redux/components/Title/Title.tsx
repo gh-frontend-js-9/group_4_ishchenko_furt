@@ -14,15 +14,15 @@ export const Title = (props: any) => {
                 classes = 'title--xxl-font-size';
                 break;
             case ('lgFontSize'):
-                classes = 'title--lg-font-size title';
+                classes = 'title--lg-font-size';
                 break;
             default:
                 classes = 'title'
         }
         return <h3 className={classes}>
-            {props.category}
-            {children}
-        </h3>;
+                    {props.category}
+                    {children}
+                </h3>;
     };
 
     return (

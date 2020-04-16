@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import Loading from "../../components/Healpers/Loading";
 import {connect} from "react-redux";
-import {ThematicBlogCard} from "../../components/ThematicBlogCard/ThematicBlogCard";
+import {ThematicBlogCard} from "../ThematicBlogCard/ThematicBlogCard";
 import {getPopularThematicPostAction} from '../../actions/getPostsActions'
-import '../../components/BoxCard/BoxCard.scss'
+import '../BoxCard/BoxCard.scss'
 
 interface IProps {
     getPopularThematicPostAction?: any,

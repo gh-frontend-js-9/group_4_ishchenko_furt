@@ -15,8 +15,7 @@ class NewPostComponent extends Component <IProps, {}> {
     };
 
     render() {
-        console.log(this.props.newPost)
-        //тут передаем props компоненту Post
+
         return (
             <>
                 {this.props.isLoading ? <Loading/> : <> </>}

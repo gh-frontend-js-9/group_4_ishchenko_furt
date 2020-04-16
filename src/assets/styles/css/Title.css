@@ -1,8 +1,7 @@
 .title, .title--lg-font-size, .title--xxl-font-size, .title--xxxl-font-size {
   font-weight: 700;
   letter-spacing: -0.22px;
-  line-height: 46px;
-  padding: 10px 0px 40px; }
+  line-height: 46px; }
   .title--lg-font-size {
     font-size: 18px;
     color: #000000;

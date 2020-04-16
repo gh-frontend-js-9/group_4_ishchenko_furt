@@ -5,19 +5,18 @@ import {EmailInput} from "../EmailInput/EmailInput";
 import {Button} from "../Button/Button";
 import './CommentsFormComponent.scss'
 import {Checkbox} from "../Checkbox/Checkbox";
+import {sendCommentAction} from "../../actions/getPostsActions";
+import {Content} from "../Content/Content";
 
 interface IState {
-    comment?: any,
-    name?: any,
-    email?: any,
+    comment?: string,
+    name?: string,
+    email?: string,
 }
 
 interface IProps {
-    comment?: any,
-    name?: any,
-    email?: any,
-    sendComment?: string,
     sendCommentAction?: any,
+    userData?: any
 }
 
 class CommentsFormComponent extends Component <IProps, IState> {
@@ -26,10 +25,28 @@ class CommentsFormComponent extends Component <IProps, IState> {
         this.state = {
             comment: '',
             name: '',
-            email: ''
+            email: '',
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    componentDidUpdate(prevProps) {
+    let userId = this.props.userData.id;
+    let userName = this.props.userData.name;
+
+        if (prevProps.userData.id !== userId) {
+
+            if (userId.length === 0) {
+                this.setState({
+                    comment: ''
+                })
+            } else {
+                this.setState({
+                    comment: `Re: ${userName} (id:${userId}), `
+                })
+            }
+        }
     }
 
     handleChange(event: any) {
@@ -41,27 +58,47 @@ class CommentsFormComponent extends Component <IProps, IState> {
 
     handleSubmit(event: any) {
         event.preventDefault();
+        const {email, name, comment} = this.state;
+        let replyTo = this.props.userData.id;
+
+        this.props.sendCommentAction(comment, name, email, replyTo);
+
+        this.setState({
+            comment: '',
+            name: '',
+            email: ''
+        })
     };
 
     render() {
         const {email, name, comment} = this.state;
         return (
-            <form className="comments-form"
+            <form id='form'
+                  className="comments-form"
                   name='comments-form'
                   onSubmit={this.handleSubmit}>
                 <textarea required
-                          className='entry-field'
+                          rows={8}
+                          name='comment'
+                          className='entry-field textarea'
                           placeholder='Comment'
                           value={comment}
                           onChange={this.handleChange}/>
                 <NameInput value={name}
+                           name='name'
                            onChange={this.handleChange}/>
                 <EmailInput value={email}
+                            name='email'
                             onChange={this.handleChange}/>
                 <Checkbox>
-                    <span>
-                        I agree to the <a href='/'>Terms and Conditions</a> and <a href='/'>Privacy Policy</a>
-                    </span>
+                    <Content greyColor>
+                        <span>
+                            I agree to the
+                            <a className='link' href='#'> Terms and Conditions </a>
+                            <span> and </span>
+                            <a className='link' href='#'> Privacy Policy </a>
+                        </span>
+                    </Content>
                 </Checkbox>
 
                 <div>
@@ -73,15 +110,15 @@ class CommentsFormComponent extends Component <IProps, IState> {
         )
     }
 };
+
 const mapStateToProps = (state: any) => {
     return {
-        // sendComment: state.sendMessage,
+        userData: state.postsReducers.userData,
     };
 };
-
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        // sendCommentAction: () => dispatch(sendCommentAction()),
+        sendCommentAction: (comment: string, name: string, email: string, replyTo:string) => dispatch(sendCommentAction(comment, name, email, replyTo))
     };
 };
 

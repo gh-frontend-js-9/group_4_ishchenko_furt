@@ -1,7 +1,6 @@
 import React from "react";
 import './Like.scss';
 import './../Icon/Icon.scss';
-import '../Media/Media.scss'
 
 
 export const Like: React.FC = () =>{

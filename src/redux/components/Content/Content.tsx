@@ -4,12 +4,15 @@ import './Content.scss'
 export const Content = (props) => {
     const {children} = props;
 
-    const fontSizeContent = (props.mdFontSize ? "content--md-font-size" : 'content--lg-20px-font-size' );
-    const colorContent = (props.greyColor ? "main-card__paragraph--grey" : '');
-    const classes = ` ${fontSizeContent} ${colorContent}`;
+    const fontSize = (props.mdFontSize ? "content--md-font-size" : props.lgSecondFontSize
+        ? 'content--lg-second-font-size' : '');
+    const color = (props.primary ? "content--white-color" : props.secondary
+        ? "content--grey-color" : "");
+
+    const classes = ` ${fontSize} ${color}`;
 
     return (
-        <span className={classes}>
+        <span className={`content ${classes} `}>
             {children}
         </span>
     )

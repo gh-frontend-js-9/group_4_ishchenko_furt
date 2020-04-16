@@ -4,20 +4,24 @@
   font-weight: 700;
   letter-spacing: -0.22px;
   line-height: 46px;
+}
 
 
-  &--lg-font-size {
-    @extend .title;
-    @include text-styles($lg-font-size, $black-color);
-  }
-
-  &--xxl-font-size {
-    @extend .title;
-    @include text-styles($xxl-font-size, $black-color);
-  }
-
-  &--xxxl-font-size {
-    @extend .title;
-    @include text-styles($xxxl-font-size, $black-color);
+@media (max-width: 800px) {
+  .title {
+    font-size: $xl-font-size
   }
 }
+
+@media (max-width: 400px) {
+  .title {
+    font-size: $lg-font-size
+  }
+}
+
+@media (max-width: 330px) {
+  .title {
+    font-size: $md-font-size
+  }
+}
+

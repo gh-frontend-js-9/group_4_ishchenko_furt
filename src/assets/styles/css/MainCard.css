@@ -1,45 +1,33 @@
+.text-white {
+  color: #ffffff; }
+
+.text-primary {
+  color: #9b9b9b; }
+
+.text-secondary {
+  color: #ff5480; }
+
+.md-font-size {
+  font-size: 16px; }
+
+.lg-second-font-size {
+  font-size: 20px; }
+
+.xxl-font-size {
+  font-size: 28px; }
+
+.xxxl-font-size {
+  font-size: 36px; }
+
 .main-card {
   font-family: "Open Sans", sans-serif; }
   .main-card--hovered:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     cursor: pointer;
     background-color: #220059; }
-  .touch .main-card--hovered:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-    cursor: none; }
-  .main-card__author {
-    font-size: 16px;
-    letter-spacing: -0.1px;
-    line-height: 46px;
-    text-transform: uppercase; }
   .main-card__title {
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: -0.17px;
-    line-height: 46px;
     padding-bottom: 40px; }
-  .main-card__paragraph, .main-card__paragraph--grey {
-    font-size: 16px;
-    letter-spacing: -0.1px;
-    line-height: 32px; }
-  .main-card__paragraph--grey {
-    color: #9b9b9b; }
 
-@media (max-width: 800px) {
-  .main-card__title {
-    font-size: 24px; }
-
-  .main-card__author {
-    font-size: 14px; }
-
-  .main-card__paragraph, .main-card__paragraph--grey {
-    font-size: 14px; } }
-@media (max-width: 400px) {
-  .main-card__title {
-    font-size: 18px; } }
-@media (max-width: 330px) {
-  .main-card__title {
-    font-size: 16px; } }
 @media (max-width: 600px) {
   .main-card--hovered:hover {
     background-color: #1b0042;

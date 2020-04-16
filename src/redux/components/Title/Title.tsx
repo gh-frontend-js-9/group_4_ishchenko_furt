@@ -3,29 +3,15 @@ import './Title.scss'
 
 export const Title = (props: any) => {
     const {children} = props;
+    let mixin = props.mixin;
 
-    const renderTitle = () => {
-        let classes;
-        switch (props.font) {
-            case ('xxxlFontSize'):
-                classes = 'title--xxxl-font-size';
-                break;
-            case ('xxlFontSize'):
-                classes = 'title--xxl-font-size';
-                break;
-            case ('lgFontSize'):
-                classes = 'title--lg-font-size';
-                break;
-            default:
-                classes = 'title'
-        }
-        return <h3 className={classes}>
-                    {props.category}
-                    {children}
-                </h3>;
-    };
+    const fontSize = (props.mdFontSize ? "content--md-font-size" : props.lgSecondFontSize
+        ? 'content--lg-second-font-size' : props.xxlFontSize ? 'xxl-font-size' : '');
+    const color = (props.primary ? "content--white-color" : props.secondary
+        ? "content--grey-color" : "");
 
-    return (
-        <>{renderTitle()}</>
-    )
+    return <h3 className={`${color} ${fontSize} ${mixin}`}>
+        {props.category}
+        {children}
+    </h3>;
 };

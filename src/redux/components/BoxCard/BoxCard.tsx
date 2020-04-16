@@ -6,7 +6,7 @@ import {MainCard} from "../MainCard/MainCard";
 export const BoxCard: React.FC = (props: any) => {
 
     return <div className='box-card'>
-            <Title {...props} font = {'xxlFontSize'}/>
+            <Title mixin='box-card__title'  {...props} font = {'xxlFontSize'}/>
             <div className='box-card__main-card main-card--hovered '>
                 <MainCard {...props}/>
             </div>

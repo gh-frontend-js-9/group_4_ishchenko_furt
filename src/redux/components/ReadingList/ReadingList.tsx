@@ -13,7 +13,9 @@ class ReadingList extends Component {
 
         return (
             <div>
-                <Title {...title} />
+                <Title font={'xxxlFontSize'}>
+                    Reading List
+                </Title>
 
                 <Slider {...settings}>
                     {renderReadingList}

@@ -1,27 +1,27 @@
-import React, {Component} from "react";
+import React from "react";
 import Slider from "react-slick";
 import lists from "../ListCard/lists";
 import {Title} from "../Title/Title";
 import {ListCard} from "../ListCard/ListCard";
-import {settings, title} from "./ReadingListSettings";
+import {settings} from "./ReadingListSettings";
 
-class ReadingList extends Component {
+export const ReadingList: React.FC = () => {
 
-    render() {
-        let renderReadingList = lists.map((list: any) => (
-            <ListCard {...list}/>
-        ));
+    let renderReadingList = lists.map((list: any) => (
+        <ListCard {...list}/>
+    ));
 
-        return (
-            <div>
-                <Title xxlFontSize {...title} />
+    return (
+        <div>
+            <Title xxxlFontSize>
+                Reading List
+            </Title>
 
-                <Slider {...settings}>
-                    {renderReadingList}
-                </Slider>
-            </div>
-        )
-    }
+            <Slider {...settings}>
+                {renderReadingList}
+            </Slider>
+        </div>
+    )
 }
 
-export default ReadingList;
+

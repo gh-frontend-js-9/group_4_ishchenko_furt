@@ -44,7 +44,3 @@ export const settings = {
         }
     ]
 };
-
-export const title: object = {
-    category: 'Reading List'
-};

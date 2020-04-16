@@ -7,10 +7,17 @@
   margin: 30px 0 10px 0;
 }
 
+@media(max-width: 1200px) {
+  .bread-crumb{
+    padding-left: 10px;
+  }
+}
+
 @media(max-width: 805px) {
   .bread-crumb{
     margin: 20px;
     width: 70%;
+    padding: 0;
   }
 }
 

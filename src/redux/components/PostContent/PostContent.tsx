@@ -14,24 +14,24 @@ import {Author} from "../Author/Author";
 import {connect} from 'react-redux';
 import {getNewPostAction} from "../../actions/getPostsActions";
 
-
 interface IProps {
     getNewPostAction?: any,
     isLoading?: boolean,
     newPost?: any,
 }
 
-class PostContent extends Component<IProps, {}>{
+class PostContent extends Component<IProps, {}> {
+
     componentDidMount() {
         this.props.getNewPostAction();
     }
 
-    render(){
+    render() {
 
-        let renderPost= this.props.newPost.map((post: any)=>(
+        let renderPost = this.props.newPost.map((post: any) => (
             <>
                 <ImageBox {...post} imagePost/>
-                <InnerHTML  postPadding>
+                <InnerHTML postPadding>
                     {post.paragraphReason}
                 </InnerHTML>
                 <Title xxlFontSize postPadding>
@@ -41,7 +41,7 @@ class PostContent extends Component<IProps, {}>{
                     {post.paragraphAbout}
                 </InnerHTML>
                 <ImageBox {...post} imagePost/>
-                <InnerHTML  postPadding>
+                <InnerHTML postPadding>
                     {post.titleList}
                 </InnerHTML>
                 <List {...post}/>
@@ -63,7 +63,7 @@ class PostContent extends Component<IProps, {}>{
                 <IconBox>
                     <Icon postElement/>
                 </IconBox>
-                <div className={'content'}>
+                <div className={'post-content'}>
                     {renderPost}
                 </div>
                 <Like/>

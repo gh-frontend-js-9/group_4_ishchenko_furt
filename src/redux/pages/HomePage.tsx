@@ -14,7 +14,7 @@ import FreelanceThematicPostComponent
     from "../components/FreelanceThematicPostComponent/FreelanceThematicPostComponent";
 import FreelancePostComponent from "../components/FreelancePostComponent/FreelancePostComponent";
 import EssentialsPostComponent from "../components/EssentialsPostComponent/EssentialsPostComponent";
-import ReadingListPage from "../components/ReadingList/ReadingList";
+import {ReadingList} from "../components/ReadingList/ReadingList";
 
 export const HomePage: React.FC = () => {
     return (
@@ -48,8 +48,7 @@ export const HomePage: React.FC = () => {
                     </GridBox>
                 </PostsBox>
 
-                <ReadingListPage/>
-
+                <ReadingList/>
                 <FlexBox>
                     <FeaturedPostComponent/>
                 </FlexBox>

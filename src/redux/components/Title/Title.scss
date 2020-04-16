@@ -7,11 +7,13 @@
   line-height: 46px;
 
   &--post-styles {
-    padding: 50px 0 0 0;
+    margin-bottom: 10px;
   }
+  //&--post-styles{
+  //  padding: 50px 0 0 0;
+  //}
 }
 
-//
 //&--lg-font-size {
 //  @extend .title;
 //  @include text-styles($lg-font-size, $black-color);
@@ -31,6 +33,18 @@
 @media (max-width: 330px) {
   .title {
     font-size: $md-font-size
+  }
+}
+
+@media (max-width: 1200px) {
+  .title{
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .title{
+    text-align: center;
   }
 }
 

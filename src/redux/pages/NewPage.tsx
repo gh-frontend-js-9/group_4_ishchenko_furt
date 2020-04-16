@@ -9,7 +9,6 @@ import FeaturedPostComponent from "../components/FeaturedPostComponent/FeaturedP
 import PostContent from "../components/PostContent/PostContent";
 import {Title} from "../components/Title/Title";
 
-
 export const NewPage: React.FC = () => {
 
     return (

@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Loading from "../../components/Healpers/Loading";
 import {getEssentialsPostAction} from "../../actions/getPostsActions";
-import {BoxCard} from "../../components/BoxCard/BoxCard";
+import {BoxCard} from "../BoxCard/BoxCard";
 
 interface IProps {
     getEssentialsPostAction?: any,

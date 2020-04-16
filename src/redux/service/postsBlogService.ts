@@ -91,8 +91,8 @@ export class postsBlogService extends Component {
         return axios.get(this.appFakeURL + this.commentsUrl)
     }
 
-    static sendComment(comment, name, email) {
-        return axios.post(this.appFakeURL + this.commentsUrl, {comment, name, email})
+    static sendComment(comment, name, email, replyTo) {
+        return axios.post(this.appFakeURL + this.commentsUrl, {comment, name, email, replyTo})
     }
 
     static getNewPost() {

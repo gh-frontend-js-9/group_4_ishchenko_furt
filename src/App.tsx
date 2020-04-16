@@ -12,10 +12,10 @@ const App: React.FC = () => {
     return (
         <>
             <BrowserRouter>
-                    <Wrapper>
-                        <Header/>
-                        <BurgerMenu/>
-                    </Wrapper>
+                <Wrapper>
+                    <Header/>
+                    <BurgerMenu/>
+                </Wrapper>
 
                 <Main>
                     <Route exact path='/' component={HomePage}/>

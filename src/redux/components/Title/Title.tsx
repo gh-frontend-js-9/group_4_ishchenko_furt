@@ -20,9 +20,9 @@ export const Title = (props: any) => {
                 classes = 'title'
         }
         return <h3 className={classes}>
-            {props.category}
-            {children}
-        </h3>;
+                    {props.category}
+                    {children}
+                </h3>;
     };
 
     return (

@@ -54,4 +54,4 @@ const mapDispatchToProps = (dispatch: any) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)( CommentPolicyBox);
+export default connect(mapStateToProps, mapDispatchToProps)(CommentPolicyBox);

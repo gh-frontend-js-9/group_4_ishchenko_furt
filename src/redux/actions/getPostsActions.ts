@@ -153,12 +153,12 @@ export function getCommentsListAction() {
     }
 }
 
-export function sendCommentAction(comment, name, email) {
+export function sendCommentAction(comment, name, email, replyTo) {
 
     return (dispatch: any) => {
         dispatch(isLoadingAction(true));
 
-        postsBlogService.sendComment(comment, name, email)
+        postsBlogService.sendComment(comment, name, email, replyTo)
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
                 dispatch(sendCommentReceiveAction(response.data));

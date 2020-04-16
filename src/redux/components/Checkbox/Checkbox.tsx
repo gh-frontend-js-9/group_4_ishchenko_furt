@@ -1,5 +1,4 @@
 import React from "react";
-import './CheckBox.scss'
 
 export const Checkbox: React.FC = (props: any) => {
     const {children} = props;

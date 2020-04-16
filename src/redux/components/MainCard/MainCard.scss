@@ -8,6 +8,7 @@
     cursor: pointer;
     background-color: $violet-color-hovered;
   }
+
   .touch &--hovered:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     cursor: none;
@@ -65,8 +66,8 @@
 }
 
 @media (max-width: 600px) {
-  .main-card--hovered:hover  {
+  .main-card--hovered:hover {
     background-color: $violet-color;
-    box-shadow:none;
+    box-shadow: none;
   }
 }

@@ -7,13 +7,9 @@ export const MainCard: React.FC = (props: any) => {
     return (
         <div className="main-card">
             <p className="main-card__author">
-                <span className={classForContent}>
-                    BY &nbsp;
-                </span>
-                TOMAS LAURINAVICIUS &nbsp;
-                <span className={classForContent}>
-                    IN &nbsp;
-                </span>
+                <span className={classForContent}>BY </span>
+                <span> TOMAS LAURINAVICIUS </span>
+                <span className={classForContent}>IN </span>
                 {props.tags}
             </p>
             <h3 className="main-card__title">{props.title}</h3>

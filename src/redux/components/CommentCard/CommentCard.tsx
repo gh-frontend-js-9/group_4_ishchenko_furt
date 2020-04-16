@@ -12,7 +12,6 @@ export const CommentCard = (props) => {
         <>
             <div className='comment-card'>
                 <img className='avatar' alt='user' src={(props.avatar)}/>
-
                 <div className='comment-card__box'>
 
                     <div className='comment-card__first-container'>
@@ -36,6 +35,7 @@ export const CommentCard = (props) => {
                 </div>
 
             </div>
+
             <img className='line-image' alt='line' src={require('../../../assets/images/line.png')}/>
         </>
     )

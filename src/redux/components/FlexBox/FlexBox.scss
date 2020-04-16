@@ -1,6 +1,20 @@
 .flex-box{
   display: flex;
+  &--center{
+    @extend .flex-box;
+    justify-content: center;
+  }
+  &--post-styles{
+    display: flex;
+  }
 }
+
+@media (max-width: 805px) {
+  .flex-box--post-styles{
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 1340px) {
   .flex-box {
     flex-direction: column;

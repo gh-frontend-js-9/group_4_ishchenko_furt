@@ -2,6 +2,8 @@
   font-weight: 700;
   letter-spacing: -0.22px;
   line-height: 46px; }
+  .title--post-styles {
+    padding: 50px 0 0 0; }
   .title--lg-font-size {
     font-size: 18px;
     color: #000000;

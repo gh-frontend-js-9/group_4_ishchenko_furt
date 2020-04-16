@@ -6,6 +6,10 @@
   line-height: 46px;
 
 
+  &--post-styles{
+    padding: 50px 0 0 0;
+  }
+
   &--lg-font-size {
     @extend .title;
     @include text-styles($lg-font-size, $black-color);

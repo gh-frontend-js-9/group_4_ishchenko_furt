@@ -33,8 +33,26 @@
   margin: 5px;
   &--post-styles{
     @extend .icon;
-    margin: 12px;
-    padding: 7px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .icon--post-styles{
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 805px) {
+  .icon--post-styles{
+    display: none;
   }
 }
 

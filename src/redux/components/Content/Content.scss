@@ -1,9 +1,29 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.content--md-font-size{
+.content--md-font-size {
   font-size: $md-font-size;
 }
 
-.content--lg-20px-font-size{
-  font-size:$lg-20px-font-size;
+.content--lg-20px-font-size {
+  font-size: $lg-20px-font-size;
+  @include text-styles($md-font-size, $black-color)
+}
+
+.content--lg-20px-font-size {
+  @include text-styles($lg-20px-font-size, $light-gray-color);
+}
+
+.content--post-pd {
+  padding: 30px 0;
+  line-height: 40px;
+}
+
+@media (max-width: 500px) {
+  .content--lg-20px-font-size {
+    @include text-styles($md-font-size, $light-gray-color);
+  }
+
+  .content--post-pd {
+    line-height: 30px;
+  }
 }

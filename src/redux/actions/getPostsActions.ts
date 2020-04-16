@@ -162,7 +162,6 @@ export function sendCommentAction(comment, name, email, replyTo) {
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
                 dispatch(sendCommentReceiveAction(response.data));
-                console.log(response)
             })
             .catch(error =>
                 dispatch((error.response))

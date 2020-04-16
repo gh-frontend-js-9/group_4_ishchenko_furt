@@ -5,7 +5,7 @@
 }
 
 .slide-box {
-  @include main-card(150px 0px 150px, 100%, $violet-color);
+  @include main-card( 0px , 100%, $violet-color);
   max-height: 800px;
   width: 85%;
 }

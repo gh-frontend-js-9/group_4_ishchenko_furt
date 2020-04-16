@@ -11,7 +11,7 @@ export const Content = (props) => {
     const classContent = ` ${fontSizeContent} ${colorContent} ${paddingSize}`;
 
     return (
-        <p className={classContent}  >
+        <p className={classContent}>
             {children}
         </p>
     )

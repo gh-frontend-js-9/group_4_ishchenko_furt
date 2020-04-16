@@ -8,19 +8,19 @@ export const Navigation = (props) => {
         : 'navigation-bar__link');
 
     const navBar = [{
-        link: '/popular',
+        link: '#',
         title: 'Popular'
     }, {
         link: '/new',
         title: 'New'
     }, {
-        link: '/readingList',
+        link: '#',
         title: 'Reading list'
     }, {
-        link: '/topics',
-        title: 'Topics'
+        link: '/author',
+        title: 'Author'
     }, {
-        link: '/',
+        link: '#',
         title: 'Home'
     }];
     let renderNav = navBar.map((nav: any, n: number) => {

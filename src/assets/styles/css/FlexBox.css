@@ -1,7 +1,8 @@
 .flex-box {
   display: flex; }
   .flex-box--center {
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
   .flex-box--post-styles {
     display: flex; }
 

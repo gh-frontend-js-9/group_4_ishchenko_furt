@@ -7,7 +7,7 @@
   &__main-card {
     @include main-card(35px 40px 19px, 100%, $violet-color);
     background-color: $violet-color;
-    height: 41vh;
+    height: 44vh;
     color: $white-color;
     border-radius: 8px;
   }
@@ -24,20 +24,10 @@
 }
 @media (max-width: 550px) {
   .box-card__main-card {
-    height: 50vh;
+    height: auto;
   }
 }
 
-@media (max-width: 400px) {
-  .box-card__main-card {
-    height: 60vh;
-  }
-}
-@media (max-width: 490px) {
-  .box-card__main-card {
-    height: 70vh;
-  }
-}
 @media (max-width: 1340px) {
   .box-card {
     display: flex;
@@ -48,7 +38,7 @@
 
 @media (max-width: 1142px) {
   .box-card {
-    width: 80%;
+    width: 100%;
     padding-right: 0px;
   }
 }

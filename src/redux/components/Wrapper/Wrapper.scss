@@ -1,7 +1,15 @@
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1170px;
-  //width: 100%;
 }
 
 @media (max-width: 1450px) {

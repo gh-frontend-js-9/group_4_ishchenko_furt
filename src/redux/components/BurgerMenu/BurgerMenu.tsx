@@ -1,14 +1,12 @@
 import React from 'react';
 import {Navigation} from "../Navigation/Navigation";
 import {StyledBurgerMenu, StyledMenu} from "./StyledBurgerMenu";
-import {Logo} from "../Logo/Logo";
 import {SearchIcon} from "../SearchIcon/SearchIcon";
 
 const Menu = ({open, setOpen}) => {
 
     return (
         <StyledMenu open={open}>
-            <Logo headerElem/>
             <Navigation/>
             <SearchIcon burgerMenuElem/>
         </StyledMenu>

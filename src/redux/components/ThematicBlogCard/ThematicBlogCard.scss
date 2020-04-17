@@ -28,15 +28,15 @@
 }
 @media (max-width: 850px) {
   .thematic-blog-card {
-    max-width: 80%;
+    max-width: none;
+    height: auto;
   }
 }
-@media (max-width: 400px) {
-  .thematic-blog-card {
-    height: 30vh;
-    margin: 20px
-  }
-}
+//@media (max-width: 400px) {
+//  .thematic-blog-card {
+//    height: auto;
+//  }
+//}
 
 @media (max-width: 600px) {
   .thematic-blog-card__title--hovered:hover {

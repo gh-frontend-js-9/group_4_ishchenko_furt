@@ -17,6 +17,11 @@
     }
   }
 }
+@media (max-width: 800px) {
+  .navigation-bar {
+    padding: 8px;
+  }
+}
 
 @media (max-width: 1000px) {
   .navigation-bar__link {

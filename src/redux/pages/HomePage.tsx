@@ -21,9 +21,9 @@ export const HomePage: React.FC = () => {
         <>
             <BackgroundBlock>
                 <Wrapper>
-                    <Wrapper secondaryWrap>
+
                         <MainCardSliderComponent/>
-                    </Wrapper>
+
                 </Wrapper>
             </BackgroundBlock>
 

@@ -13,13 +13,13 @@
 
 @media (max-width: 800px) {
   .title {
-    font-size: $xl-font-size
+    line-height: 36px;
   }
 }
 
 @media (max-width: 400px) {
   .title {
-    font-size: $lg-font-size
+    line-height: 26px;
   }
 }
 

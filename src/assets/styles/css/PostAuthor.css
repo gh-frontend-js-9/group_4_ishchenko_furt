@@ -5,3 +5,13 @@
   line-height: 46px;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif; }
+
+@media (max-width: 800px) {
+  .post-author {
+    line-height: 36px; } }
+@media (max-width: 460px) {
+  .post-author {
+    line-height: 26px; } }
+@media (max-width: 330px) {
+  .post-author {
+    font-size: 16px; } }

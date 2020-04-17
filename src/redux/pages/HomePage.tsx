@@ -49,7 +49,6 @@ export const HomePage: React.FC = () => {
                 </PostsBox>
 
                 <ReadingListPage/>
-
                 <FlexBox>
                     <FeaturedPostComponent/>
                 </FlexBox>

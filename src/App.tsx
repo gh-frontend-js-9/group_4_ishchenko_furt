@@ -7,6 +7,7 @@ import {HomePage} from "./redux/pages/HomePage";
 import {NewPage} from "./redux/pages/NewPage";
 import {BurgerMenu} from "./redux/components/BurgerMenu/BurgerMenu";
 import {Main} from "./redux/components/Main/Main";
+import {SubscribePage} from "./redux/pages/SubscribePage";
 
 const App: React.FC = () => {
     return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
                 <Main>
                     <Route exact path='/' component={HomePage}/>
                     <Route path='/new' component={NewPage}/>
+                    <Route path='/subscribe' component={SubscribePage}/>
                 </Main>
 
                 <Wrapper>

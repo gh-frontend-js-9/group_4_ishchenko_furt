@@ -5,6 +5,7 @@ import {BreadCrumb} from "../components/BreadCrumb/BreadCrumb";
 import {InsideWrapper} from "../components/InsideWrapper/InsideWrapper";
 import {CommentsBox} from "../components/CommentsBox/CommentsBox";
 import {FlexBox} from "../components/FlexBox/FlexBox";
+import {Calendar} from "../components/Calendar/Calendar";
 import FeaturedPostComponent from "../components/FeaturedPostComponent/FeaturedPostComponent";
 import PostContent from "../components/PostContent/PostContent";
 import {Title} from "../components/Title/Title";
@@ -19,13 +20,13 @@ export const NewPage: React.FC = () => {
                     <BreadCrumb/>
                     <PostContent/>
                 </Post>
-                <Title font={'xxxlFontSize'}>
+                <Title>
                     You might also like...
                 </Title>
                 <FlexBox>
                     <FeaturedPostComponent/>
                 </FlexBox>
-
+                <Calendar/>
                 <InsideWrapper>
                     <CommentsBox/>
                 </InsideWrapper>

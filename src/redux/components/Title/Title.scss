@@ -4,7 +4,7 @@
   font-weight: 700;
   letter-spacing: -0.22px;
   line-height: 46px;
-
+  margin-bottom: 10px;
 
   &--post-styles{
     padding: 50px 0 0 0;
@@ -23,5 +23,17 @@
   &--xxxl-font-size {
     @extend .title;
     @include text-styles($xxxl-font-size, $black-color);
+  }
+}
+
+@media (max-width: 1200px) {
+  .title{
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .title{
+    text-align: center;
   }
 }

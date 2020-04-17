@@ -22,7 +22,7 @@ export const HomePage: React.FC = () => {
             <BackgroundBlock>
                 <Wrapper>
 
-                        <MainCardSliderComponent/>
+                    <MainCardSliderComponent/>
 
                 </Wrapper>
             </BackgroundBlock>

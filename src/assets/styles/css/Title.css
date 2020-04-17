@@ -11,7 +11,5 @@
     line-height: 36px; } }
 @media (max-width: 400px) {
   .title {
-    line-height: 26px; } }
-@media (max-width: 330px) {
-  .title {
-    font-size: 16px; } }
+    line-height: 26px;
+    font-size: 28px; } }

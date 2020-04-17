@@ -20,13 +20,6 @@
 @media (max-width: 400px) {
   .title {
     line-height: 26px;
+    font-size: $xxl-font-size;
   }
 }
-
-@media (max-width: 330px) {
-  .title {
-    font-size: $md-font-size
-  }
-}
-
-

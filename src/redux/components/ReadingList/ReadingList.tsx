@@ -13,15 +13,15 @@ export const ReadingList: React.FC = () => {
     ));
 
     return (
-        <div className= 'reading-list-box'>
-            <Title xxxlFontSize>
+        <>
+            <Title mixin="reading-list__title" xxxlFontSize>
                 Reading List
             </Title>
 
             <Slider {...settings}>
                 {renderReadingList}
             </Slider>
-        </div>
+        </>
     )
 }
 

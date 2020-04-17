@@ -20,7 +20,7 @@ interface IProps {
     newPost?: any,
 }
 
-class PostContent extends Component<IProps, {}> {
+class PostContent extends Component < IProps, {}> {
 
     componentDidMount() {
         this.props.getNewPostAction();
@@ -62,14 +62,14 @@ class PostContent extends Component<IProps, {}> {
                     </FigCaption>
                 </Figure>
             </>
-        ))
+        ));
 
         return (
             <FlexBox post>
                 <IconBox>
                     <Icon postElement/>
                 </IconBox>
-                <div className={'post-content'}>
+                <div className='post-content'>
                     {renderPost}
                 </div>
                 <Like/>

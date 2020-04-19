@@ -9,7 +9,7 @@ export const Arrow = (props: any) => {
                  display: 'block',
                  position: 'absolute',
                  top: '40%',
-                 right: '50px',
+                 right: '30px',
                  cursor: "pointer"
              }}
              onClick={onClick} >

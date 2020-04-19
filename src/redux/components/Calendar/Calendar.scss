@@ -21,7 +21,7 @@
 
 .DayPicker-Day:hover {
   background-color: $pink;
-  color: white;
+  color: $white-color;
   cursor: pointer;
 }
 
@@ -29,7 +29,7 @@
   text-align: center;
   color: $black-color;
   font-size: $sm-font-size;
-  font-weight: 600;
+  font-weight: $bold-font-weight;
 }
 
 .DayPicker-Caption {

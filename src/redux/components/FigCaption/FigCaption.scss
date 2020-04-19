@@ -1,10 +1,12 @@
+@import '../../../assets/styles/scss/styles.scss';
+
 .figcaption{
   text-align: center;
-  color: #9283e0;
-  font-family: "Open Sans", sans-serif;
+  color: $light-violet-color;
+  font-family: $open-sans-font;
   font-style: italic;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: $xl-font-size;
+  font-weight: $bold-font-weight;
   letter-spacing: -0.15px;
   line-height: 58px;
 }
@@ -12,14 +14,14 @@
 
 @media (max-width: 680px) {
   .figcaption{
-    font-size: 18px;
+    font-size: $lg-font-size;
     line-height: 40px;
   }
 }
 
 @media (max-width: 680px) {
   .figcaption{
-    font-size: 16px;
+    font-size: $md-font-size;
     line-height: 35px;
   }
 }

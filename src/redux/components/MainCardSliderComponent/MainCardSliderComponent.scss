@@ -5,9 +5,17 @@
 }
 
 .slide-box {
-  @include main-card( 0px , 100%, $violet-color);
+  @include main-card( 100px 0 0 0, 100%, $violet-color);
   max-height: 800px;
   width: 85%;
+}
+
+@media(max-height: 580px) {
+  .slide-box {
+    @include main-card( 40px 0 0 0, 100%, $violet-color);
+    max-height: 800px;
+    width: 85%;
+  }
 }
 
 @media (max-width: 1190px) {

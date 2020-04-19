@@ -58,7 +58,12 @@ class PostContent extends Component < IProps, {}> {
                     </FlexBox>
                     <FigCaption>
                         {post.figCaption}
-                        <Author {...post}/>
+                        <Author>
+                            Follow me
+                            <a href='https://www.instagram.com/?hl=ru'>
+                                {post.media}
+                            </a>
+                        </Author>
                     </FigCaption>
                 </Figure>
             </>

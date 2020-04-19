@@ -1,5 +1,6 @@
 .author{
   font-style: normal;
+  text-align: center;
   color: #000;
   margin: 30px;
   line-height: 25px;
@@ -16,9 +17,9 @@
   &__social{
     font-size: 16px;
     letter-spacing: -0.1px;
-  }
-  &__link{
-    color: deepskyblue;
-    text-decoration: none;
+    & > a{
+      color: deepskyblue;
+      text-decoration: none;
+    }
   }
 }

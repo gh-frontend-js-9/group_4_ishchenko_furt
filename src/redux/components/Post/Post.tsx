@@ -11,7 +11,9 @@ export const Post: React.FC = () => {
     return (
         <>
             <div className={'post'}>
-                <BreadCrumb/>
+                <BreadCrumb>
+                    Home  —  Reading lists  —  UX Design  —  10 Reasons to Build Your Website with WP Page Builder
+                </BreadCrumb>
                 <PostContent/>
             </div>
             <Title mixin = 'post__title' xxxlFontSize>

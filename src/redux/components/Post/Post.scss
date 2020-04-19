@@ -3,6 +3,13 @@
   padding-bottom: 200px;
 }
 
+@media (max-width: 1190px) {
+  .post__title {
+    padding-left: 25px;
+    padding-bottom: 20px;
+  }
+}
+
 @media (max-width: 1000px) {
   .post {
     padding-top: 70px;
@@ -12,7 +19,7 @@
 
 @media (max-width: 805px) {
   .post {
-    padding-top: 70px;
+    padding-top: 40px;
     padding-bottom: 50px;
   }
 }
@@ -20,12 +27,3 @@
 .post__title {
   padding-bottom: 30px;
 }
-
-@media (max-width: 1190px) {
-  .post__title {
-    padding-left: 25px;
-    padding-bottom: 20px;
-  }
-}
-
-

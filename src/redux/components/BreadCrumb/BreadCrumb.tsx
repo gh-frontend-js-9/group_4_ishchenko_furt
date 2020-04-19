@@ -1,7 +1,6 @@
 import React from "react";
 import './BreadCrumb.scss';
 
-
 export const BreadCrumb: React.FC = () =>{
     return(
         <div className={'bread-crumb'}>

@@ -9,8 +9,9 @@ export const GET_POPULAR_THEMATIC_POST_SUCCESS = 'GET_POPULAR_THEMATIC_POST_SUCC
 export const GET_ESSENTIALS_THEMATIC_POST_SUCCESS = 'GET_FREELANCE_ESSENTIALS_POST_SUCCESS'
 export const GET_COMMENTS_LIST_SUCCESS = 'GET_COMMENTS_LIST_SUCCESS';
 export const SEND_COMMENT_SUCCESS = 'SEND_COMMENT_SUCCESS';
-export const GET_NEW_POST_SUCCESS = 'GET_NEW_POST_SUCCESS'
-export const GET_USER_ID = 'GET_USER_ID'
+export const GET_NEW_POST_SUCCESS = 'GET_NEW_POST_SUCCESS';
+export const GET_USER_ID = 'GET_USER_ID';
+export const GET_AUTHOR_POST_SUCCESS = 'GET_AUTHOR_POST_SUCCESS';
 
 const initialState = {
     popularPost: [],
@@ -25,6 +26,7 @@ const initialState = {
     sendComment: [],
     newPost: [],
     userData: [],
+    authorPost: [],
     isLoading: false
 };
 
@@ -47,6 +49,7 @@ export function postsReducers(state: any = initialState, action: any) {
             };
         case GET_FEATURED_POST_SUCCESS:
             return {
+
                 ...state,
                 featuredPost: action.payload,
             };
@@ -89,6 +92,11 @@ export function postsReducers(state: any = initialState, action: any) {
             return {
                 ...state,
                 userData: action.payload
+            };
+        case GET_AUTHOR_POST_SUCCESS:
+            return {
+                ...state,
+                authorPost: action.payload
             };
         case IS_LOADING:
             return {

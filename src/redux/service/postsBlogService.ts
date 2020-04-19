@@ -46,6 +46,9 @@ export class postsBlogService extends Component {
     static get commentsUrl() {
         return '/comments'
     }
+    static get authorUrl() {
+        return '/author'
+    }
 
     static get newPostUrl() {
         return '/post'
@@ -89,6 +92,9 @@ export class postsBlogService extends Component {
 
     static sendComment(comment, name, email, replyTo) {
         return axios.post(this.appFakeURL + this.commentsUrl, {comment, name, email, replyTo})
+    }
+    static getAuthorPost() {
+        return axios.get(this.appFakeURL + this.authorUrl)
     }
 
     static getNewPost() {

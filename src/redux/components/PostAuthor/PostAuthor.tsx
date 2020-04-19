@@ -11,8 +11,8 @@ export const PostAuthor = (props: any) => {
 
     return (
         <p className={`post-author ${classes}`}>
-            <span >
-                BY TOMAS LAURINAVICIUS IN {props.tags}
+            <span>
+                By {props.author.firstName} {props.author.lastName} IN {props.tags}
             </span>
         </p>
     )

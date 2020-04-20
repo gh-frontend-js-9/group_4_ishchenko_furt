@@ -1,4 +1,5 @@
 import {
+    getAuthorPostReceiveAction,
     getCommentsListReceiveAction,
     getEssentialsPostReceiveAction, getEssentialsThematicPostReceiveAction,
     getFeaturedPostReceiveAction, getFreelancePostReceiveAction, getFreelanceThematicPostReceiveAction,
@@ -146,6 +147,20 @@ export function getCommentsListAction() {
             .then((response: any) => {
                 dispatch(isLoadingAction(false));
                 dispatch(getCommentsListReceiveAction(response.data));
+            })
+            .catch(error =>
+                dispatch((error.response))
+            )
+    }
+}
+
+export function getAuthorPostAction() {
+
+    return (dispatch: any) => {
+
+        postsBlogService.getAuthorPost()
+            .then((response: any) => {
+                dispatch(getAuthorPostReceiveAction(response.data));
             })
             .catch(error =>
                 dispatch((error.response))

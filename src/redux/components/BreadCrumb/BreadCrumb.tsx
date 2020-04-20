@@ -10,4 +10,4 @@ export const BreadCrumb: React.FC = (props: any) =>{
             {children}
         </div>
     )
-}
+};

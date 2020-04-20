@@ -3,10 +3,11 @@ import './Button.scss'
 
 export const Button = (props: any) => {
     const {children} = props;
+    const mixin = props.mixin;
 
     return (
         <button {...props}
-                className='button button--hovered'>
+                className={`${mixin} button button--hovered`}>
             {children}
         </button>
     )

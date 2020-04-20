@@ -1,4 +1,5 @@
 import {
+    GET_AUTHOR_POST_SUCCESS,
     GET_COMMENTS_LIST_SUCCESS,
     GET_ESSENTIALS_POST_SUCCESS, GET_ESSENTIALS_THEMATIC_POST_SUCCESS,
     GET_FEATURED_POST_SUCCESS, GET_FREELANCE_POST_SUCCESS, GET_FREELANCE_THEMATIC_POST_SUCCESS,
@@ -88,6 +89,12 @@ export function getUserIdAction(userData: string) {
     return {
         type: GET_USER_ID,
         payload: userData
+    };
+}
+export function getAuthorPostReceiveAction(authorPost: string) {
+    return {
+        type: GET_AUTHOR_POST_SUCCESS,
+        payload: authorPost
     };
 }
 

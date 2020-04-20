@@ -1,12 +1,12 @@
-import React, {Component} from "react";
+import React, {Component} from 'react';
 import {connect} from 'react-redux'
-import {NameInput} from "../NameInput/NameInput";
-import {EmailInput} from "../EmailInput/EmailInput";
-import {Button} from "../Button/Button";
+import {NameInput} from '../NameInput/NameInput';
+import {EmailInput} from '../EmailInput/EmailInput';
+import {Button} from '../Button/Button';
 import './CommentsFormComponent.scss'
-import {Checkbox} from "../Checkbox/Checkbox";
-import {sendCommentAction} from "../../actions/getPostsActions";
-import {Content} from "../Content/Content";
+import {Checkbox} from '../Checkbox/Checkbox';
+import {sendCommentAction} from '../../actions/getPostsActions';
+import {Content} from '../Content/Content';
 
 interface IState {
     comment?: string,
@@ -32,8 +32,8 @@ class CommentsFormComponent extends Component <IProps, IState> {
     }
 
     componentDidUpdate(prevProps) {
-    let userId = this.props.userData.id;
-    let userName = this.props.userData.name;
+        let userId = this.props.userData.id;
+        let userName = this.props.userData.name;
 
         if (prevProps.userData.id !== userId) {
 
@@ -74,7 +74,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
         const {email, name, comment} = this.state;
         return (
             <form id='form'
-                  className="comments-form"
+                  className='comments-form'
                   name='comments-form'
                   onSubmit={this.handleSubmit}>
                 <textarea required
@@ -102,7 +102,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
                 </Checkbox>
 
                 <div>
-                    <Button disabled={!comment} type="submit">
+                    <Button disabled={!comment} type='submit'>
                         Post Comment
                     </Button>
                 </div>
@@ -118,7 +118,7 @@ const mapStateToProps = (state: any) => {
 };
 const mapDispatchToProps = (dispatch: any) => {
     return {
-        sendCommentAction: (comment: string, name: string, email: string, replyTo:string) => dispatch(sendCommentAction(comment, name, email, replyTo))
+        sendCommentAction: (comment: string, name: string, email: string, replyTo: string) => dispatch(sendCommentAction(comment, name, email, replyTo))
     };
 };
 

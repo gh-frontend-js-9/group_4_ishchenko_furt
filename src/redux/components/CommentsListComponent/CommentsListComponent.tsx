@@ -1,10 +1,10 @@
-import React, {Component} from "react";
+import React, {Component} from 'react';
 import {connect} from 'react-redux'
-import Loading from "../Healpers/Loading";
-import {CommentCard} from "../CommentCard/CommentCard";
-import {getCommentsListAction} from "../../actions/getPostsActions";
-import {OutlineButton} from "../OutlineButton/OutlineButton";
-import {getUserIdAction} from "../../actions/PostsActionsCreators";
+import Loading from '../Healpers/Loading';
+import {CommentCard} from '../CommentCard/CommentCard';
+import {getCommentsListAction} from '../../actions/getPostsActions';
+import {OutlineButton} from '../OutlineButton/OutlineButton';
+import {getUserIdAction} from '../../actions/PostsActionsCreators';
 
 interface IProps {
     getCommentsListAction?: any,

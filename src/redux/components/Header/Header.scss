@@ -5,15 +5,9 @@
   padding: 25px 25px 25px 0px;
 }
 
-@media (max-width: 610px) {
-  .header__flex-box {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
-@media (max-width: 805px) {
-  .header {
-    display: none;
-  }
-}
+//@media (max-width: 805px) {
+//  .header {
+//    display: none;
+//  }
+//}

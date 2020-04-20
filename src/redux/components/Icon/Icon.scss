@@ -19,7 +19,6 @@
   }
 }
 
-
 .fa__footer {
   width: 24px;
   color: $white-color;
@@ -27,11 +26,12 @@
 
 .icon {
   text-align: center;
-  background-color: $light-gray-color ;
+  background-color: $light-gray-color;
   border-radius: 25px;
   padding: 6px 2px;
   margin: 5px;
-  &--post-styles{
+
+  &--post-styles {
     @extend .icon;
     display: flex;
     justify-content: center;
@@ -39,19 +39,19 @@
     padding: 0;
     margin-bottom: 20px;
     font-size: 22px;
-    width: 34px;
-    height: 34px;
+    width: 35px;
+    height: 35px;
   }
 }
 
 @media (max-width: 1190px) {
-  .icon--post-styles{
+  .icon--post-styles {
     margin-left: 20px;
   }
 }
 
 @media (max-width: 805px) {
-  .icon--post-styles{
+  .icon--post-styles {
     display: none;
   }
 }

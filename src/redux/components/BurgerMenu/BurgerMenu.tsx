@@ -8,7 +8,7 @@ const Menu = ({open, setOpen}) => {
     return (
         <StyledMenu open={open}>
             <Navigation/>
-            <SearchIcon burgerMenuElem/>
+            <SearchIcon/>
         </StyledMenu>
     );
 };
@@ -17,9 +17,9 @@ const Burger = ({open, setOpen}) => {
 
     return (
         <StyledBurgerMenu open={open} onClick={() => setOpen(!open)}>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
         </StyledBurgerMenu>
     )
 };

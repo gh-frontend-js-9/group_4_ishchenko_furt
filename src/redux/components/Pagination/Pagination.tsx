@@ -13,11 +13,10 @@ interface IProps {
 }
 
 interface IState {
-    offset?: any,
-    data?: any,
+    offset?: number,
     perPage?: any,
-    currentPage?: any,
-    pageCount?: any,
+    currentPage?: number,
+    pageCount?: number,
     authorPost?: any,
     renderCard?: any
 }
@@ -27,7 +26,6 @@ class Pagination extends Component <IProps, IState> {
         super(props);
         this.state = {
             offset: 0,
-            data: [],
             perPage: 3,
             currentPage: 0,
             pageCount: null
@@ -42,11 +40,14 @@ class Pagination extends Component <IProps, IState> {
 
         const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
         const renderCard = slice.map(post =>
-            <div className='featured-post' key={post.id}>
+            <div className='pagination-box pagination-box--hovered'
+                 key={post.id}>
                 <ImageBox {...post}/>
                 <div className="main-card">
                     <PostAuthor {...post} mdFontSize/>
-                    <Title mixin='featured-post__title' xxlFontSize> {post.category}</Title>
+                    <Title mixin='featured-post__title' xxlFontSize>
+                        {post.category}
+                    </Title>
                 </div>
             </div>);
 
@@ -54,10 +55,9 @@ class Pagination extends Component <IProps, IState> {
             pageCount: Math.ceil(data.length / this.state.perPage),
             renderCard
         })
-
     }
 
-    handlePageClick = (e) => {
+    handlePageClick = (e:any) => {
         const selectedPage = e.selected;
         const offset = selectedPage * this.state.perPage;
 
@@ -90,7 +90,7 @@ class Pagination extends Component <IProps, IState> {
                     breakClassName={"break-me"}
                     pageCount={this.state.pageCount}
                     marginPagesDisplayed={2}
-                    pageRangeDisplayed={5}
+                    pageRangeDisplayed={1}
                     onPageChange={this.handlePageClick}
                     containerClassName={"pagination"}
                     subContainerClassName={"pages pagination"}

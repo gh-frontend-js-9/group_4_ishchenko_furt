@@ -19,11 +19,9 @@ import {ReadingList} from "../components/ReadingList/ReadingList";
 export const HomePage: React.FC = () => {
     return (
         <>
-            <BackgroundBlock>
+            <BackgroundBlock mixin = 'background-block__home-page'>
                 <Wrapper>
-
                     <MainCardSliderComponent/>
-
                 </Wrapper>
             </BackgroundBlock>
 

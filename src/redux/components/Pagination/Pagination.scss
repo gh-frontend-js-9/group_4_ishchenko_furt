@@ -1,7 +1,17 @@
 @import '../../../assets/styles/scss/styles.scss';
 
+.pagination-box {
+  padding: 20px 10px 60px 10px;
+  border-radius: 8px;
+
+  &--hovered:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+}
+
 .pagination {
-  margin: 15px auto;
+  padding: 30px 0px;
   display: flex;
   list-style: none;
   outline: none;
@@ -29,8 +39,4 @@
 
 .pagination > li > a, .pagination > li > span {
   color: $black-color
-}
-
-.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span {
-  border-radius: unset
 }

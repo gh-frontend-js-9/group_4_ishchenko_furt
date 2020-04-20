@@ -1,5 +1,6 @@
 .main-card__slide-box {
-  width: 100%; }
+  width: 100%;
+  padding-top: 150px; }
 
 .slide-box {
   padding: 0px;

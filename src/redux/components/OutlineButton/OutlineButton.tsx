@@ -7,7 +7,7 @@ export const OutlineButton = (props: any) => {
 
     return (
         <a href='#form' {...props}
-                className={`${classes} outline-button--hovered`}>
+           className={`${classes} outline-button--hovered`}>
             {children}
         </a>
     )

@@ -5,7 +5,7 @@ import '../../../assets/styles/scss/common/_common.scss'
 export const Title = (props: any) => {
     const {children} = props;
     const paddingSize = (props.postPadding ? 'title--post-styles' : '');
-    let mixin = props.mixin;
+    const mixin = props.mixin;
 
     const fontSize = (
         props.mdFontSize ? "md-font-size"
@@ -13,8 +13,7 @@ export const Title = (props: any) => {
             : props.xxlFontSize ? 'xxl-font-size'
                 : props.xxxlFontSize ? 'xxxl-font-size' : "");
 
-    const color = (props.white ? "text-white" : props.primary
-        ? "primary" : "");
+    const color = (props.white ? "text-white" : props.primary ? "primary" : "");
 
     return (
         <h3 className={`title ${color} ${fontSize} ${mixin} ${paddingSize}`}>

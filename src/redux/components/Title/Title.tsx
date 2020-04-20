@@ -11,7 +11,9 @@ export const Title = (props: any) => {
         props.mdFontSize ? "md-font-size"
         : props.lgSecondFontSize ? 'lg-second-font-size'
             : props.xxlFontSize ? 'xxl-font-size'
-                : props.xxxlFontSize ? 'xxxl-font-size' : "");
+                : props.xxxlFontSize ? 'xxxl-font-size'
+                    :props.extraXlFontSize ? 'extra-xl-font-size' : ''
+    );
 
     const color = (props.white ? "text-white" : props.primary ? "primary" : "");
 

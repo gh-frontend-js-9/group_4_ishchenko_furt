@@ -15,15 +15,15 @@ export const Navigation = (props) => {
         link: '#',
         title: 'Popular'
     }, {
-        link: '/new',
-        title: 'New'
-    }, {
         link: '#',
         title: 'Reading list'
     }, {
         link: '/subscribe',
         title: 'Subscribe'
-    }];
+    }, {
+        link: '/new',
+        title: 'New'
+    },];
     const classes = `${linkNavClass} ${mixin}`;
 
     let renderNav = navBar.map((nav: any, n: number) => {

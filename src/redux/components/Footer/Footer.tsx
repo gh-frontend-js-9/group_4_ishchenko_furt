@@ -9,7 +9,7 @@ export const Footer = () => {
     return (
         <div className='footer'>
             <Logo/>
-            <div>
+            <div className='footer__icon'>
                 <Icon/>
             </div>
             <Copyright/>

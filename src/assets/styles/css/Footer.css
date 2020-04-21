@@ -8,3 +8,5 @@
 @media (max-width: 805px) {
   .footer {
     flex-direction: column; } }
+.footer__icon {
+  display: flex; }

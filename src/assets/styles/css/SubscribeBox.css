@@ -1,6 +1,7 @@
 .subscribe-box {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 150px 0px; }
   .subscribe-box__content {
     font-weight: 600;
     padding: 30px 0px 50px;

@@ -89,7 +89,8 @@ class CommentsFormComponent extends Component <IProps, IState> {
                            onChange={this.handleChange}/>
                 <EmailInput value={email}
                             name='email'
-                            onChange={this.handleChange}/>
+                            onChange={this.handleChange}
+                            placeholder='Email'/>
                 <Checkbox>
                     <Content primary mdFontSize>
                         <span>

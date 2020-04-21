@@ -7,7 +7,7 @@
   &__main-card {
     @include main-card(35px 40px 19px, 100%, $violet-color);
     background-color: $violet-color;
-    height: 44vh;
+    height: 38.5vh;
     color: $white-color;
     border-radius: 8px;
   }

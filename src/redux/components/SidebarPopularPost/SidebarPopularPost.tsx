@@ -6,7 +6,6 @@ import {getPopularThematicPostAction} from '../../actions/getPostsActions';
 
 interface IProps {
     getPopularThematicPostAction?: any,
-    isLoading?: boolean,
     popularThematicPost?: any,
 }
 
@@ -44,7 +43,6 @@ class SidebarPopularPost extends Component<IProps, {}>{
 const mapStateToProps = (state: any) => {
     return {
         popularThematicPost: state.postsReducers.popularThematicPost,
-        isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {

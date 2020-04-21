@@ -6,7 +6,6 @@ import '../SidebarPopularPost/SidebarPost.scss';
 
 interface IProps {
     getEssentialsThematicPostAction?: any,
-    isLoading?: boolean,
     essentialsThematicPost?: any
 }
 
@@ -44,7 +43,6 @@ class SidebarRecentPost extends Component<IProps, {}>{
 const mapStateToProps = (state: any) => {
     return {
         essentialsThematicPost: state.postsReducers.essentialsThematicPost,
-        isLoading: state.postsReducers.isLoading,
     };
 };
 const mapDispatchToProps = (dispatch: any) => {

@@ -2,14 +2,25 @@
   width: 100%;
   padding-top: 150px; }
 
+@media (max-width: 500px) {
+  .main-card__slide-box {
+    padding-top: 35px; } }
 .slide-box {
-  padding: 0px;
+  padding: 100px 0 0 0;
   max-width: 100%;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   background-color: #1b0042;
   max-height: 800px;
   width: 85%; }
 
+@media (max-height: 580px) {
+  .slide-box {
+    padding: 40px 0 0 0;
+    max-width: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    background-color: #1b0042;
+    max-height: 800px;
+    width: 85%; } }
 @media (max-width: 1190px) {
   .slide-box {
     padding-left: 45px; } }

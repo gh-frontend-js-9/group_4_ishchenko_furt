@@ -1,19 +1,20 @@
 .author {
   font-style: normal;
-  color: #000;
-  margin: 30px;
+  text-align: center;
+  color: #000000;
+  padding: 30px;
   line-height: 25px;
   font-weight: 600; }
   .author__image {
-    margin-bottom: 15px; }
+    padding-bottom: 20px; }
   .author__name {
-    font-family: "Open Sans Semi Bold", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     letter-spacing: -0.11px;
     text-transform: uppercase; }
   .author__social {
     font-size: 16px;
     letter-spacing: -0.1px; }
-  .author__link {
-    color: deepskyblue;
-    text-decoration: none; }
+    .author__social > a {
+      color: #37cee6;
+      text-decoration: none; }

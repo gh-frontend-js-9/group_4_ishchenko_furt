@@ -43,7 +43,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
                 })
             } else {
                 this.setState({
-                    comment: `Re: ${userName} (id:${userId}), `
+                    comment: `Re: #${userId} ${userName}, `
                 })
             }
         }

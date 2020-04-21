@@ -18,7 +18,7 @@
 
 .DayPicker-Day:hover {
   background-color: #ff5480;
-  color: white;
+  color: #ffffff;
   cursor: pointer; }
 
 .DayPicker-Caption > div {

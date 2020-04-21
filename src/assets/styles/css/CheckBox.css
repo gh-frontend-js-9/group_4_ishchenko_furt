@@ -1,6 +1,6 @@
 .checkbox {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding: 3px 0px 30px; }
 
 .checkbox__input {

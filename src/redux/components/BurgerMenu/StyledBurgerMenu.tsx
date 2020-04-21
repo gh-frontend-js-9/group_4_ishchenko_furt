@@ -62,7 +62,7 @@ export const StyledMenu = styled.nav <IProps>`
   transform: ${({open}) => open ? 'translateX(0)' : 'translateX(-100%)'};
   height: 100vh;
   text-align: left;
-  padding: 25px;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -84,9 +84,9 @@ export const StyledMenu = styled.nav <IProps>`
     text-decoration: none;
     transition: color 0.3s linear;
 
-    @media (max-width: 576px) {
-      font-size: 1.5rem;
+    @media (max-width: 300px) {
       text-align: center;
+      font-size: 12px;
     }
   }
 `;

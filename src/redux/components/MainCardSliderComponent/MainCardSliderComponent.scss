@@ -4,7 +4,11 @@
   width: 100%;
   padding-top: 150px;
 }
-
+@media (max-width: 500px) {
+  .main-card__slide-box {
+    padding-top: 35px;
+  }
+}
 .slide-box {
   @include main-card( 100px 0 0 0, 100%, $violet-color);
   max-height: 800px;

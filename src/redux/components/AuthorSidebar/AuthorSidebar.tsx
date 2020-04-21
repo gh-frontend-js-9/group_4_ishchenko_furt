@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './AuthorSidebar.scss'
 
 export const AuthorSidebar: React.FC = (props: any) => {

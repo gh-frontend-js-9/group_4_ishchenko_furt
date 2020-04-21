@@ -3,10 +3,9 @@
 .logo--black-color {
   padding-bottom: 7px;
 }
-
-@media (max-width: 680px) {
+@media (max-width: 805px) {
   .logo--black-color {
-    padding: 10px;
+    vertical-align: baseline;
   }
 }
 

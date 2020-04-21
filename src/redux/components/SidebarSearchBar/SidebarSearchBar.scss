@@ -1,0 +1,21 @@
+@import '../../../assets/styles/scss/styles.scss';
+
+.searchbar{
+  text-align: center;
+  padding: 20px;
+  &__input{
+    width: 80%;
+    max-width: 320px;
+    border: 0;
+    outline: none;
+  }
+  &__icon{
+    color: $light-gray-color;
+    font-size: $xl-font-size;
+  }
+}
+
+.searchbar__icon:hover{
+  color: $pink;
+  cursor: pointer;
+}

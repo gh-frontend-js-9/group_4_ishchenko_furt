@@ -1,0 +1,45 @@
+@import '../../../assets/styles/scss/styles.scss';
+
+.banner{
+  width: 100%;
+  margin: 20px 0;
+  font-family: $open-sans-font;
+
+  &__canvas{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    display: flex;
+    font-size: $lg-font-size;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: $white-color;
+  }
+}
+
+.flags{
+  padding: 10px 0;
+  &__box {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    display: inline-block;
+    background-color: $white-color;
+    line-height: 30px;
+    padding: 5px 5px 5px 7px;
+    margin: 0 10px 7px 0;
+  }
+  &__icon{
+    color: $light-gray-color;
+    font-size: 15px;
+    padding: 0 5px 0 10px;
+  }
+}
+
+.flags__box:hover{
+  cursor: pointer;
+  background-color: $light-violet-color;
+  color: $white-color;
+}

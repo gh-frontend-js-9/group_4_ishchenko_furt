@@ -1,4 +1,4 @@
-import './AuthorSlider.scss';
+import './SidebarSlider.scss';
 import {Arrow} from "../Arrow/Arrow";
 import React from "react";
 

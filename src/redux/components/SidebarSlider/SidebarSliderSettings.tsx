@@ -13,5 +13,6 @@ export const authorSettings = {
     slidesToScroll: 1,
     initialSlide: 0,
     variableWidth: true,
+    prevArrow:<br />,
     nextArrow: <Arrow/>
 }

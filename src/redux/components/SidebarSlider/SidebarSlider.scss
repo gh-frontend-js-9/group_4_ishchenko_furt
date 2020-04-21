@@ -17,3 +17,9 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
 }
+
+@media(max-width: 530px) {
+  .author-slider{
+    display: none;
+  }
+}

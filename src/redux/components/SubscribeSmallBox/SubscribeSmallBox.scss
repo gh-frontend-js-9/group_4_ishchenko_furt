@@ -15,8 +15,8 @@
 
   &__title {
     text-align: center;
-    padding: 10px 0px;
-    font-weight: 600;
+    padding: 10px 0;
+    font-weight: $bold-font-weight;
     line-height: 30px;
   }
 
@@ -34,6 +34,36 @@
     padding: 15px;
     font-size: $sm-font-size;
     position: absolute;
-    left: 270px;
+    right: 50px;
+  }
+}
+
+@media(max-width: 1200px) {
+  .subscribe-small-box__email{
+    left: 150px;
+  }
+
+  .subscribe-small-box__button{
+    right: 180px;
+  }
+}
+
+@media(max-width: 850px) {
+  .subscribe-small-box__email{
+    left: 90px;
+  }
+
+  .subscribe-small-box__button{
+    right: 100px;
+  }
+}
+
+@media(max-width: 530px) {
+  .subscribe-small-box__email{
+    left: 35px;
+  }
+
+  .subscribe-small-box__button{
+    right: 35px;
   }
 }

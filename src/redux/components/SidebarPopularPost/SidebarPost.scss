@@ -21,6 +21,26 @@
   }
 }
 
+@media(max-width: 1200px) {
+  .sidebar-post--small{
+    line-height: 30px;
+    font-size: $lg-font-size;
+  }
+}
+
+@media(max-width: 850px) {
+  .sidebar-post--small{
+    line-height: 20px;
+  }
+}
+
+@media(max-width: 520px) {
+  .sidebar-post--small{
+    font-size: $sm-font-size;
+    line-height: 17px;
+  }
+}
+
 .sidebar-post > div:hover{
   color: $pink;
   cursor: pointer;

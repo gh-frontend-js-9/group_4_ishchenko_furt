@@ -17,3 +17,9 @@
     font-size: $lg-font-size;
   }
 }
+
+@media(max-width: 1200px) {
+  .sidebar-essentials{
+    display: none;
+  }
+}

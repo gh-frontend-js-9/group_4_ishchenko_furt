@@ -7,7 +7,7 @@ import {Icon} from "../Icon/Icon";
 
 export const SidebarSocial:React.FC = () =>{
     return(
-        <div>
+        <div className={'sidebar-essentials'}>
             <Title mixin={'sidebar-post--center'}>
                 Essentials
             </Title>

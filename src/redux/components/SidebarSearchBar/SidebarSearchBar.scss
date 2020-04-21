@@ -3,12 +3,14 @@
 .searchbar{
   text-align: center;
   padding: 20px;
+
   &__input{
     width: 80%;
     max-width: 320px;
     border: 0;
     outline: none;
   }
+
   &__icon{
     color: $light-gray-color;
     font-size: $xl-font-size;
@@ -18,4 +20,10 @@
 .searchbar__icon:hover{
   color: $pink;
   cursor: pointer;
+}
+
+@media(max-width: 1200px) {
+  .searchbar__input{
+    max-width: 500px;
+  }
 }

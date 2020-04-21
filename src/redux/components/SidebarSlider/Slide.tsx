@@ -1,5 +1,5 @@
 import React from "react";
-import './AuthorSlider.scss';
+import './SidebarSlider.scss';
 
 export const Slide:React.FC = () =>{
     return(

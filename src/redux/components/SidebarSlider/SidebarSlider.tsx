@@ -1,10 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import {Slide} from "./Slide";
-import './AuthorSlider.scss';
-import {authorSettings} from "./AuthorSliderSettings";
+import './SidebarSlider.scss';
+import {authorSettings} from "./SidebarSliderSettings";
 
-export const AuthorSlider:React.FC = () =>{
+export const SidebarSlider:React.FC = () =>{
 
     return(
         <Slider {...authorSettings}>

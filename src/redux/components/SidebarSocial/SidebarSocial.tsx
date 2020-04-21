@@ -1,5 +1,6 @@
 import React from "react";
 import {SidebarBox} from "../SidebarBox/SidebarBox";
+import {Title} from "../Title/Title";
 import '../SidebarPopularPost/SidebarPost.scss';
 import './SidebarSocial.scss';
 import {Icon} from "../Icon/Icon";
@@ -7,15 +8,15 @@ import {Icon} from "../Icon/Icon";
 export const SidebarSocial:React.FC = () =>{
     return(
         <div>
-            <h3 className={'sidebar-title'}>
+            <Title mixin={'sidebar-post--center'}>
                 Essentials
-            </h3>
+            </Title>
             <SidebarBox>
-                <h3 className={'sidebar-title'}>
+                <Title mixin={'sidebar-post--center'}>
                     Social
-                </h3>
+                </Title>
                 <div className={'social-icons'}>
-                    <Icon/>
+                    <Icon mixin={'social-icons--pink social-icons--big'}/>
                 </div>
             </SidebarBox>
         </div>

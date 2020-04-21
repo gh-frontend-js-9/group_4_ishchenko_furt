@@ -1,8 +1,9 @@
 import React from "react";
 import './Icon.scss'
 
-export const Icon = (props) => {
+export const Icon = (props:any) => {
     const iconClass = (props.postElement ? 'icon--post-styles' : 'icon');
+    const mixin = props.mixin
 
     const icons = [{
         name: 'fa-vk',
@@ -22,7 +23,7 @@ export const Icon = (props) => {
     }];
 
     let renderIcon = icons.map((icon: any, n: number) => {
-        return <span key={n} className={iconClass}>
+        return <span key={n} className={`${iconClass} ${mixin}`}>
                         <a className="icon__anchor" key={n} href={icon.href}>
                             <i key={n}
                                className={`${icon.name} fa__footer fa fa--color fa--hovered `}

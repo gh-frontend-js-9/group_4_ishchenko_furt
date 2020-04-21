@@ -1,14 +1,5 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.sidebar-title{
-    text-align: center;
-    font-family: $open-sans-font;
-    padding: 20px;
-    text-transform: uppercase;
-    font-size: $lg-font-size;
-    font-weight: $bold-font-weight;
-}
-
 .sidebar-post{
   display: flex;
   padding-bottom: 25px;
@@ -16,22 +7,21 @@
     width: 100%;
     max-width: 80px;
     height: 80px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
   }
-  &__text{
-    padding: 0 10px;
-    line-height: 22px;
+  &--small{
+    padding: 0 0 5px 10px;
+    line-height: 20px;
   }
-  &__tag{
-    padding: 5px 0;
-    color: $light-gray-color;
-  }
-  &__title{
-    font-weight: $bold-font-weight;
+  &--center{
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
   }
 }
 
 .sidebar-post > div:hover{
   color: $pink;
+  cursor: pointer;
 }

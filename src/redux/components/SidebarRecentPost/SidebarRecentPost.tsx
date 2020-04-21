@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {SidebarBox} from "../SidebarBox/SidebarBox";
+import {Content} from "../Content/Content";
+import {Title} from "../Title/Title";
 import {getEssentialsThematicPostAction} from '../../actions/getPostsActions';
 import '../SidebarPopularPost/SidebarPost.scss';
 
@@ -18,21 +20,21 @@ class SidebarRecentPost extends Component<IProps, {}>{
         let renderRecentPost = this.props.essentialsThematicPost.map((post: any)=>(
             <div className={'sidebar-post'}>
                 <div className={'sidebar-post__text'}>
-                    <p className={'sidebar-post__tag'}>
+                    <Content mixin={'sidebar-post--small'} primary>
                         {post.tags}
-                    </p>
-                    <h3 className={'sidebar-post__title'}>
+                    </Content>
+                    <Title mixin={'sidebar-post--small'}>
                         {post.title}
-                    </h3>
+                    </Title>
                 </div>
             </div>
         ))
 
         return(
             <SidebarBox>
-                <h3 className={'sidebar-title'}>
+                <Title mixin={'sidebar-post--center'}>
                     Recent post
-                </h3>
+                </Title>
                 {renderRecentPost}
             </SidebarBox>
         )

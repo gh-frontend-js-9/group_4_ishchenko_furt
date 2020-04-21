@@ -42,7 +42,7 @@ export const SubscribePage: React.FC = () => {
                         <Banner/>
                     </AuthorSidebar>
                 </Box>
-            
+
         </Wrapper>
     );
 };

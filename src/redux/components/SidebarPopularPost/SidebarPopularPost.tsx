@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import {SidebarBox} from "../SidebarBox/SidebarBox";
 import './SidebarPost.scss';
+import {Content} from "../Content/Content";
+import {Title} from "../Title/Title";
 import {connect} from "react-redux";
 import {getPopularThematicPostAction} from '../../actions/getPostsActions';
 
@@ -18,22 +20,22 @@ class SidebarPopularPost extends Component<IProps, {}>{
         let renderPopularPost = this.props.popularThematicPost.map((post: any) => (
             <div className={'sidebar-post'}>
                 <div className={'sidebar-post__image'} />
-                <div className={'sidebar-post__text'}>
-                    <p className={'sidebar-post__tag'}>
+                <div>
+                    <Content mixin={'sidebar-post--small'} primary>
                         {post.tags}
-                    </p>
-                    <h3 className={'sidebar-post__title'}>
+                    </Content>
+                    <Title mixin={'sidebar-post--small'} >
                         {post.title}
-                    </h3>
+                    </Title>
                 </div>
             </div>
         ));
 
         return(
             <SidebarBox>
-                <h3 className={'sidebar-title'}>
+                <Title mixin={'sidebar-post--center'}>
                     Popular post
-                </h3>
+                </Title>
                 {renderPopularPost}
             </SidebarBox>
         )

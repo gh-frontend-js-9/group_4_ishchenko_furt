@@ -7,7 +7,7 @@
 @media (max-width: 805px) {
   .header {
     justify-content: flex-end;
-    align-items: center; } }
+    align-items: flex-start; } }
 @media (max-width: 805px) {
   .header__nav {
     display: none; } }

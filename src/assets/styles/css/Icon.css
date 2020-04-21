@@ -1,8 +1,6 @@
-.fa {
-  color: #ffffff; }
-  .fa--hovered:hover {
-    color: #ff5480;
-    cursor: pointer; }
+.fa--hovered:hover {
+  color: #ff5480;
+  cursor: pointer; }
 
 @media (max-width: 600px) {
   .fa--hovered:hover {

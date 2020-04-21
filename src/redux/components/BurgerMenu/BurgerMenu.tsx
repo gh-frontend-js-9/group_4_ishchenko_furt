@@ -1,14 +1,12 @@
 import React from 'react';
-import {Navigation} from "../Navigation/Navigation";
-import {StyledBurgerMenu, StyledMenu} from "./StyledBurgerMenu";
-import {SearchIcon} from "../SearchIcon/SearchIcon";
+import {Navigation} from '../Navigation/Navigation';
+import {StyledBurgerMenu, StyledMenu} from './StyledBurgerMenu';
 
 const Menu = ({open, setOpen}) => {
 
     return (
         <StyledMenu open={open}>
             <Navigation/>
-            <SearchIcon/>
         </StyledMenu>
     );
 };
@@ -17,9 +15,9 @@ const Burger = ({open, setOpen}) => {
 
     return (
         <StyledBurgerMenu open={open} onClick={() => setOpen(!open)}>
-            <div> </div>
-            <div> </div>
-            <div> </div>
+            <div></div>
+            <div></div>
+            <div></div>
         </StyledBurgerMenu>
     )
 };

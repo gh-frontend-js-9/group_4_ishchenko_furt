@@ -3,7 +3,7 @@
 .outline-button {
   font-weight: $bold-font-weight;
   border-radius: 10px;
-  padding: 14px 20px;
+  padding: 14px 15px;
   background-color:  #fafafa;
   text-decoration: none;
 
@@ -23,4 +23,15 @@
   @extend .outline-button;
   @include text-styles($sm-font-size, $light-gray-color);
   border: 2px solid $border-gray-color;
+}
+
+@media (max-width: 360px) {
+  .outline-button--pink  {
+    padding: 10px;
+  }
+}
+@media (max-width: 335px) {
+  .outline-button--pink  {
+    margin-top: 20px;
+  }
 }

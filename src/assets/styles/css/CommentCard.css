@@ -10,7 +10,7 @@
   .comment-card__second-container {
     padding-top: 30px; }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .comment-card__first-container {
     flex-direction: column; } }
 .line-image {

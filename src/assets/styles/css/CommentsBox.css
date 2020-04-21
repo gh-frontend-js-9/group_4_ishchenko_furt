@@ -8,3 +8,10 @@
   padding: 70px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   background-color: #ffffff; }
+
+@media (max-width: 400px) {
+  .form-box {
+    padding: 40px 20px; } }
+@media (max-width: 395px) {
+  .form-box {
+    padding: 40px 5px; } }

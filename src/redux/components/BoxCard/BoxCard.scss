@@ -5,9 +5,9 @@
   padding-right: 25px;
 
   &__main-card {
-    @include main-card(35px 40px 19px, 100%, $violet-color);
+    @include main-card(10px, 100%, $violet-color);
     background-color: $violet-color;
-    height: 38.5vh;
+    height: 340px;
     color: $white-color;
     border-radius: 8px;
   }
@@ -39,6 +39,6 @@
 @media (max-width: 1142px) {
   .box-card {
     width: 100%;
-    padding-right: 0px;
+    padding-right: 0;
   }
 }

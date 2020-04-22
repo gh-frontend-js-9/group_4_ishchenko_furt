@@ -1,27 +1,22 @@
 import React from "react";
+import './MainCardSliderComponent.scss';
 
 export const settings = {
     arrows: false,
     dots: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    className:'main-slider',
+    dotsClass: 'slick-dots',
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     appendDots: (dots: any) => (
-        <div
-            style={{
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'flex-start'
-            }}
-        >
+        <div>
             {dots}
         </div>
     ),
     customPaging: (i: any) => (
-        <div className={'slick-dots'}>
+        <div>
             {i + 1}
         </div>
     )

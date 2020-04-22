@@ -1,3 +1,14 @@
 .author-theme {
   width: 65%;
-  padding: 60px 0px; }
+  padding-bottom: 60px; }
+
+@media (max-width: 1200px) {
+  .author-theme {
+    width: 100%;
+    max-width: 800px; } }
+@media (max-width: 850px) {
+  .author-theme {
+    max-width: 500px; } }
+@media (max-width: 530px) {
+  .author-theme {
+    max-width: 320px; } }

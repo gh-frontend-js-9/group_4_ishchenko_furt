@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
 import ReactPaginate from 'react-paginate';
 import './Pagination.scss'
-import {PostAuthor} from "../PostAuthor/PostAuthor";
-import {ImageBox} from "../ImageBox/ImageBox";
-import {Title} from "../Title/Title";
-import {connect} from "react-redux";
-import {getAuthorPostAction} from "../../actions/getPostsActions";
+import {PostAuthor} from '../PostAuthor/PostAuthor';
+import {ImageBox} from '../ImageBox/ImageBox';
+import {Title} from '../Title/Title';
+import {connect} from 'react-redux';
+import {getAuthorPostAction} from '../../actions/getPostsActions';
 
 interface IProps {
     getAuthorPostAction?: any,
@@ -59,7 +59,7 @@ class Pagination extends Component <IProps, IState> {
         })
     }
 
-    handlePageClick = (e:any) => {
+    handlePageClick = (e: any) => {
         const selectedPage = e.selected;
         const offset = selectedPage * this.state.perPage;
 
@@ -86,17 +86,17 @@ class Pagination extends Component <IProps, IState> {
             <div>
                 {this.state.renderCard}
                 <ReactPaginate
-                    previousLabel={"<"}
-                    nextLabel={">"}
-                    breakLabel={"..."}
+                    previousLabel={'<'}
+                    nextLabel={'>'}
+                    breakLabel={'...'}
                     breakClassName={"break-me"}
                     pageCount={this.state.pageCount}
                     marginPagesDisplayed={2}
                     pageRangeDisplayed={1}
                     onPageChange={this.handlePageClick}
-                    containerClassName={"pagination"}
-                    subContainerClassName={"pages pagination"}
-                    activeClassName={"active"}/>
+                    containerClassName={'pagination'}
+                    subContainerClassName={'pages pagination'}
+                    activeClassName={'active'}/>
             </div>
         )
     }

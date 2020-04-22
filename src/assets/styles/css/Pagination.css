@@ -2,17 +2,23 @@
   padding: 20px 10px 60px 10px;
   border-radius: 8px; }
   .pagination-box__main-card {
-    margin: 30px 0px; }
+    margin: 30px 0; }
   .pagination-box--hovered:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer; }
 
+@media (max-width: 600px) {
+  .pagination-box {
+    padding: 0; } }
 .pagination {
-  padding: 100px 0px 0px;
+  padding: 100px 0 0;
   display: flex;
   list-style: none;
   outline: none; }
 
+@media (max-width: 1100px) {
+  .pagination {
+    padding: 0; } }
 .pagination > .active > a {
   color: #fff; }
 
@@ -27,10 +33,29 @@
   outline: none;
   cursor: pointer; }
 
-.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+@media (max-width: 870px) {
+  .pagination > li > a {
+    border-radius: 50%;
+    padding: 10px 15px; } }
+@media (max-width: 540px) {
+  .pagination > li > a {
+    font-size: 12px;
+    margin: 0; } }
+@media (max-width: 540px) {
+  .pagination > li > a {
+    font-size: 10px;
+    padding: 8px 13px;
+    margin: 1px; } }
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
   background-color: #ff5480;
   border-radius: 50px;
   outline: none; }
 
-.pagination > li > a, .pagination > li > span {
+.pagination > li > a,
+.pagination > li > span {
   color: #000000; }

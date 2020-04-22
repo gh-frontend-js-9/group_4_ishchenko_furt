@@ -3,7 +3,7 @@
 .button{
   @include text-styles ($xl-font-size, $white-color);
   border: 0px;
-  padding: 14px 20px;
+  padding: 12px 20px;
   background-color: $pink;
   border-radius: 40px;
 }

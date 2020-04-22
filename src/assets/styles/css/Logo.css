@@ -1,6 +1,9 @@
 .logo--black-color {
   padding-bottom: 7px; }
 
+@media (max-width: 1200px) {
+  .logo--black-color {
+    padding-left: 20px; } }
 @media (max-width: 805px) {
   .logo--black-color {
     vertical-align: baseline; } }

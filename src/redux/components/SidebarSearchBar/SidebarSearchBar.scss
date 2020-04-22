@@ -1,29 +1,30 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.searchbar{
+.searchbar {
   text-align: center;
   padding: 20px;
+  @include text-styles($sm-font-size, $light-gray-color);
 
-  &__input{
+  &__input {
     width: 80%;
     max-width: 320px;
     border: 0;
     outline: none;
   }
 
-  &__icon{
-    color: $light-gray-color;
+  &__icon {
+    color: $black-color;
     font-size: $xl-font-size;
   }
 }
 
-.searchbar__icon:hover{
+.searchbar__icon:hover {
   color: $pink;
   cursor: pointer;
 }
 
 @media(max-width: 1200px) {
-  .searchbar__input{
+  .searchbar__input {
     max-width: 500px;
   }
 }

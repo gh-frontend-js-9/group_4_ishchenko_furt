@@ -1,4 +1,5 @@
 .author {
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   text-align: center;
   color: #000000;
@@ -8,7 +9,6 @@
   .author__image {
     padding-bottom: 20px; }
   .author__name {
-    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     letter-spacing: -0.11px;
     text-transform: uppercase; }

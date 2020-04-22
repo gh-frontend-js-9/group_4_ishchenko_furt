@@ -14,15 +14,19 @@
   border: 2px solid #ff5480;
   color: #ff5480; }
 
-.outline-button--gray {
-  font-size: 14px;
-  color: #9b9b9b;
-  font-family: "Open Sans", sans-serif;
-  border: 2px solid #e6e6e6; }
-
 @media (max-width: 360px) {
   .outline-button--pink {
     padding: 10px; } }
 @media (max-width: 335px) {
   .outline-button--pink {
     margin-top: 20px; } }
+.outline-button--gray {
+  font-size: 14px;
+  color: #9b9b9b;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid #e6e6e6; }
+
+@media (max-width: 600px) {
+  .outline-button--gray {
+    margin-top: 13px;
+    padding: 10px; } }

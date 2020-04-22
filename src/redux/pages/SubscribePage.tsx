@@ -18,7 +18,7 @@ export const SubscribePage: React.FC = () => {
 
     return (
         <Wrapper>
-
+            <Wrapper secondaryWrap>
             <BreadCrumb>
                 Home  —  Tomas Laurinavicius
             </BreadCrumb>
@@ -26,26 +26,18 @@ export const SubscribePage: React.FC = () => {
             <Box>
                 <AuthorTheme/>
 
-
                 <AuthorSidebar>
                     <SidebarSearchBar/>
-
                     <SidebarPopularPost/>
-
                     <SidebarRecentPost/>
-
                     <SubscribeSmallBox/>
-
                     <SidebarSlider/>
-
                     <SidebarSocial/>
-
                     <Calendar/>
-
                     <Banner/>
                 </AuthorSidebar>
             </Box>
-
+            </Wrapper>
         </Wrapper>
     );
 };

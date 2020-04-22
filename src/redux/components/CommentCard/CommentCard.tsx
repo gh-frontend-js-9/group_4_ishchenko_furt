@@ -15,9 +15,9 @@ export const CommentCard = (props) => {
                 <div className='comment-card__box'>
 
                     <div className='comment-card__first-container'>
-                        <Content lgFontSize>
+                        <Title lgFontSize>
                             #{props._id} {props.name}
-                        </Content>
+                        </Title>
 
                         <Content mdFontSize primary>
                             {date}

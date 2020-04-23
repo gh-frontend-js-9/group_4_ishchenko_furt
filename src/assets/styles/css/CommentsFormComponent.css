@@ -10,8 +10,18 @@
     padding: 10px 15px;
     font-size: 18px; } }
 .textarea {
-  resize: none; }
+  resize: none;
+  padding: 15px;
+  border-radius: 8px; }
 
 .link {
   text-decoration: none;
   color: #37cee6; }
+
+.entry-field__email {
+  padding: 15px;
+  border-radius: 8px; }
+
+.entry-field__name {
+  padding: 15px;
+  border-radius: 8px; }

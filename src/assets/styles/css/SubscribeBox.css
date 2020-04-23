@@ -9,16 +9,17 @@
   .subscribe-box__title {
     padding: 20px 0; }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
   .subscribe-box {
     display: none; } }
 .subscribe-input {
   position: relative; }
   .subscribe-input__email {
+    padding: 20px  130px 20px 15px;
     border-radius: 40px;
     border: none;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-    width: 55%; }
+    width: 35%; }
   .subscribe-input__button {
     position: absolute;
     right: 120px;
@@ -26,4 +27,4 @@
 
 @media (max-width: 1200px) {
   .subscribe-input__button {
-    right: 160px; } }
+    right: 170px; } }

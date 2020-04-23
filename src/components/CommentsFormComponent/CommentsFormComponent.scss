@@ -18,9 +18,19 @@
 
 .textarea {
   resize: none;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .link {
   text-decoration: none;
   color: $blue-color;
+}
+.entry-field__email{
+  padding: 15px;
+  border-radius: 8px;
+}
+.entry-field__name{
+  padding: 15px;
+  border-radius: 8px;
 }

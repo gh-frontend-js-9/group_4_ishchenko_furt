@@ -5,7 +5,7 @@
 
   &__slide {
     color: $white-color;
-    height: 600px;
+    height: 750px;
 
     &__content {
       height: 100%;
@@ -24,7 +24,7 @@
 
 @media(max-width: 1000px) {
   .main-slider__slide {
-    height: 400px;
+    height: 700px;
   }
 }
 
@@ -37,7 +37,7 @@
 
 @media(max-width: 800px) {
   .main-slider__slide {
-    height: 520px;
+    height: 600px;
   }
 }
 

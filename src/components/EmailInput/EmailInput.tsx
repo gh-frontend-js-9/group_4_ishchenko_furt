@@ -7,6 +7,6 @@ export const EmailInput = (props: any) => {
     return (
         <input {...props}
                required
-               className={`entry-field  ${mixin}`}/>
+               className={` ${mixin}`}/>
     )
 };

@@ -2,7 +2,7 @@
   width: 100%; }
   .main-slider__slide {
     color: #ffffff;
-    height: 600px; }
+    height: 750px; }
     .main-slider__slide__content {
       height: 100%;
       display: flex;
@@ -13,14 +13,14 @@
     justify-content: center; } }
 @media (max-width: 1000px) {
   .main-slider__slide {
-    height: 400px; } }
+    height: 700px; } }
 @media (max-width: 980px) {
   .main-slider__slide__content {
     width: 60%;
     margin: 0 auto; } }
 @media (max-width: 800px) {
   .main-slider__slide {
-    height: 520px; } }
+    height: 600px; } }
 @media (max-width: 350px) {
   .main-slider__slide {
     height: 570px; }

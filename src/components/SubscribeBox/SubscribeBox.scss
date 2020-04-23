@@ -14,7 +14,7 @@
   }
 }
 
-@media(max-width: 860px) {
+@media(max-width: 900px) {
   .subscribe-box{
     display: none;
   }
@@ -24,10 +24,11 @@
   position: relative;
 
   &__email {
+    padding: 20px  130px 20px 15px;
     border-radius: 40px;
     border: none;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-    width: 55%;
+    width: 35%;
   }
 
   &__button {
@@ -39,6 +40,6 @@
 
 @media(max-width: 1200px) {
   .subscribe-input__button{
-    right: 160px;
+    right: 170px;
   }
 }

@@ -85,10 +85,12 @@ class CommentsFormComponent extends Component <IProps, IState> {
                           placeholder='Comment'
                           value={comment}
                           onChange={this.handleChange}/>
-                <NameInput value={name}
+                <NameInput mixin='entry-field entry-field__name'
+                           value={name}
                            name='name'
                            onChange={this.handleChange}/>
-                <EmailInput value={email}
+                <EmailInput mixin='entry-field entry-field__email'
+                            value={email}
                             name='email'
                             onChange={this.handleChange}
                             placeholder='Email'/>
@@ -105,7 +107,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
                 </Checkbox>
 
                 <div>
-                    <Button mixin = 'comments-form__button' disabled={!comment} type='submit'>
+                    <Button mixin='comments-form__button' disabled={!comment} type='submit'>
                         Post Comment
                     </Button>
                 </div>

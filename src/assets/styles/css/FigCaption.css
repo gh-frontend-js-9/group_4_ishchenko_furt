@@ -10,9 +10,5 @@
 
 @media (max-width: 680px) {
   .figcaption {
-    font-size: 18px;
-    line-height: 40px; } }
-@media (max-width: 680px) {
-  .figcaption {
     font-size: 16px;
     line-height: 35px; } }

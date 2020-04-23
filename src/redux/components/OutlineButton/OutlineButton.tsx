@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import './OutlineButton.scss'
 
 export const OutlineButton = (props: any) => {
@@ -6,8 +6,8 @@ export const OutlineButton = (props: any) => {
     const classes = (props.secondary ? 'outline-button--pink' : 'outline-button--gray');
 
     return (
-        <a href='#form' {...props}
-           className={`${classes} outline-button--hovered`}>
+        <a  {...props}
+            className={`${classes} outline-button--hovered`}>
             {children}
         </a>
     )

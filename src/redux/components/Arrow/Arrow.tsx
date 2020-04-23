@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const Arrow = (props: any) => {
     const {style, onClick} = props;
@@ -10,9 +10,9 @@ export const Arrow = (props: any) => {
                  position: 'absolute',
                  top: '40%',
                  right: '30px',
-                 cursor: "pointer"
+                 cursor: 'pointer'
              }}
-             onClick={onClick} >
+             onClick={onClick}>
 
             <img src={require('../../../assets/images/right-arrow.png')} alt="arrow_right"/>
         </div>

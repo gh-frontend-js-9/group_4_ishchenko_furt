@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-export const Figure: React.FC = (props:any) =>{
-    const {children} = props
+export const Figure: React.FC = (props: any) => {
+    const {children} = props;
 
-    return(
+    return (
         <figure>
             {children}
         </figure>
     )
-}
+};

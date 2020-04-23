@@ -17,14 +17,15 @@
   }
 }
 
-@media (max-width: 514px) {
-  .box-card__main-card {
-    padding: 15px;
-  }
-}
 @media (max-width: 550px) {
   .box-card__main-card {
     height: auto;
+  }
+}
+
+@media (max-width: 514px) {
+  .box-card__main-card {
+    padding: 15px;
   }
 }
 

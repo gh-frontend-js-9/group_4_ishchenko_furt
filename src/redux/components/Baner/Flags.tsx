@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import './Banner.scss'
 
-export const Flags: React.FC = () =>{
+export const Flags: React.FC = () => {
     const flags = [
         'Sale',
         'Revenue',
@@ -19,16 +19,14 @@ export const Flags: React.FC = () =>{
         'Management'
     ];
 
-    let renderFlags = flags.map((flag:any)=>(
+    let renderFlags = flags.map((flag: any) => (
         <span className={'flags__box'}>
             {flag}
-            <i className="fa fa-times flags__icon" aria-hidden="true">
-
-            </i>
+            <i className="fa fa-times flags__icon" aria-hidden="true"> </i>
         </span>
-    ))
+    ));
 
-    return(
+    return (
         <div className={'flags'}>
             {renderFlags}
         </div>

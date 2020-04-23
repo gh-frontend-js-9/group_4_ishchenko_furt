@@ -1,8 +1,9 @@
-import React from "react";
-import {ListItem} from "../ListItem/ListItem";
+import React from 'react';
+import {ListItem} from '../ListItem/ListItem';
 import './List.scss'
 
 export const List: React.FC = (props: any) => {
+
     let renderListItem = props.list.map((item: any) => (
         <ListItem>
             {item}
@@ -14,5 +15,5 @@ export const List: React.FC = (props: any) => {
             {renderListItem}
         </ul>
     )
-}
+};
 

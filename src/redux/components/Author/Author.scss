@@ -1,6 +1,6 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.author{
+.author {
   font-family: $open-sans-font;
   font-style: normal;
   text-align: center;
@@ -8,18 +8,22 @@
   padding: 30px;
   line-height: 25px;
   font-weight: $bold-font-weight;
-  &__image{
+
+  &__image {
     padding-bottom: 20px;
   }
-  &__name{
+
+  &__name {
     font-size: $lg-font-size;
     letter-spacing: -0.11px;
     text-transform: uppercase;
   }
-  &__social{
+
+  &__social {
     font-size: $md-font-size;
     letter-spacing: -0.1px;
-    & > a{
+
+    & > a {
       color: $blue-color;
       text-decoration: none;
     }

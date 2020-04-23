@@ -16,7 +16,7 @@ interface IState {
 
 interface IProps {
     sendCommentAction?: any,
-    userData?: any
+    userData?: any,
 }
 
 class CommentsFormComponent extends Component <IProps, IState> {
@@ -72,6 +72,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
 
     render() {
         const {email, name, comment} = this.state;
+
         return (
             <form id='form'
                   className='comments-form'
@@ -91,7 +92,8 @@ class CommentsFormComponent extends Component <IProps, IState> {
                             name='email'
                             onChange={this.handleChange}
                             placeholder='Email'/>
-                <Checkbox>
+
+                <Checkbox id='scales'>
                     <Content primary mdFontSize>
                         <span>
                             I agree to the

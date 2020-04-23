@@ -1,9 +1,8 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import Loading from "../Healpers/Loading";
-import {getFreelancePostAction
-} from "../../actions/getPostsActions";
-import {BoxCard} from "../BoxCard/BoxCard";
+import Loading from '../Healpers/Loading';
+import {getFreelancePostAction} from '../../actions/getPostsActions';
+import {BoxCard} from '../BoxCard/BoxCard';
 
 interface IProps {
     getFreelancePostAction?: any,

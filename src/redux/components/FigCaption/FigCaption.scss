@@ -11,14 +11,6 @@
   line-height: 58px;
 }
 
-
-@media (max-width: 680px) {
-  .figcaption{
-    font-size: $lg-font-size;
-    line-height: 40px;
-  }
-}
-
 @media (max-width: 680px) {
   .figcaption{
     font-size: $md-font-size;

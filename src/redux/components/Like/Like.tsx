@@ -1,7 +1,6 @@
-import React from "react";
+import React from 'react';
 import './Like.scss';
 import './../Icon/Icon.scss';
-
 
 export const Like: React.FC = () => {
     const icons = [{
@@ -10,7 +9,7 @@ export const Like: React.FC = () => {
     }, {
         name: 'fa-eye',
         quantity: '25K'
-    }]
+    }];
 
     let renderIcons = icons.map((icon: any, n: number) => {
         return (
@@ -31,4 +30,4 @@ export const Like: React.FC = () => {
             {renderIcons}
         </div>
     )
-}
+};

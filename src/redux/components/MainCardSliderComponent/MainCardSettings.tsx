@@ -1,5 +1,4 @@
 import React from "react";
-import './MainCardSliderComponent.scss';
 
 export const settings = {
     arrows: false,
@@ -20,5 +19,4 @@ export const settings = {
             {i + 1}
         </div>
     )
-
 };

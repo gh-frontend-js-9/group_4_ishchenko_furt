@@ -15,7 +15,7 @@ export const CommentsBox = () => {
             </div>
 
             <div className='form-box'>
-                <Title xxlFontSize>Leave a Reply</Title>
+                <Title xxlFontSize> Leave a Reply </Title>
                 <CommentsFormComponent/>
             </div>
         </>

@@ -5,6 +5,8 @@ import './Copyright.scss'
 export const Copyright = () => {
 
     return (
-        <Content mixin = 'copyright__content' primary>All Rights Reserved 2018 BehindMars</Content>
+        <Content mixin = 'copyright__content' primary>
+            All Rights Reserved 2018 BehindMars
+        </Content>
     )
 };

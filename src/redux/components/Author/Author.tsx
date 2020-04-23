@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './Author.scss';
 
 export const Author: React.FC = (props: any) => {
@@ -15,4 +15,4 @@ export const Author: React.FC = (props: any) => {
             </span>
         </div>
     )
-}
+};

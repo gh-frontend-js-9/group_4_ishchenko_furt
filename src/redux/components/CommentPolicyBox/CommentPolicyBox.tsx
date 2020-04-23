@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
-import {Title} from "../Title/Title";
-import {OutlineButton} from "../OutlineButton/OutlineButton";
-import {Content} from "../Content/Content";
+import {Title} from '../Title/Title';
+import {OutlineButton} from '../OutlineButton/OutlineButton';
+import {Content} from '../Content/Content';
 import './CommentPolicyBox.scss'
-import {getUserIdAction} from "../../actions/PostsActionsCreators";
-import {connect} from "react-redux";
+import {getUserIdAction} from '../../actions/PostsActionsCreators';
+import {connect} from 'react-redux';
 
 interface IProps {
     getUserIdAction?: any,
@@ -25,7 +25,7 @@ class CommentPolicyBox extends Component <IProps, {}> {
                         Comments
                     </Title>
 
-                    <OutlineButton secondary onClick={() => this.cleanUserData([], [])}>
+                    <OutlineButton href='#form' secondary onClick={() => this.cleanUserData([], [])}>
                         Leave a Comment
                     </OutlineButton>
 

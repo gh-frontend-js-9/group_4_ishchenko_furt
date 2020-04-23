@@ -1,6 +1,6 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.bread-crumb{
+.bread-crumb {
   width: 100%;
   height: 19px;
   color: $light-gray-color;
@@ -10,21 +10,21 @@
 }
 
 @media(max-width: 1200px) {
-  .bread-crumb{
+  .bread-crumb {
     text-align: center;
     padding-left: 10px;
   }
 }
 
 @media(max-width: 805px) {
-  .bread-crumb{
+  .bread-crumb {
     padding: 20px;
     width: 70%;
   }
 }
 
 @media(max-width: 600px) {
-  .bread-crumb{
+  .bread-crumb {
     font-size: 10px;
   }
 }

@@ -17,7 +17,7 @@ export const Navigation = (props) => {
     }, {
         link: '/new',
         title: 'New'
-    },];
+    }];
     const classes = `${linkNavClass} ${mixin}`;
 
     let renderNav = navBar.map((nav: any, n: number) => {

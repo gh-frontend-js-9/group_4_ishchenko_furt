@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './ImageBox.scss'
 
 export const ImageBox: React.FC = (props: any) => {

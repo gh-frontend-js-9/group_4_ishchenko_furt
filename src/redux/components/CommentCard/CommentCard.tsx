@@ -1,8 +1,8 @@
 import React from 'react'
-import {Content} from "../Content/Content";
-import {Title} from "../Title/Title";
+import {Content} from '../Content/Content';
+import {Title} from '../Title/Title';
 import './CommentCard.scss'
-import moment from "moment";
+import moment from 'moment';
 
 export const CommentCard = (props) => {
     const {children} = props;
@@ -38,4 +38,4 @@ export const CommentCard = (props) => {
             <img className='line-image' alt='line' src={require('../../../assets/images/line.png')}/>
         </>
     )
-}
+};

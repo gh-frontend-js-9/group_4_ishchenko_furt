@@ -1,6 +1,6 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.footer{
+.footer {
   color: $light-gray-color;
   display: flex;
   justify-content: space-between;
@@ -10,9 +10,10 @@
 
 @media (max-width: 805px) {
   .footer {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
-.footer__icon{
+
+.footer__icon {
   display: flex;
 }

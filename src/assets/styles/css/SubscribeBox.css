@@ -9,7 +9,7 @@
   .subscribe-box__title {
     padding: 20px 0; }
 
-@media (max-width: 1100px) {
+@media (max-width: 860px) {
   .subscribe-box {
     display: none; } }
 .subscribe-input {

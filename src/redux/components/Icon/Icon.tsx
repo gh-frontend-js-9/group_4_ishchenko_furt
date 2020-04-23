@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 import './Icon.scss'
 
-export const Icon = (props:any) => {
+export const Icon = (props: any) => {
     const iconClass = (props.postElement ? 'icon--post-styles' : 'icon');
-    const mixin = props.mixin
+    const mixin = props.mixin;
 
     const icons = [{
         name: 'fa-vk',

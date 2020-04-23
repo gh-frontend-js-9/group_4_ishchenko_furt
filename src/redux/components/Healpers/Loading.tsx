@@ -1,9 +1,10 @@
 import React from "react"
+import {Content} from '../Content/Content';
 
 function Loading() {
 
     return (
-        <p>Loading...</p>
+        <Content> Loading... </Content>
     )
 }
 

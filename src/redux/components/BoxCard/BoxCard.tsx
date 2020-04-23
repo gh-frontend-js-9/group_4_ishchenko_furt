@@ -1,7 +1,7 @@
-import React from "react";
-import {Title} from "../Title/Title";
+import React from 'react';
+import {Title} from '../Title/Title';
 import './BoxCard.scss'
-import {MainCard} from "../MainCard/MainCard";
+import {MainCard} from '../MainCard/MainCard';
 
 export const BoxCard: React.FC = (props: any) => {
 

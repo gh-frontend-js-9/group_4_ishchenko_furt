@@ -1,11 +1,11 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.DayPicker{
+.DayPicker {
   display: block;
 }
 
 @media(max-width: 1200px) {
-  .DayPicker{
+  .DayPicker {
     display: none;
   }
 }
@@ -19,6 +19,7 @@
   border-radius: 8px;
   background-color: $white-color;
 }
+
 .DayPicker-Month {
   display: table;
   margin: 15px 15px 0 15px;
@@ -55,7 +56,8 @@
   background-size: 30%;
   padding: 5px;
   background-color: $border-gray-color;
-  &--prev{
+
+  &--prev {
     left: 25px;
   }
 }

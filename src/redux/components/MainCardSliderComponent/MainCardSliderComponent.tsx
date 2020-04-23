@@ -1,13 +1,11 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import Loading from "../../components/Healpers/Loading";
-import Slider from "react-slick";
+import Loading from '../../components/Healpers/Loading';
+import Slider from 'react-slick';
 import './MainCardSliderComponent.scss';
-import {getListPostsAction} from "../../actions/getPostsActions";
-import {settings} from "./MainCardSettings";
+import {getListPostsAction} from '../../actions/getPostsActions';
+import {settings} from './MainCardSettings';
 import {MainCard} from '../MainCard/MainCard';
-import './MainCardSliderComponent.scss'
-
 
 interface IProps {
     getListPostsAction?: any,
@@ -29,7 +27,6 @@ class MainCardSliderComponent extends Component <IProps, {}> {
                     <MainCard {...slide} />
                 </div>
             </div>
-
         ));
 
         let renderSlider = (
@@ -40,7 +37,7 @@ class MainCardSliderComponent extends Component <IProps, {}> {
 
         return (
             <>
-                {this.props.isLoading ? <Loading/> : <>{renderSlider} </>}
+                {this.props.isLoading ? <Loading/> : <>{renderSlider}</>}
             </>
         )
     }

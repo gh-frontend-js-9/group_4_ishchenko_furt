@@ -4,14 +4,13 @@ import {
     GET_ESSENTIALS_POST_SUCCESS, GET_ESSENTIALS_THEMATIC_POST_SUCCESS,
     GET_FEATURED_POST_SUCCESS, GET_FREELANCE_POST_SUCCESS, GET_FREELANCE_THEMATIC_POST_SUCCESS,
     GET_LIST_POSTS_SUCCESS, GET_NEW_POST_SUCCESS,
-    GET_POPULAR_POST_SUCCESS, GET_POPULAR_THEMATIC_POST_SUCCESS, GET_USER_ID,
+    GET_POPULAR_POST_SUCCESS, GET_POPULAR_THEMATIC_POST_SUCCESS, GET_POST_FAILURE, GET_POSTS_REQUEST, GET_USER_ID,
     IS_LOADING, SEND_COMMENT_SUCCESS
-} from "../reducers/postsReducers";
+} from '../reducers/postsReducers';
 
-export function isLoadingAction(bool: boolean) {
+export function getListPostsRequest() {
     return {
-        type: IS_LOADING,
-        isLoading: bool
+        type: GET_POSTS_REQUEST,
     };
 }
 
@@ -102,5 +101,12 @@ export function getNewPostReceiveAction(newPost: any) {
     return {
         type: GET_NEW_POST_SUCCESS,
         payload: newPost
+    };
+}
+
+export function getListPostsFailure(error: any) {
+    return {
+        type: GET_POST_FAILURE,
+        payload: error
     };
 }

@@ -6,7 +6,6 @@ import {OutlineButton} from '../OutlineButton/OutlineButton';
 import {getCommentsListAction} from '../../redux/actions/getPostsActions';
 import {getUserIdAction} from '../../redux/actions/PostsActionsCreators';
 
-
 interface IProps {
     getCommentsListAction?: any,
     getUserIdAction?: any,

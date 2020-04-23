@@ -21,8 +21,8 @@ class MainCardSliderComponent extends Component <IProps, {}> {
     render() {
         let response = Object.values(this.props.listPosts);
 
-        let renderSlides = response.map((slide: any) => (
-            <div className={'main-slider__slide'}>
+        let renderSlides = response.map((slide: any, num:number) => (
+            <div key = {num} className={'main-slider__slide'}>
                 <div className={'main-slider__slide__content'}>
                     <MainCard {...slide} />
                 </div>

@@ -1,0 +1,30 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.search-bar {
+  text-align: center;
+  padding: 20px;
+  @include text-styles($sm-font-size, $light-gray-color);
+
+  &__input {
+    width: 80%;
+    max-width: 320px;
+    border: 0;
+    outline: none;
+  }
+
+  &__icon {
+    color: $black-color;
+    font-size: $xl-font-size;
+  }
+}
+
+.search-bar__icon:hover {
+  color: $pink;
+  cursor: pointer;
+}
+
+@media(max-width: 1200px) {
+  .search-bar__input {
+    max-width: 500px;
+  }
+}

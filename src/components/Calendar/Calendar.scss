@@ -1,0 +1,65 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.DayPicker {
+  display: block;
+}
+
+@media(max-width: 1200px) {
+  .DayPicker {
+    display: none;
+  }
+}
+
+.DayPicker-wrapper {
+  width: 100%;
+  height: 355px;
+  padding-bottom: 40px;
+  font-family: $open-sans-font;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: $white-color;
+}
+
+.DayPicker-Month {
+  display: table;
+  margin: 15px 15px 0 15px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 363px;
+  height: 261px;
+}
+
+.DayPicker-Day:hover {
+  background-color: $pink;
+  color: $white-color;
+  cursor: pointer;
+}
+
+.DayPicker-Caption > div {
+  text-align: center;
+  color: $black-color;
+  font-size: $md-font-size;
+  font-weight: $bold-font-weight;
+}
+
+.DayPicker-Caption {
+  margin-top: 30px;
+  display: table-caption;
+  margin-bottom: 50px;
+}
+
+.DayPicker-NavButton {
+  top: 35px;
+  border-radius: 50%;
+  background-size: 30%;
+  padding: 5px;
+  background-color: $border-gray-color;
+
+  &--prev {
+    left: 25px;
+  }
+}
+
+

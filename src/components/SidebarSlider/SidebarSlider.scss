@@ -1,0 +1,25 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.author-slider{
+  width: 100%;
+
+  &__slide{
+    margin: 5px;
+    height: 225px;
+    width: 225px;
+  }
+  &__card{
+    height: 100%;
+    margin: 0 auto;
+    width: 197px;
+    background-color: $white-color;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media(max-width: 530px) {
+  .author-slider{
+    display: none;
+  }
+}

@@ -21,13 +21,13 @@
   }
 
   &__email {
-    padding: 13px;
+    padding: 13px 90px 13px 13px;
     border-radius: 40px;
     position: absolute;
     left: 70px;
     border: none;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-    width: 55%;
+    width: 30%;
   }
 
   &__button {
@@ -55,9 +55,11 @@
   }
   .subscribe-small-box__email{
     position: static;
+    width: 50%;
+    padding: 20px;
   }
   .subscribe-small-box__button {
     position: static;
-   margin: 30px;
+    margin: 30px;
   }
 }

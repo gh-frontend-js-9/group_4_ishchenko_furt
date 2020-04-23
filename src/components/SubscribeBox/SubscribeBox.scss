@@ -13,6 +13,11 @@
     padding: 20px 0;
   }
 }
+@media(max-width: 1100px) {
+  .subscribe-box{
+    padding: 60px 0px;
+  }
+}
 
 @media(max-width: 900px) {
   .subscribe-box{

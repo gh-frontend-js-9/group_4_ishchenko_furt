@@ -1,3 +1,3 @@
 Ishchenko - Furt 
 
-https://nostalgic-kepler-c68800.netlify.app
+https://condescending-brown-7446aa.netlify.app/

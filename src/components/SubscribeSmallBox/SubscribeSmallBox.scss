@@ -39,21 +39,22 @@
   }
 }
 
-@media(max-width: 1200px)and (min-width: 900px) {
+@media(max-width: 1200px) and (min-width: 900px) {
   .subscribe-small-box {
     display: none;
   }
 }
+
 @media(max-width: 900px) {
   .subscribe-small-box {
     height: auto;
   }
   .subscribe-small-box__form {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .subscribe-small-box__email{
+  .subscribe-small-box__email {
     position: static;
     width: 50%;
     padding: 20px;

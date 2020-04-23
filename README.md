@@ -1,3 +1,3 @@
 Ishchenko - Furt 
 
-https://lucid-mclean-24bbaf.netlify.app
+https://condescending-brown-7446aa.netlify.app/

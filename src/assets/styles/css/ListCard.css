@@ -1,6 +1,6 @@
 .list-container {
-  margin: 5px;
-  width: 190px; }
+  width: 210px;
+  margin: 5px; }
   .list-container--hovered:hover > .list-title {
     color: #ff5480;
     cursor: pointer; }
@@ -8,11 +8,10 @@
 .list-container--hovered:hover {
   cursor: pointer; }
 
-@media (max-width: 1100px) {
-  .list-container {
-    margin: 20px; } }
 .list-card {
-  height: 240px;
+  height: 225px;
+  width: 197px;
+  margin: 0 auto;
   border-radius: 5%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
 

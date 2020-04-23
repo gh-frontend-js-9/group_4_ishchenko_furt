@@ -1,0 +1,25 @@
+@import '../../assets/styles/scss/styles.scss';
+
+.post-content {
+  padding: 0 40px;
+  font-family: $open-sans-font;
+  color: $dark-gray-color;
+  font-size: $lg-second-font-size;
+}
+
+@media (max-width: 1000px) {
+  .post-content {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .post-content {
+    padding: 0 20px;
+  }
+}
+
+.page-link {
+  color: $blue-color;
+  text-decoration: none;
+}

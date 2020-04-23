@@ -1,8 +1,0 @@
-@import '../../../assets/styles/scss/styles.scss';
-
-.entry-field{
-  @include text-styles($md-font-size, $black-color);
-  border-radius: 10px;
-  border: 2px solid $border-gray-color;
-  padding: 15px;
-}

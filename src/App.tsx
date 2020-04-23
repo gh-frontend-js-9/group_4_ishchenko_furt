@@ -1,13 +1,13 @@
 import React from 'react';
-import {Header} from './redux/components/Header/Header';
-import {Wrapper} from './redux/components/Wrapper/Wrapper';
-import {Footer} from './redux/components/Footer/Footer';
 import {BrowserRouter, Route} from 'react-router-dom';
-import {HomePage} from './redux/pages/HomePage';
-import {NewPage} from './redux/pages/NewPage';
-import {BurgerMenu} from './redux/components/BurgerMenu/BurgerMenu';
-import {Main} from './redux/components/Main/Main';
-import {SubscribePage} from './redux/pages/SubscribePage';
+import {Wrapper} from './components/Wrapper/Wrapper';
+import {HomePage} from './pages/HomePage';
+import {BurgerMenu} from './components/BurgerMenu/BurgerMenu';
+import {SubscribePage} from './pages/SubscribePage';
+import {Footer} from './components/Footer/Footer';
+import {Main} from './components/Main/Main';
+import {NewPage} from './pages/NewPage';
+import {Header} from './components/Header/Header';
 
 const App: React.FC = () => {
 

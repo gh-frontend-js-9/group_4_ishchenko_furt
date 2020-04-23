@@ -1,8 +1,8 @@
 @import '../../assets/styles/scss/styles.scss';
 
 .list-container {
+  width: 210px;
   margin: 5px;
-  width: 190px;
 
   &--hovered:hover > .list-title {
     color: $pink;
@@ -14,14 +14,10 @@
   cursor: pointer;
 }
 
-@media (max-width: 1100px) {
-  .list-container {
-    margin: 20px;
-  }
-}
-
 .list-card {
-  height: 240px;
+  height: 225px;
+  width: 197px;
+  margin: 0 auto;
   border-radius: 5%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }

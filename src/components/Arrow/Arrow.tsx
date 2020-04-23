@@ -8,7 +8,7 @@ export const Arrow = (props: any) => {
                  ...style,
                  display: 'block',
                  position: 'absolute',
-                 top: '40%',
+                 top: '110px',
                  right: '30px',
                  cursor: 'pointer'
              }}

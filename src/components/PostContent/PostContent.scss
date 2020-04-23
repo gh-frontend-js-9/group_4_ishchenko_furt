@@ -5,6 +5,10 @@
   font-family: $open-sans-font;
   color: $dark-gray-color;
   font-size: $lg-second-font-size;
+
+  &__title {
+    padding-bottom: 10px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -16,6 +20,12 @@
 @media (max-width: 800px) {
   .post-content {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .post-content__title {
+    font-size: $xl-font-size;
   }
 }
 

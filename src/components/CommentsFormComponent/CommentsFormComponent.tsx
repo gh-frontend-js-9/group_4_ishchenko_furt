@@ -105,7 +105,7 @@ class CommentsFormComponent extends Component <IProps, IState> {
                 </Checkbox>
 
                 <div>
-                    <Button disabled={!comment} type='submit'>
+                    <Button mixin = 'comments-form__button' disabled={!comment} type='submit'>
                         Post Comment
                     </Button>
                 </div>

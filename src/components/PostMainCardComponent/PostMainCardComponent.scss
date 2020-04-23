@@ -25,3 +25,9 @@
     }
   }
 }
+
+@media (max-width: 470px) {
+  .post-main-card__title {
+    font-size: $xl-font-size;
+  }
+}

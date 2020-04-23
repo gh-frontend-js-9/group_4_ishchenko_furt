@@ -21,3 +21,9 @@
   }
 }
 
+@media (max-width: 470px) {
+  .main-card__title {
+    font-size: $xl-font-size;
+  }
+}
+

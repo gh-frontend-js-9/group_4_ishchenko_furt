@@ -14,3 +14,6 @@
     padding: 0px 20px; }
     .post-main-card__title {
       font-size: 28px; } }
+@media (max-width: 470px) {
+  .post-main-card__title {
+    font-size: 24px; } }

@@ -2,10 +2,6 @@
   padding-top: 20px;
   padding-bottom: 200px; }
 
-@media (max-width: 1190px) {
-  .post__title {
-    padding-left: 25px;
-    padding-bottom: 20px; } }
 @media (max-width: 1000px) {
   .post {
     padding-top: 70px;
@@ -16,3 +12,14 @@
     padding-bottom: 50px; } }
 .post__title {
   padding-bottom: 30px; }
+
+@media (max-width: 1190px) {
+  .post__title {
+    padding-left: 25px;
+    padding-bottom: 20px; } }
+@media (max-width: 510px) {
+  .post__title {
+    font-size: 28px; } }
+@media (max-width: 377px) {
+  .post__title {
+    font-size: 24px; } }

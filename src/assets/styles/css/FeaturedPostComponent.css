@@ -11,5 +11,6 @@
     display: flex;
     text-align: center;
     flex-direction: column; } }
-.featured-post__title {
-  padding-bottom: 30px; }
+@media (max-width: 470px) {
+  .featured-post__title {
+    font-size: 18px; } }

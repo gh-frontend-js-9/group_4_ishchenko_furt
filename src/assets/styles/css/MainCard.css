@@ -11,3 +11,6 @@
   .main-card--hovered:hover {
     background-color: #1b0042;
     box-shadow: none; } }
+@media (max-width: 470px) {
+  .main-card__title {
+    font-size: 24px; } }

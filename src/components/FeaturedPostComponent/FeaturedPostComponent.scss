@@ -22,6 +22,8 @@
   }
 }
 
-.featured-post__title {
-  padding-bottom: 30px;
+@media (max-width: 470px) {
+  .featured-post__title {
+    font-size: $lg-font-size;
+  }
 }

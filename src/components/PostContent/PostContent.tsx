@@ -36,7 +36,7 @@ class PostContent extends Component <IProps, {}> {
                     {post.paragraphReason}
                 </InnerHTML>
 
-                <Title xxlFontSize postPadding>
+                <Title xxlFontSize mixin = 'post-content__title'>
                     {post.titleAbout}
                 </Title>
 

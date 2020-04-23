@@ -19,7 +19,7 @@ export const StyledBurgerMenu = styled.button <IProps>`
   cursor: pointer;
   z-index: 101;
   
-  @media (min-width:805px) {
+  @media (min-width:570px) {
        display:none;
      }
   &:focus {

@@ -2,12 +2,12 @@
   width: 49%;
   padding-right: 25px; }
   .box-card__main-card {
-    padding: 35px 40px 19px;
+    padding: 10px;
     max-width: 100%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
     background-color: #1b0042;
     background-color: #1b0042;
-    height: 38.5vh;
+    height: 340px;
     color: #ffffff;
     border-radius: 8px; }
   .box-card__title {
@@ -27,4 +27,4 @@
 @media (max-width: 1142px) {
   .box-card {
     width: 100%;
-    padding-right: 0px; } }
+    padding-right: 0; } }

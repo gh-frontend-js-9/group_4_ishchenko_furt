@@ -12,12 +12,6 @@ export const Navigation = (props) => {
         link: '/',
         title: 'Home'
     }, {
-        link: '#',
-        title: 'Popular'
-    }, {
-        link: '#',
-        title: 'Reading list'
-    }, {
         link: '/subscribe',
         title: 'Subscribe'
     }, {

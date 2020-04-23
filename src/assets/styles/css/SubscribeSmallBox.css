@@ -28,21 +28,25 @@
     position: absolute;
     right: 50px; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 600px) {
+  .subscribe-small-box {
+    display: none; } }
+@media (max-width: 600px) {
   .subscribe-small-box__email {
-    left: 150px; }
+    left: 55px; }
 
   .subscribe-small-box__button {
-    right: 180px; } }
-@media (max-width: 850px) {
-  .subscribe-small-box__email {
-    left: 90px; }
-
-  .subscribe-small-box__button {
-    right: 100px; } }
+    right: 80px; } }
 @media (max-width: 530px) {
   .subscribe-small-box__email {
-    left: 35px; }
+    padding: 7px 10px;
+    font-size: 12px; }
 
   .subscribe-small-box__button {
-    right: 35px; } }
+    padding: 6px 10px; } }
+@media (max-width: 380px) {
+  .subscribe-small-box__button {
+    right: 40px; } }
+@media (max-width: 285px) {
+  .subscribe-small-box__button {
+    right: 20px; } }

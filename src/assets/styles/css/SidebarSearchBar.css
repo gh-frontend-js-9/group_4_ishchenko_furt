@@ -1,0 +1,22 @@
+.searchbar {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #9b9b9b;
+  font-family: "Open Sans", sans-serif; }
+  .searchbar__input {
+    width: 80%;
+    max-width: 320px;
+    border: 0;
+    outline: none; }
+  .searchbar__icon {
+    color: #000000;
+    font-size: 24px; }
+
+.searchbar__icon:hover {
+  color: #ff5480;
+  cursor: pointer; }
+
+@media (max-width: 1200px) {
+  .searchbar__input {
+    max-width: 500px; } }

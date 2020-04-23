@@ -4,7 +4,7 @@ import {SidebarBox} from "../SidebarBox/SidebarBox";
 import {Content} from "../Content/Content";
 import {Title} from "../Title/Title";
 import {getEssentialsThematicPostAction} from '../../actions/getPostsActions';
-import '../SidebarPopularPost/SidebarPost.scss';
+import '../SidebarPopularPost/SidebarPopularPost.scss';
 
 interface IProps {
     getEssentialsThematicPostAction?: any,

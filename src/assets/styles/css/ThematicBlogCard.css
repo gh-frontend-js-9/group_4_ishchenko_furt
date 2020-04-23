@@ -1,8 +1,8 @@
 .thematic-blog-card {
   font-family: "Open Sans", sans-serif;
   padding: 20px;
-  height: 140px;
-  max-width: 276px;
+  height: 141px;
+  max-width: 236px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   background-color: #ffffff; }
@@ -22,7 +22,7 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     letter-spacing: -0.11px;
-    line-height: 30px; }
+    line-height: 23px; }
     .thematic-blog-card__title--hovered:hover {
       color: #ff5480; }
 

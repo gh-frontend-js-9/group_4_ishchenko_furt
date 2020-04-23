@@ -41,6 +41,7 @@ class Pagination extends Component <IProps, IState> {
 
         const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
         const renderCard = slice.map(post =>
+
             <div className='pagination-box pagination-box--hovered pagination-box__main-card'
                  key={post.id}>
                 <ImageBox {...post}/>

@@ -15,10 +15,10 @@
 .subscribe-input {
   position: relative; }
   .subscribe-input__email {
+    border-radius: 40px;
     border: none;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-    width: 55%;
-    border-radius: 40px; }
+    width: 55%; }
   .subscribe-input__button {
     position: absolute;
     right: 120px;

@@ -28,7 +28,7 @@ class CommentsListComponent extends Component <IProps, {}> {
     render() {
         let renderComment = this.props.commentsList.map((comment: any) =>
             <CommentCard{...comment} key={comment._id}>
-                <OutlineButton onClick={() => this.getUserData(comment._id, comment.name)}>
+                <OutlineButton href='#form' onClick={() => this.getUserData(comment._id, comment.name)}>
                     Reply
                 </OutlineButton>
             </CommentCard>);

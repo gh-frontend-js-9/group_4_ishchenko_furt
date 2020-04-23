@@ -2,7 +2,8 @@
   padding: 20px 10px 60px 10px;
   border-radius: 8px; }
   .pagination-box__main-card {
-    margin: 30px 0; }
+    margin: 60px 0;
+    max-height: 500px; }
   .pagination-box--hovered:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer; }

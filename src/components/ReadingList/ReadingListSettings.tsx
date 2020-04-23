@@ -9,38 +9,41 @@ export const settings = {
     slidesToShow: 5,
     slidesToScroll: 4,
     initialSlide: 0,
+    variableWidth: true,
     nextArrow: <Arrow/>,
     responsive: [
         {
-            breakpoint: 1360,
+            breakpoint: 1480,
             settings: {
-                slidesToShow: 4,
-                slidesToScroll: 3,
+                slidesToShow: 3,
+                slidesToScroll: 2,
                 infinite: true,
             }
         },
         {
-            breakpoint: 880,
+            breakpoint: 740,
             settings: {
-                slidesToShow: 3,
-                slidesToScroll: 2,
+                slidesToShow: 1,
+                slidesToScroll: 1,
                 initialSlide: 1,
+                centerMode: true
             }
         },
         {
-            breakpoint: 680,
+            breakpoint: 370,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false
             }
         },
-        {
+        /*{
             breakpoint: 460,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 centerMode: true
             }
-        }
+        }*/
     ]
 };

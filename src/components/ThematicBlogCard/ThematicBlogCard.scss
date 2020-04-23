@@ -1,7 +1,7 @@
 @import '../../assets/styles/scss/styles.scss';
 
 .thematic-blog-card {
-  @include thematic-blog-card(25px);
+  @include thematic-blog-card(20px);
 
   &--hovered:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -27,6 +27,11 @@
   }
 }
 
+@media (max-width: 1142px) {
+  .thematic-blog-card {
+    max-width: none;
+  }
+}
 @media (max-width: 850px) {
   .thematic-blog-card {
     max-width: none;

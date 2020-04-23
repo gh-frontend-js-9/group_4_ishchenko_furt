@@ -1,7 +1,7 @@
 .thematic-blog-card {
   font-family: "Open Sans", sans-serif;
-  padding: 25px;
-  height: 117px;
+  padding: 20px;
+  height: 140px;
   max-width: 276px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
@@ -26,6 +26,9 @@
     .thematic-blog-card__title--hovered:hover {
       color: #ff5480; }
 
+@media (max-width: 1142px) {
+  .thematic-blog-card {
+    max-width: none; } }
 @media (max-width: 850px) {
   .thematic-blog-card {
     max-width: none;

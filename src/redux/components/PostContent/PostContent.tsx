@@ -1,18 +1,18 @@
-import React, {Component} from "react";
+import React, {Component} from 'react';
 import './PostContent.scss'
-import {Title} from "../Title/Title";
-import {FlexBox} from "../FlexBox/FlexBox";
-import {ImageBox} from "../ImageBox/ImageBox";
-import {IconBox} from "../IconBox/IconBox";
-import {Icon} from "../Icon/Icon";
-import {InnerHTML} from "../InnerHTML/InnerHTML";
-import {Like} from "../Like/Like";
-import {Figure} from "../Figure/Figure";
-import {List} from "../List/List";
-import {FigCaption} from "../FigCaption/FigCaption";
-import {Author} from "../Author/Author";
+import {Title} from '../Title/Title';
+import {FlexBox} from '../FlexBox/FlexBox';
+import {ImageBox} from '../ImageBox/ImageBox';
+import {IconBox} from '../IconBox/IconBox';
+import {Icon} from '../Icon/Icon';
+import {InnerHTML} from '../InnerHTML/InnerHTML';
+import {Like} from '../Like/Like';
+import {Figure} from '../Figure/Figure';
+import {List} from '../List/List';
+import {FigCaption} from '../FigCaption/FigCaption';
+import {Author} from '../Author/Author';
 import {connect} from 'react-redux';
-import {getNewPostAction} from "../../actions/getPostsActions";
+import {getNewPostAction} from '../../actions/getPostsActions';
 
 interface IProps {
     getNewPostAction?: any,
@@ -20,7 +20,7 @@ interface IProps {
     newPost?: any,
 }
 
-class PostContent extends Component < IProps, {}> {
+class PostContent extends Component <IProps, {}> {
 
     componentDidMount() {
         this.props.getNewPostAction();
@@ -28,8 +28,8 @@ class PostContent extends Component < IProps, {}> {
 
     render() {
 
-        let renderPost = this.props.newPost.map((post: any) => (
-            <>
+        let renderPost = this.props.newPost.map((post: any, num: number) => (
+            <div key={num}>
                 <ImageBox {...post} imagePost/>
                 <InnerHTML postPadding>
                     {post.paragraphReason}
@@ -66,7 +66,7 @@ class PostContent extends Component < IProps, {}> {
                         </Author>
                     </FigCaption>
                 </Figure>
-            </>
+            </div>
         ));
 
         return (

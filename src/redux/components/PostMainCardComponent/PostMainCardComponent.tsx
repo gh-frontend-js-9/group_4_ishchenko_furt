@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import Loading from "../Healpers/Loading";
-import {getPopularPostAction} from "../../actions/getPostsActions";
-import {PostAuthor} from "../PostAuthor/PostAuthor";
-import {Title} from "../Title/Title";
-import {Content} from "../Content/Content";
+import Loading from '../Healpers/Loading';
+import {getPopularPostAction} from '../../actions/getPostsActions';
+import {PostAuthor} from '../PostAuthor/PostAuthor';
+import {Title} from '../Title/Title';
+import {Content} from '../Content/Content';
 import './PostMainCardComponent.scss'
 
 interface IProps {
@@ -19,14 +19,17 @@ class PostMainCardComponent extends Component <IProps, {}> {
     };
 
     render() {
-        let renderPopularPost = this.props.popularPost.map((post: any) => {
-            return (<div className="post-main-card main-card">
-                <Title xxxlFontSize mixin='post-main-card__title'>
-                    {post.title}
-                </Title>
-                <Content mixin='post-main-card__content' lgFontSize>{post.description}</Content>
-                <PostAuthor {...post} mdFontSize/>
-            </div>);
+        let renderPopularPost = this.props.popularPost.map((post: any, num: number) => {
+
+            return (
+                <div key={num} className="post-main-card main-card">
+                    <Title xxxlFontSize mixin='post-main-card__title'>
+                        {post.title}
+                    </Title>
+
+                    <Content mixin='post-main-card__content' lgFontSize>{post.description}</Content>
+                    <PostAuthor {...post} mdFontSize/>
+                </div>);
         });
 
         return (

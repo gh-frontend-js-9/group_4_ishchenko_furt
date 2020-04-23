@@ -1,6 +1,6 @@
 @import '../../../assets/styles/scss/styles.scss';
 
-.searchbar {
+.search-bar {
   text-align: center;
   padding: 20px;
   @include text-styles($sm-font-size, $light-gray-color);
@@ -18,13 +18,13 @@
   }
 }
 
-.searchbar__icon:hover {
+.search-bar__icon:hover {
   color: $pink;
   cursor: pointer;
 }
 
 @media(max-width: 1200px) {
-  .searchbar__input {
+  .search-bar__input {
     max-width: 500px;
   }
 }

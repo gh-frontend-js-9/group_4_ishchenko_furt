@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import './ThematicBlogCard.scss'
-import {Title} from "../Title/Title";
+import {Title} from '../Title/Title';
 
 export const ThematicBlogCard: React.FC = (props: any) => {
 
@@ -9,7 +9,8 @@ export const ThematicBlogCard: React.FC = (props: any) => {
             <p className="thematic-blog-card__theme">
                 {props.tags}
             </p>
-            <Title mixin={"thematic-blog-card__title thematic-blog-card__title--hovered"}>
+
+            <Title mixin={'thematic-blog-card__title thematic-blog-card__title--hovered'}>
                 {props.title}
             </Title>
         </div>

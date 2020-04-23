@@ -21,12 +21,15 @@ class SidebarPopularPost extends Component<IProps, {}> {
             <div className={'sidebar-post'}>
                 <div className={'sidebar-post__image'}/>
                 <div className={'sidebar-post__text-box'}>
+
                     <Content mixin={'sidebar-post--small'} primary>
                         {post.tags}
                     </Content>
+
                     <Title mixin={'sidebar-post--small'}>
                         {post.title}
                     </Title>
+
                 </div>
             </div>
         ));

@@ -18,7 +18,9 @@ export const SubscribeBox: React.FC = () => {
 
             <form className='subscribe-input'>
                 <EmailInput mixin='subscribe-input__email' placeholder='Your email'/>
-                <Button mixin='subscribe-input__button'>Subscribe</Button>
+                <Button mixin='subscribe-input__button'>
+                    Subscribe
+                </Button>
             </form>
 
         </div>

@@ -10,6 +10,8 @@ export const InnerHTML = (props: any) => {
     const classes = ` ${fontSize} ${paddingSize}`;
 
     return (
-        <p className={classes} dangerouslySetInnerHTML={{__html: children}}> </p>
+        <p className={classes} dangerouslySetInnerHTML={{__html: children}}>
+
+        </p>
     )
 };

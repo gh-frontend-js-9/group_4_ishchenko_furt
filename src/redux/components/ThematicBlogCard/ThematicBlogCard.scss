@@ -26,17 +26,13 @@
     }
   }
 }
+
 @media (max-width: 850px) {
   .thematic-blog-card {
     max-width: none;
     height: auto;
   }
 }
-//@media (max-width: 400px) {
-//  .thematic-blog-card {
-//    height: auto;
-//  }
-//}
 
 @media (max-width: 600px) {
   .thematic-blog-card__title--hovered:hover {
@@ -50,5 +46,3 @@
     box-shadow: none;
   }
 }
-
-

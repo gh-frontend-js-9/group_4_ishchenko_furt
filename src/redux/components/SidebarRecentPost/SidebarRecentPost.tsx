@@ -1,8 +1,8 @@
-import React, {Component} from "react";
-import {connect} from "react-redux";
-import {SidebarBox} from "../SidebarBox/SidebarBox";
-import {Content} from "../Content/Content";
-import {Title} from "../Title/Title";
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {SidebarBox} from '../SidebarBox/SidebarBox';
+import {Content} from '../Content/Content';
+import {Title} from '../Title/Title';
 import {getEssentialsThematicPostAction} from '../../actions/getPostsActions';
 import '../SidebarPopularPost/SidebarPopularPost.scss';
 
@@ -11,26 +11,28 @@ interface IProps {
     essentialsThematicPost?: any
 }
 
-class SidebarRecentPost extends Component<IProps, {}>{
+class SidebarRecentPost extends Component<IProps, {}> {
     componentDidMount() {
         this.props.getEssentialsThematicPostAction();
     };
 
-    render(){
-        let renderRecentPost = this.props.essentialsThematicPost.map((post: any)=>(
+    render() {
+        let renderRecentPost = this.props.essentialsThematicPost.map((post: any) => (
             <div className={'sidebar-post'}>
                 <div className={'sidebar-post__text'}>
+
                     <Content mixin={'sidebar-post--small'} primary>
                         {post.tags}
                     </Content>
                     <Title mixin={'sidebar-post--small'}>
                         {post.title}
                     </Title>
+
                 </div>
             </div>
         ))
 
-        return(
+        return (
             <SidebarBox>
                 <Title mixin={'sidebar-post--center'}>
                     Recent post

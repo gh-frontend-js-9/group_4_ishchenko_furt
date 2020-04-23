@@ -11,9 +11,12 @@ export const SubscribeSmallBox: React.FC = () => {
                 <Title mixin='subscribe-small-box__title' lg-second-font-size>
                     SUBSCRIBE
                 </Title>
+
                 <form className='subscribe-small-box__form'>
                     <EmailInput mixin='subscribe-small-box__email' placeholder='Your email'/>
-                    <Button mixin='subscribe-small-box__button'>Subscribe</Button>
+                    <Button mixin='subscribe-small-box__button'>
+                        Subscribe
+                    </Button>
                 </form>
             </div>
     )
